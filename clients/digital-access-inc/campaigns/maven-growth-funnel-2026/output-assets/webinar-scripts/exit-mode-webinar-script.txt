@@ -1,0 +1,720 @@
+# MAVEN BY DIGITAL ACCESS INC
+## Webinar Script — Exit Mode (FINAL COMPLETE VERSION)
+**"The Pre-Sale Revenue Audit: What Your Business Is Worth to a Buyer — And How to Improve It Before You Sell"**
+
+**Runtime:** ~30 minutes | **Platform:** ReplayIQ.ai
+**Presenter:** [NAME] | digitalaccesspro.com
+
+---
+
+## PRODUCTION NOTES:
+- Use HeyGen or Synthesia AI presenter
+- Record 4-5 minute Maven screen demo (silent, exit-mode framing) — insert at [DEMO INSERT] marker
+- AI presenter provides ALL voiceover including demo narration
+- Upload to ReplayIQ.ai with trained chatbot enabled (exit mode response library)
+- CTA button links to Maven exit-mode chatbot
+- Tone: warmer than Growth Mode — these are owners with decades of work on the line
+
+---
+
+# SEGMENT 1: THE HOOK (0:00 – 5:00)
+
+**[SLIDE: Black screen]**
+
+**[ON SCREEN TEXT:]**
+*"What number do you want to walk away with when you sell your business?"*
+
+**[PAUSE - 3 seconds]**
+
+**[SLIDE CHANGE: Presenter on screen]**
+
+That's the question nobody in your life is asking you directly.
+
+Your accountant talks about tax strategy.
+
+Your attorney talks about deal structure.
+
+Your friends say, "Man, you've built something really great."
+
+But nobody sits you down and asks: **What number do you actually need?**
+
+**[PAUSE - 2 seconds]**
+
+And more importantly — what does your business look like right now to the person who's going to write that check?
+
+**[PAUSE]**
+
+Because here's what I've learned working with hundreds of business owners who are 1 to 3 years from selling:
+
+Most of them discover the answer to that question too late.
+
+They go to market thinking they have a strong business — and they do. They've built something real over 10, 20, sometimes 30 years of hard work.
+
+And then a buyer's due diligence team comes in.
+
+And starts finding things.
+
+**[PAUSE - 2 seconds]**
+
+Missed calls that nobody ever tracked.
+
+Rankings that fell while you were busy running the business.
+
+Processes that exist only in your head and a few key employees' heads.
+
+Revenue that looks strong until a buyer asks: *"What happens to this revenue when you leave?"*
+
+**[PAUSE]**
+
+And suddenly the number on the table is lower than it should be.
+
+**[SLIDE CHANGE]**
+
+In the next 30 minutes, I'm going to show you something that most business brokers won't tell you — because they get paid when you sell, not when you maximize what you sell for.
+
+I'm going to show you the five gaps that buyers find in almost every local service business they look at.
+
+I'm going to show you what each of those gaps is **projected** to cost you at the negotiating table.
+
+And I'm going to show you a real analysis — for a real business — that identifies those gaps and builds a concrete plan to close them over the next 12 to 24 months.
+
+**[PAUSE]**
+
+Not generic advice. Not "improve your marketing."
+
+**Your** specific gaps. **Your** specific business. **Your** specific market.
+
+And a roadmap that shows **your** buyers a business worth paying for.
+
+**[PAUSE - 2 seconds]**
+
+And here's what's important to understand before we start:
+
+We are not a business broker. We don't appraise businesses. We don't facilitate sales.
+
+What we do is identify the marketing and operational gaps that suppress **your** EBITDA and make **your** buyers nervous — and build a systematic plan to close them before you go to market.
+
+**[PAUSE]**
+
+Think of it as pre-sale preparation. The work that happens before you engage a broker. The work that determines whether you walk into that conversation from a position of strength — or a position of explaining gaps.
+
+**[SLIDE CHANGE: Maven logo / presenter]**
+
+My name is [NAME]. I run Maven by Digital Access Inc.
+
+We've spent eight years building proprietary systems that analyze local service businesses — roofing companies, HVAC contractors, plumbers, remodelers, personal injury law firms.
+
+We've seen what buyers find. We've seen what costs owners money at the table. And we've built a 7-minute analysis that shows **you** — specifically, **your** business — exactly where those gaps are.
+
+**[PAUSE]**
+
+The analysis is built on:
+- **Eight years of proprietary campaign data** from hundreds of local service businesses
+- **Real-time competitor intelligence** pulled directly from your market
+- **Third-party industry benchmarks** specific to your vertical
+- **Data on what buyers actually look for** when they evaluate businesses like yours
+
+We're not guessing. We're showing you what the data says about **your** business — before a buyer's team does.
+
+**[PAUSE - 2 seconds]**
+
+And here's the part that matters most:
+
+When you get your analysis, you get access to it inside your own portal.
+
+You can log in anytime. Review your gaps. See your roadmap. Track your progress as you close each one over the next 12 to 24 months.
+
+It's **yours**. Whether you work with us or not.
+
+**[SLIDE CHANGE]**
+
+Let me show you what I mean.
+
+---
+
+# SEGMENT 2: THE 5 GAPS BUYERS FIND (5:00 – 13:00)
+
+**[SLIDE: "The 5 Gaps Buyers Find in Almost Every Local Service Business"]**
+
+Let me tell you about two roofing companies.
+
+Same market. Same size. Both doing roughly $2 million a year.
+
+One sold for **3.2 times EBITDA**.
+
+The other sold for **5.8 times EBITDA**.
+
+**[PAUSE - 2 seconds]**
+
+Same revenue. Almost double the multiple.
+
+What was the difference?
+
+**[PAUSE]**
+
+It wasn't luck. It wasn't the broker. It wasn't the timing.
+
+It was five specific things that one business had — and one didn't.
+
+**[PAUSE]**
+
+Let me show you what those five things are.
+
+And as I do, I want you to think about where **your** business stands on each one.
+
+---
+
+## GAP #1: OWNER-DEPENDENT REVENUE
+
+**[SLIDE CHANGE: Image representing a business tied to one person]**
+
+Picture this:
+
+You're a roofing contractor. You've been in business 22 years. You know every major general contractor in your market. You know every property manager. You built those relationships over two decades.
+
+When a buyer looks at your business, the first question they ask is:
+
+*"Does this revenue come with the business — or does it come with him?"*
+
+**[PAUSE - 2 seconds]**
+
+If the answer is "mostly him" — they discount the price. Heavily.
+
+It's called key-man risk. And it's one of the first things sophisticated buyers screen for.
+
+**[PAUSE]**
+
+Here's what the data shows:
+
+Businesses where revenue is demonstrably tied to the owner's personal relationships, personal presence, and personal decision-making typically sell at the **lower end of the multiple range** for their industry.
+
+Businesses where revenue is generated by a documented, systematic, AI-driven marketing engine — one that generates leads, answers calls, follows up, and books jobs **without the owner in the middle of every transaction** — command meaningfully higher multiples.
+
+**[PAUSE - 2 seconds]**
+
+The Maven analysis shows you exactly how owner-dependent **your** revenue currently is — and builds a roadmap to systematize the marketing and lead generation functions that buyers want to see running on their own.
+
+When a buyer looks at **your** business and sees: *"This generates revenue even when the owner is on vacation"* — that's worth something significant at the table.
+
+---
+
+## GAP #2: INCONSISTENT OR SEASONAL REVENUE
+
+**[SLIDE CHANGE]**
+
+Buyers want to underwrite predictable earnings.
+
+If your revenue is lumpy — big months followed by slow months, heavy seasonal swings, or a few large clients that represent most of the income — they have two options:
+
+They discount the price. Or they walk away.
+
+**[PAUSE]**
+
+Here's a real example of what this looks like in the numbers.
+
+Imagine a roofing company doing $2.1 million in revenue. But $800,000 of that comes in a 90-day window every spring. The other three quarters are thin.
+
+A buyer modeling that business doesn't see $2.1 million in consistent revenue.
+
+They see a seasonal spike they're not sure they can replicate — and they price accordingly.
+
+**[PAUSE - 2 seconds]**
+
+Now imagine the same business — same total revenue — but with a documented marketing system that generates consistent inbound leads every month of the year.
+
+SEO traffic that doesn't stop in November. Review-driven "near me" searches that keep the phone ringing in January. An AI voice agent that captures every inquiry regardless of season.
+
+Suddenly that buyer sees something completely different.
+
+**[PAUSE]**
+
+Not a seasonal business.
+
+A consistent business that happens to peak in spring.
+
+**[PAUSE - 2 seconds]**
+
+The Maven analysis shows you what **your** revenue consistency looks like to a buyer — and what a systematic marketing engine that generates predictable monthly lead flow would mean for **your** EBITDA picture.
+
+---
+
+## GAP #3: MARKETING PRESENCE GAPS THAT SIGNAL RISK
+
+**[SLIDE CHANGE]**
+
+Here's something most business owners don't think about when they're preparing to sell:
+
+Every gap in your marketing presence is a question a buyer asks about **future revenue**.
+
+Low review count? *"Can this business maintain its pipeline without the owner's personal reputation?"*
+
+Page 2 rankings? *"Is this business visible in a market where search matters?"*
+
+No presence on AI search platforms like ChatGPT and Gemini? *"Is this business positioned for where clients are increasingly searching?"*
+
+**[PAUSE - 2 seconds]**
+
+Let me give you a real number.
+
+Imagine you're a personal injury attorney preparing to sell a practice that generates $1.8 million in annual revenue.
+
+The Maven analysis runs on your firm and finds three things:
+
+Your firm has **68 reviews**. Your top competitor has **431**.
+
+You rank **page 3** for "car accident attorney [your city]" — a term searched 2,400 times a month in your market.
+
+Your firm has **zero presence** on ChatGPT and Gemini when someone asks for a personal injury attorney recommendation.
+
+**[PAUSE]**
+
+Each of those gaps represents a meaningful question a buyer's team will ask.
+
+Closing them over 12 to 18 months — and documenting that closure — changes the conversation from *"Here are the problems"* to *"Here's where we were 18 months ago, and here's where we are now."*
+
+That's a fundamentally different due diligence experience.
+
+**[PAUSE]**
+
+The Maven analysis shows you your firm's specific gaps — and what a systematic plan to close them would look like over **your** exit timeline.
+
+---
+
+## GAP #4: NO DOCUMENTED SYSTEMS
+
+**[SLIDE CHANGE]**
+
+This is the one that surprises most owners.
+
+You've been running your business for 20 years. You know exactly how it works. Your team knows how it works.
+
+But if I ask you to hand me the document that explains how you qualify a new roofing lead, how you onboard a new technician, how you follow up with a customer after a job, how you handle a negative review —
+
+Most owners look at me and say: *"It's just... how we do it."*
+
+**[PAUSE - 2 seconds]**
+
+To a buyer, that's not a business.
+
+That's a job that comes with a building.
+
+**[PAUSE]**
+
+Here's what buyers want to see:
+
+Documented SOPs for every major business function. Written, tested, repeatable processes that don't require the current owner — or even the current team — to carry them in their heads.
+
+AI-assisted workflows that reduce human error and owner dependency.
+
+A business that, in the buyer's words, *"would still work if I changed the team."*
+
+**[PAUSE - 2 seconds]**
+
+The Maven exit program builds and documents those systems as part of the engagement — so you walk into a sale with a business that looks modern, scalable, and not dependent on any single person.
+
+---
+
+## GAP #5: NO PERFORMANCE TRACK RECORD
+
+**[SLIDE CHANGE]**
+
+This is the gap that determines everything.
+
+Buyers don't just buy revenue.
+
+They buy **predictable, documented, defensible** revenue.
+
+**[PAUSE]**
+
+Here's the difference:
+
+You show up to sell with **one strong year** of revenue and a QuickBooks printout.
+
+That's a snapshot.
+
+You show up with **18 months** of consistent, upward-trending revenue — with a documented marketing system behind every dollar of it, month-by-month reports showing exactly what drove each lead, and a portal that shows the buyer exactly how the machine works —
+
+**[PAUSE - 2 seconds]**
+
+That's a trend line.
+
+Buyers model trend lines. They apply multiples to trend lines.
+
+Snapshots make them nervous.
+
+**[PAUSE]**
+
+And here's the timing reality:
+
+You cannot build an 18-month track record in the last 3 months before you sell.
+
+If you're planning to sell in 24 months, the window to start building that record is **now**.
+
+Every month you wait is a month of documented improvement you won't have at the table.
+
+**[PAUSE - 2 seconds]**
+
+The Maven analysis shows you where **your** performance track record stands today — and what a 12 to 24 month systematic improvement plan would look like for **your** business, **your** buyers, **your** exit timeline.
+
+---
+
+# SEGMENT 3: THE MAVEN ANALYSIS — LIVE DEMO (13:00 – 19:00)
+
+**[SLIDE: "The 7-Minute Analysis — Exit Mode Live Walkthrough"]**
+
+What you're about to see is a real Maven exit-readiness analysis for a home services business that's been operating for 19 years and is planning to go to market in approximately 20 months.
+
+I'm going to walk you through exactly what the AI generates — and what it means in terms of **your** buyers and **your** position at the negotiating table.
+
+This is the same analysis you'll get for **your** business.
+
+Same depth. Same specificity. But customized to:
+- **Your** market
+- **Your** competitors
+- **Your** current gaps
+- **Your** exit timeline
+
+Let's go.
+
+---
+
+**[DEMO RECORDING INSERT — 4-5 minutes]**
+
+**[Narrator voiceover over silent screen recording]**
+
+---
+
+### DEMO POINT 1: THE INTAKE (45 seconds)
+
+"Here's how it starts.
+
+The AI asks about 10 questions. Standard business information — name, location, website, what you do, average job value, current revenue.
+
+But it also asks: **What's your exit timeline?**
+
+That changes everything about how the analysis is built.
+
+A business planning to sell in 36 months needs a different roadmap than one planning to sell in 12. The AI accounts for that — and builds a plan designed specifically to maximize **your** position within **your** timeline.
+
+Takes about 5 minutes. The AI scrapes your website automatically and pulls real-time data from your market while you wait."
+
+---
+
+### DEMO POINT 2: THE GAP ANALYSIS — EXIT MODE FRAMING (90 seconds)
+
+"Here's the output.
+
+Seven categories. Real scores. But here's what's different from a standard marketing analysis:
+
+Every gap is framed around what it means to **a buyer**.
+
+Look at this: **Reviews** — 78 reviews. Top competitor in this market: 310.
+
+The standard marketing analysis says: *'You need more reviews to improve rankings.'*
+
+The exit-mode analysis says: *'This review gap affects your page 1 visibility on high-intent searches. Consistent inbound leads from search is one of the first things buyers evaluate. Closing this gap over 12 months of systematic review generation directly strengthens the revenue story a buyer sees.'*
+
+Every gap is connected to buyer perception and EBITDA — not just marketing metrics.
+
+**[PAUSE]**
+
+Look at **Speed-to-Lead**: The AI estimates this business is missing approximately 32% of incoming calls.
+
+The exit-mode framing: *'For a buyer, uncaptured revenue represents either upside they'll need to create — or risk they're not sure they can close. An AI voice agent eliminates this gap and turns it into a documented operational asset. The buyer sees: this business captures every lead, even when the owner isn't available.'*
+
+**[PAUSE]**
+
+**Website Conversion Score**: 41 out of 100.
+
+Specific issues identified on this business's actual site. The AI tells them: three specific fixes that would move this score significantly — fixes that could double the conversion rate on the traffic the SEO system is about to bring in.
+
+This is **their** analysis. It won't work for anyone else. It's built for **them**."
+
+---
+
+### DEMO POINT 3: THE CUSTOMER ACQUISITION COST — EXIT LENS (60 seconds)
+
+"Here's the number that matters most in a pre-sale context.
+
+Estimated customer acquisition cost: **$380**.
+
+Top competitor: **$260**.
+
+That $120 gap represents significant inefficiency in how this business converts marketing spend into revenue.
+
+Here's why that matters to a buyer:
+
+Closing that gap — reducing CAC toward the competitor's level — would improve EBITDA on the same revenue. And buyers apply multiples to EBITDA.
+
+Even a modest improvement in CAC efficiency, documented over 12 months, strengthens the profitability story a buyer sees.
+
+This is specifically calculated for **this business** in **this market**. When you get your analysis, you'll see **your** CAC compared to **your** competitors — with the buyer-readiness framing built in."
+
+---
+
+### DEMO POINT 4: THE EXIT READINESS ROADMAP (90 seconds)
+
+"Here's the 12-month plan. Built around this business's 20-month exit timeline.
+
+**Month 1-3: Close the Marketing Gaps**
+- Review generation system (closing the 232-review gap systematically)
+- AI voice agent (eliminating the 32% missed call rate)
+- Website conversion fixes (the three specific issues identified)
+- Call tracking and attribution reporting (building the documented revenue record)
+
+**Month 3-9: Build the Revenue Track Record**
+- Full SEO deployment targeting this business's top keywords in their market
+- Monthly performance reporting showing consistent, attributable lead generation
+- Revenue attribution dashboards — every lead tracked from source to close
+
+**Month 6-18: AI Infusion and Operations Documentation**
+- AI-assisted customer communication and follow-up
+- SOP documentation for hiring, onboarding, job delivery, and customer service
+- Internal dashboards showing operational efficiency metrics
+
+**Month 12-20: Exit Readiness Package**
+- Buyer-ready data room with 12+ months of clean performance documentation
+- Revenue attribution showing exactly what drove growth
+- AI-generated SOPs for every major business function
+- Operational efficiency reports documenting time and cost savings
+
+**[PAUSE]**
+
+These are projections based on eight years of campaign data from similar businesses in similar markets. They're not promises. Marketing doesn't come with guarantees.
+
+But they're the most specific, data-driven picture of **your** exit preparation path available.
+
+And the roadmap is **yours**. You own it. Whether you work with us or not."
+
+---
+
+**[END DEMO RECORDING]**
+
+**[SLIDE: Back to presenter]**
+
+That's the analysis.
+
+Seven minutes.
+
+Completely customized to **your** business, **your** gaps, **your** exit timeline, **your** buyers.
+
+Built on eight years of proprietary data and real-time market intelligence.
+
+And it's **yours** — whether you work with us or not.
+
+---
+
+# SEGMENT 4: OBJECTION HANDLING (19:00 – 24:00)
+
+---
+
+**OBJECTION #1: "I'm already thinking about selling. Why would I invest in marketing now?"**
+
+**[SLIDE CHANGE]**
+
+Exactly. And the first thing a serious buyer is going to do is find every gap in your marketing and revenue systems.
+
+The question is whether you find them first — close them — and show 12 to 18 months of documented improvement.
+
+Or whether a buyer finds them and uses them to negotiate your price down.
+
+**[PAUSE]**
+
+Here's the math on why this matters:
+
+A home services business with EBITDA of $400,000 and a 4x multiple sells for $1.6 million.
+
+The same business — with 18 months of documented AI-driven growth, marketing gaps closed, consistent revenue trend, and operational SOPs — might support a 5.5x or 6x multiple.
+
+At 5.5x, that's $2.2 million.
+
+**[PAUSE - 2 seconds]**
+
+The difference between 4x and 5.5x on $400,000 of EBITDA is **$600,000**.
+
+That's not a rounding error. That's the cost of not starting 18 months ago.
+
+The second best time to start is now.
+
+---
+
+**OBJECTION #2: "Can you tell me what my business is worth?"**
+
+**[SLIDE CHANGE]**
+
+No. And we'd be skeptical of anyone who does without a full financial review.
+
+That's a business broker's job. A good one is worth every dollar of their fee.
+
+What we do is identify the marketing and operational gaps that are likely suppressing **your** EBITDA and raising red flags in due diligence — and build a concrete plan to close them.
+
+Think of it as pre-sale preparation. Not valuation.
+
+**[PAUSE]**
+
+The Maven analysis is the first step: see **your** specific gaps, see **your** specific roadmap, understand what closing each gap is projected to mean for **your** revenue picture.
+
+Then, when you engage a broker, you walk in with a business that's been optimized — not one that needs explaining.
+
+---
+
+**OBJECTION #3: "I already talked to a broker. Should I still do this?"**
+
+**[SLIDE CHANGE]**
+
+Yes. And honestly, this is what brokers wish their clients had done before they listed.
+
+A documented, AI-optimized business with 12 to 18 months of clean performance data is dramatically easier to position and sell at a premium than one without it.
+
+**[PAUSE]**
+
+If your broker is good, they'll tell you the same thing: the businesses that get the best multiples are the ones that came to market prepared.
+
+Not the ones that came to market and then tried to explain their gaps.
+
+---
+
+**OBJECTION #4: "I don't have time for a marketing program. I'm trying to get out."**
+
+**[SLIDE CHANGE]**
+
+I hear this one a lot.
+
+Here's what I'd say: the marketing system runs autonomously. No account managers. No weekly calls. No strategy sessions that waste your afternoon.
+
+The AI handles the execution. The portal shows you the progress. You review a dashboard when you want to.
+
+**[PAUSE]**
+
+Your job during this 12 to 24 month period isn't to manage marketing. Your job is to run your business well enough that the revenue trend stays strong — and the documentation we're building tells the right story.
+
+We handle the marketing. You handle the business.
+
+---
+
+# SEGMENT 5: THE OFFER & CTA (24:00 – 30:00)
+
+**[SLIDE: "Here's What I Want You to Do Right Now"]**
+
+Click the button below this video.
+
+You'll be taken to the Maven chatbot.
+
+It's going to ask you about 10 questions. The most important one:
+
+**"What's your exit timeline?"**
+
+Everything the AI builds from that point is designed around **your** exit — not generic marketing growth, but a systematic plan to close **your** specific gaps within **your** specific window before **your** buyers look.
+
+**[PAUSE]**
+
+In 7 minutes, you'll get:
+
+✓ **Full marketing gap analysis across 7 categories** — with buyer-readiness framing on every one
+✓ **Your estimated customer acquisition cost** compared to your top competitors — and what that gap means for EBITDA
+✓ **A visibility analysis** — where your business shows up on Google, on "near me" searches, and on AI platforms buyers' clients are using
+✓ **Website conversion score** with specific fixable issues identified on **your** actual site
+✓ **A 12-month exit readiness roadmap** — customized to **your** timeline, **your** gaps, **your** buyers
+✓ **Portal access** — review your plan anytime, track your progress as you close each gap
+✓ **A human available** to walk through it — no pitch, no pressure, just answers about **your specific situation**
+
+**[PAUSE - 2 seconds]**
+
+**[SLIDE CHANGE]**
+
+**What does this cost?**
+
+**$39.**
+
+**[PAUSE]**
+
+For a complete exit-readiness analysis — 100% customized to **your** business and **your** exit timeline — that a consulting firm would charge $3,000 to $5,000 to produce.
+
+**[PAUSE - 2 seconds]**
+
+Why $39 instead of free?
+
+Because we're looking for business owners who are serious about maximizing their exit — not tire-kickers who think they might sell someday.
+
+Thirty-nine dollars is a filter for intent.
+
+If you're not willing to invest $39 to understand exactly where **your** business stands before you go to market — this probably isn't for you.
+
+**[SLIDE CHANGE]**
+
+Here's what happens after you pay:
+
+1. You answer the 10 questions (5 minutes)
+2. The AI builds your custom exit-readiness analysis (2 minutes)
+3. You get the full report instantly
+4. You get access to **your** portal — log in anytime, review **your** plan, track progress
+5. You can book a 15-minute call with our team to walk through it — no pitch, no pressure, just answers to your questions about **your** specific business and **your** exit
+
+Either way, the plan is **yours**. Forever.
+
+**[PAUSE]**
+
+And let me say this directly:
+
+The gap between a business that sells at 3x EBITDA and one that sells at 5x or 6x is almost always the same five things we talked about today.
+
+Not luck. Not timing. Not which broker you picked.
+
+**The gaps buyers find. And whether you found them first.**
+
+**[SLIDE CHANGE]**
+
+Now here's what I need you to pay attention to:
+
+This $39 offer is only available through this webinar.
+
+We're in the early phase of testing this offer with pre-exit business owners. After this test period, the same analysis will be priced at $297.
+
+If you're watching this, you're in the test group.
+
+**[PAUSE - 2 seconds]**
+
+Here's what I know:
+
+If you close this page and don't click that button, you'll forget about this by tomorrow.
+
+You'll go back to running your business. Next year will come. The year after that.
+
+And then you'll go to market — and a buyer will hand you a list of gaps you could have closed 18 months ago.
+
+**[PAUSE]**
+
+Or you can take 7 minutes right now.
+
+See exactly where **your** business stands.
+
+Know exactly what a buyer will find.
+
+And start closing those gaps today.
+
+**[SLIDE CHANGE: Final CTA]**
+
+Click the button below. Get your analysis. Own your roadmap.
+
+**Whatever you decide after that — the plan is yours. Forever.**
+
+[NAME] | Maven by Digital Access Inc | digitalaccesspro.com
+
+**[END OF SCRIPT]**
+
+---
+
+## WEBINAR PRODUCTION CHECKLIST
+
+- [ ] Record AI presenter reading this script (HeyGen/Synthesia)
+- [ ] Record 4-5 min Maven platform demo — exit mode analysis with buyer-readiness framing
+- [ ] Splice demo at [DEMO INSERT] marker using Descript or CapCut
+- [ ] Upload to ReplayIQ.ai (separate instance from Growth Mode)
+- [ ] Configure chatbot with Exit Mode response library
+- [ ] Set CTA button → Maven exit mode chatbot ($39 exit pricing)
+- [ ] Set up post-registration email sequence
+- [ ] Test full flow before going live
+
+**TRAFFIC NOTE:** LinkedIn ads will outperform Facebook for this audience.
+Target: Business owners 50-70, home services/trades/legal/professional services,
+company size 5-50 employees, seniority: Owner/Partner/President.

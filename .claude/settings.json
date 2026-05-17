@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Click_Campaigns__list_agents",
+      "WebFetch(domain:help.centripe.ai)"
+    ]
+  }
+}

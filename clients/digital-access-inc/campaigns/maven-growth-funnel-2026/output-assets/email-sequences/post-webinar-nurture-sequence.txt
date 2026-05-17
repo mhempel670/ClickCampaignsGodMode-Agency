@@ -1,0 +1,211 @@
+================================================================
+MAVEN BY DIGITAL ACCESS INC
+Post-Webinar & Post-Analysis Nurture Sequences
+================================================================
+
+SEQUENCE A: POST-WEBINAR REGISTRATION (3 emails)
+Triggers when someone registers for either webinar.
+Goal: Get them to actually watch, then run the analysis.
+
+SEQUENCE B: POST-ANALYSIS NURTURE (3 emails)
+Triggers when someone completes the 7-minute analysis.
+Goal: Get them to book the "Talk to a Human" call.
+
+================================================================
+SEQUENCE A: POST-WEBINAR REGISTRATION
+================================================================
+
+- - - - - - - - -
+EMAIL A1 — Immediately after registration
+- - - - - - - - -
+
+SUBJECT: You're registered — here's what to expect
+
+Hi {{first_name}},
+
+You're registered for the Maven webinar.
+
+Here's the link to watch: [WEBINAR LINK]
+
+It's about 25 minutes. No pitch at the start —
+we get straight into the data.
+
+At the end, you'll have the option to run your own
+7-minute analysis. Specific to your business, your
+market, your competitors.
+
+See you in there.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — The webinar runs on-demand, so you can watch
+whenever it works. That said, the analysis at the end
+tends to be more useful when you're not multitasking.
+Just saying.
+
+
+- - - - - - - - -
+EMAIL A2 — 24 hours after registration (if no analysis started)
+- - - - - - - - -
+
+SUBJECT: did you get a chance to watch?
+
+Hi {{first_name}},
+
+Just checking — did you get a chance to watch
+the webinar yet?
+
+If not, here it is again: [WEBINAR LINK]
+
+The part most people find useful is the live demo —
+starts around the 10-minute mark. Shows a real analysis
+for a real business, with the actual numbers.
+
+Takes 25 minutes. The analysis at the end takes 7.
+
+Matt
+Maven by Digital Access Inc
+
+P.S. — If you watched and had questions, reply here.
+Happy to answer directly.
+
+
+- - - - - - - - -
+EMAIL A3 — 48 hours after registration (if no analysis started)
+- - - - - - - - -
+
+SUBJECT: last nudge, then I'll leave you alone
+
+Hi {{first_name}},
+
+Last reminder on this.
+
+If the webinar wasn't for you, no worries.
+
+But if you've been meaning to watch and just
+haven't gotten to it — here's the direct link
+to the analysis itself: [ANALYSIS LINK]
+
+You don't have to watch the webinar first.
+You can go straight to the analysis.
+
+7 minutes. Your business. Your gaps. Your plan.
+
+Matt
+Maven by Digital Access Inc
+
+P.S. — If the timing just isn't right, that's fine.
+The link works whenever you're ready.
+
+
+================================================================
+SEQUENCE B: POST-ANALYSIS NURTURE
+================================================================
+
+- - - - - - - - -
+EMAIL B1 — Immediately after analysis completes
+- - - - - - - - -
+
+SUBJECT: Your Maven analysis is ready — here's your summary
+
+Hi {{first_name}},
+
+Your custom Maven marketing analysis for {{business_name}}
+is complete.
+
+Here's a quick summary of what it found:
+
+• Estimated Customer Acquisition Cost: ${{cac}}
+• Website Conversion Score: {{website_score}}/100
+• Review Gap vs. Top Competitor: {{review_gap}}%
+• Estimated Revenue Impact of Top 3 Gaps: {{gap_impact}}/month
+• 12-Month Projection (full plan): {{projection}}
+
+Your full plan — with month-by-month services, projected
+budget, and specific keyword and website recommendations —
+is here: [PLAN LINK]
+
+If you'd like to walk through it with someone from our team,
+click "Talk to a Human" inside the plan, or book directly:
+[BOOKING LINK]
+
+All figures are projections based on your market data.
+They'll be explained fully on the call.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — The plan is actionable whether you work with us
+or not. Take it to any developer or marketing firm
+and have them execute it. We're just the fastest,
+most cost-effective way to do it autonomously.
+
+
+- - - - - - - - -
+EMAIL B2 — 48 hours after analysis (no call booked)
+- - - - - - - - -
+
+SUBJECT: did you get a chance to look at your Maven plan?
+
+Hi {{first_name}},
+
+Your Maven plan has been ready for a couple of days —
+wanted to make sure you had a chance to review it.
+
+The numbers that tend to surprise people most:
+the review gap vs. top competitors and the estimated
+missed-call impact. If yours are notable, they're
+probably worth addressing regardless of what you
+decide about execution.
+
+If you'd like to walk through the plan with someone
+from our team — no commitment, just a conversation —
+here's the booking link: [BOOKING LINK]
+
+Or reply here with questions. I'm happy to answer
+them directly.
+
+Matt
+Maven by Digital Access Inc
+
+P.S. — The call is 15 minutes. We review the plan,
+answer your questions, and you decide from there.
+No pressure either direction.
+
+
+- - - - - - - - -
+EMAIL B3 — 5 days after analysis (no call booked)
+- - - - - - - - -
+
+SUBJECT: one more thing about your Maven plan
+
+Hi {{first_name}},
+
+Last note on this.
+
+Your plan identified some specific gaps — and gave you
+a 12-month roadmap to close them. If the numbers were
+compelling, the next step is straightforward.
+
+If they weren't — if your marketing is actually in
+solid shape — that's useful to know too.
+
+Either way, if you want to talk through it:
+[BOOKING LINK]
+
+If you don't — no worries. The plan is yours.
+Use it however makes sense.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — For what it's worth, most business owners
+who run the analysis find at least 2-3 gaps worth
+addressing. Closing even one of the major ones
+tends to pay for the whole program.
+
+================================================================

@@ -1,0 +1,180 @@
+================================================================
+MAVEN BY DIGITAL ACCESS INC
+Cold Email Sequence — Personal Injury Attorneys
+4 Emails / 14 Days | Brand Voice: Dry, Plain, Revenue-Focused
+Target: PI firm partners, managing partners, firm owners
+Goal: Drive to Growth Mode webinar registration
+================================================================
+
+SPAM WORD AUDIT: No "free," "guarantee," "proven," "limited time."
+MERGE TAGS: {{first_name}}, {{firm_name}}, {{city}}
+[LINK] = webinar registration URL
+
+================================================================
+EMAIL 1 — Day 1
+NO LINKS. CTA = reply only.
+================================================================
+
+SUBJECT LINE OPTIONS (A/B test):
+  A: quick question about {{firm_name}}
+  B: noticed something, {{first_name}}
+  C: the after-hours call math for PI firms
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hi {{first_name}},
+
+I was doing some research on personal injury firms in {{city}}
+and ran {{firm_name}} through our marketing analysis platform.
+
+I won't dump everything in an email — but there's a gap
+between where your firm shows up when someone searches
+for help after an accident and where your top local
+competitor shows up.
+
+At the case values you're working with, that gap isn't
+a minor inconvenience.
+
+Worth a quick conversation?
+
+Reply "yes" and I'll send you what I found.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — No pitch. No sales call. Just the data.
+If it's not useful, tell me to get lost.
+
+
+================================================================
+EMAIL 2 — Day 4
+Include webinar link.
+================================================================
+
+SUBJECT LINE OPTIONS:
+  A: the thing I mentioned — {{firm_name}}
+  B: still want to send you this, {{first_name}}
+  C: the after-hours problem (and what it costs PI firms)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hi {{first_name}},
+
+Followed up a few days ago — no response, which is fine.
+Busy is the default setting for most PI partners I talk to.
+
+Let me just leave this here.
+
+We built a custom marketing breakdown for {{firm_name}} —
+your Google rankings for the searches that matter,
+your review count vs. the top firm in {{city}},
+your estimated case acquisition cost, and your visibility
+on AI search platforms like ChatGPT and Gemini.
+
+At $50,000 to $100,000+ per case, even one missed inquiry
+a week is a number worth paying attention to.
+
+If you want to see the analysis: [LINK]
+
+Takes 7 minutes to run. No sales call required.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — Worst case, you see your gaps and confirm
+your current marketing is solid. Best case,
+you find something worth fixing.
+
+
+================================================================
+EMAIL 3 — Day 8
+Pain point angle. Include webinar link.
+================================================================
+
+SUBJECT LINE OPTIONS:
+  A: the $100K call that went unanswered
+  B: {{first_name}} — honest question
+  C: what AI search is doing to PI firm visibility right now
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hi {{first_name}},
+
+Two things are happening in PI marketing right now
+that most firms haven't fully dealt with.
+
+First: after-hours calls.
+
+An accident victim calling at 11pm isn't waiting
+until morning. They're calling whoever picks up.
+
+The average PI firm misses a meaningful percentage of
+after-hours and overflow calls. At $100,000+ per case,
+you don't need to miss many before you're talking
+about serious projected revenue that went to the firm
+that answered.
+
+Second: AI search.
+
+More potential clients are asking ChatGPT, Gemini,
+and Perplexity "who's the best personal injury attorney
+near me" — especially in the hours right after an accident.
+
+Most PI firms have zero presence on these platforms.
+
+The firms that show up there are capturing inquiries
+that never even reach Google.
+
+The analysis I mentioned covers both — and shows
+your firm's specific visibility gaps.
+
+Still 7 minutes. Still no commitment: [LINK]
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — This isn't a general problem. It's a specific,
+measurable gap. The analysis shows you your number.
+
+
+================================================================
+EMAIL 4 — Day 14
+Breakup email. Include webinar link.
+================================================================
+
+SUBJECT LINE OPTIONS:
+  A: last note from me, {{first_name}}
+  B: alright, I'll leave you alone
+  C: leaving the door open — {{firm_name}}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hi {{first_name}},
+
+Last email — I mean it.
+
+If you ever want to see what the analysis shows
+for {{firm_name}} — your ranking gaps, review position,
+AI search visibility, and case acquisition cost —
+it's here whenever the timing works:
+
+[LINK]
+
+No commitment. No sales call unless you want one.
+Just your data and a plan to address it.
+
+Hope business is strong.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — The firms closing the visibility gaps now
+are the ones showing up when the next round of
+high-value cases starts searching.
+Up to you whether {{firm_name}} is on that list.
+
+================================================================

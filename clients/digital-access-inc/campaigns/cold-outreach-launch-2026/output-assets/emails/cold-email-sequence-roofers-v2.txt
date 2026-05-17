@@ -1,0 +1,145 @@
+MAVEN BY DIGITAL ACCESS INC
+Cold Email Sequence — Roofers (US Nationwide) v2
+4 Emails / 14 Days | Frank Kern Style
+================================================================
+
+
+EMAIL 1 — Day 1 (NO LINKS — reply only)
+----------------------------------------------------------------
+
+SUBJECT LINE OPTIONS (pick one to A/B test):
+  A: quick question, {{first_name}}
+  B: noticed something about {{business_name}}
+  C: this might be a little awkward
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hi {{first_name}},
+
+I'll keep this short.
+
+I was looking at roofing companies in {{city}} and ran some numbers on {{business_name}}.
+
+I'm not going to dump it all in an email — but there's a gap between where you're showing up online right now and where your top local competitor is showing up that's... not small.
+
+Might be worth 2 minutes of your time.
+
+Just reply "yes" and I'll show you exactly what I found.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — No pitch. No sales call. Just the data. If it's not useful, you can tell me to get lost and I'll respect that completely.
+
+
+================================================================
+
+
+EMAIL 2 — Day 4 (include link)
+----------------------------------------------------------------
+
+SUBJECT LINE OPTIONS:
+  A: you didn't reply so I'm trying again
+  B: the thing I mentioned — {{business_name}}
+  C: ok here it is, {{first_name}}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hi {{first_name}},
+
+Tried to reach you a few days ago — no response, which is completely fair. Inboxes are chaos.
+
+I'll just leave this here.
+
+We put together a custom marketing breakdown for {{business_name}} — your Google rankings, your review count vs. competitors in {{city}}, your estimated customer acquisition cost, and a 12-month roadmap to close the gaps.
+
+It normally runs $39. We're putting them out at no cost for roofing companies right now because we want the case studies.
+
+If you want yours: [LINK]
+
+Takes 7 minutes. No sales call required.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — Worst case you get a detailed breakdown of your marketing gaps and it costs you nothing. Best case, you find something worth fixing.
+
+
+================================================================
+
+
+EMAIL 3 — Day 8 (include link)
+----------------------------------------------------------------
+
+SUBJECT LINE OPTIONS:
+  A: the $15,000 call you didn't answer
+  B: {{first_name}}, be honest with me
+  C: the math on this is a little brutal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hi {{first_name}},
+
+Honest question:
+
+What percentage of calls to {{business_name}} go unanswered during a busy day?
+
+If you're like most roofing companies, it's higher than you'd want to admit — especially during peak season when everyone's in the field.
+
+Here's the uncomfortable math: at $15,000 to $25,000 per job, you don't have to miss many calls before you're staring at a significant amount of revenue that just... walked over to your competitor.
+
+The breakdown I mentioned shows your specific numbers — call gaps, ranking gaps, review gaps vs. your market.
+
+Still no cost. Still 7 minutes: [LINK]
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — I'm not saying this to be dramatic. The roofers who close this gap are the ones capturing the bulk of demand when storm season hits. The ones who don't are watching it happen from the sidelines.
+
+
+================================================================
+
+
+EMAIL 4 — Day 14 — BREAKUP (include link)
+----------------------------------------------------------------
+
+SUBJECT LINE OPTIONS:
+  A: alright, I'll leave you alone
+  B: last one — I mean it this time
+  C: I can take a hint, {{first_name}}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hi {{first_name}},
+
+Last email. I mean it this time.
+
+If you ever want to see what your marketing breakdown shows for {{business_name}} — the rankings, the review gaps, what competitors in {{city}} are doing that you're not — it's here whenever the timing is right:
+
+[LINK]
+
+No expiration. No sales call. No more emails from me after this one.
+
+Hope business is going well.
+
+Matt
+Maven by Digital Access Inc
+digitalaccesspro.com
+
+P.S. — If the timing ever works, the analysis will be there. And if it doesn't — no hard feelings. You've got a roofing company to run.
+
+
+================================================================
+MERGE TAGS:
+  {{first_name}}    — contact's first name
+  {{business_name}} — company name
+  {{city}}          — contact's city
+  [LINK]            — replace with your Maven growth plan URL
+
+SPAM WORD AUDIT: No "free", "guarantee", "proven", "limited time",
+"act now", or "click here" in any email. Clean to send.
+================================================================

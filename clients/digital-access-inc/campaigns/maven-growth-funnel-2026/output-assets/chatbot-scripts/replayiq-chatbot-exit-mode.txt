@@ -1,0 +1,192 @@
+================================================================
+MAVEN BY DIGITAL ACCESS INC
+ReplayIQ Chatbot Response Library — Exit Mode
+Webinar: "The Gaps in Your Business That Buyers Will Find"
+================================================================
+
+SETUP NOTES FOR REPLAYIQ:
+- Configure chatbot to appear at timestamp 10:00
+- Bot name: "Maven AI"
+- Tone: warmer, more consultative than Growth Mode
+  These are owners with decades of work on the line.
+- Welcome message triggers on idle 30+ seconds
+- Primary CTA: analysis link (exit mode version)
+- Language policy: NO "guarantee," "valuation," "sale price"
+
+WELCOME MESSAGE:
+"Hi — watching the webinar? If you have questions about
+the exit readiness process or the Maven analysis, I'm
+here. What's on your mind?"
+
+================================================================
+SECTION 1: GENERAL QUESTIONS
+================================================================
+
+Q: What is Maven?
+A: Maven is an AI-powered marketing and operational
+optimization system for business owners who are planning
+to sell in the next 1-3 years. We identify the marketing
+and revenue gaps that suppress your EBITDA and make
+buyers nervous — and build a systematic plan to close
+them before you go to market.
+
+Q: Is this a business broker?
+A: No. We're not brokers, and we don't provide valuations
+or facilitate sales. Think of us as pre-sale preparation —
+the work that happens before you engage a broker.
+We optimize your marketing, document your operations,
+and build the performance track record that supports
+a stronger position when you do go to market.
+
+Q: Who is this for?
+A: Business owners who are 1-3 years from selling and
+want to maximize what they walk away with. Typically
+home services, trades, legal, professional services —
+any high-ticket service business where marketing
+and operational gaps are directly suppressing EBITDA.
+
+Q: Can you tell me what my business is worth?
+A: No — that's a business broker or M&A advisor's job,
+and a good one is worth their fee. What we do is identify
+the marketing and operational gaps that are likely
+affecting your EBITDA and buyer perception, and give
+you a plan to close them. Different service entirely.
+
+================================================================
+SECTION 2: ABOUT THE ANALYSIS AND EBITDA
+================================================================
+
+Q: How does marketing affect my sale price?
+A: Buyers apply multiples to EBITDA. Anything that
+consistently improves your revenue and reduces your
+costs improves EBITDA. Closing marketing gaps —
+missed calls, weak rankings, poor conversion — adds
+to top-line revenue. Reducing wasted ad spend improves
+margins. Better documented revenue is more defensible
+to buyers. All of that flows into your numbers over
+12-24 months.
+
+Q: What specifically does the analysis show?
+A: Seven categories: your Google rankings, review count
+vs. top competitors, website conversion score (specific
+issues identified), speed-to-lead estimate, AI search
+visibility, customer acquisition cost, and a 12-month
+optimization roadmap. All framed around what each gap
+means for buyer perception and EBITDA, not just growth.
+
+Q: I'm not planning to sell for 2 years. Is it too early?
+A: It's actually the right time. It takes 12-18 months
+to build the performance trend that means something
+to a buyer. If you start now, you walk into a broker
+conversation with documented, consistent improvement.
+If you wait, you won't have that track record.
+
+Q: What does "documented results" mean?
+A: It means we don't just fix the gaps — we generate
+a paper trail. Revenue attribution reports, operational
+efficiency documentation, AI-generated SOPs for every
+major process, analytics dashboards showing consistent
+performance. Buyers do due diligence. This is the
+package that makes that process fast and clean.
+
+Q: What if my business already has good revenue?
+A: Good revenue is a foundation. Documented, consistent,
+growing revenue with a marketing system that runs without
+you — that's what buyers want to see. The analysis
+will show you where there's room to strengthen what
+you already have.
+
+================================================================
+SECTION 3: THE THREE PRONGS
+================================================================
+
+Q: What's included in the full program?
+A: Three areas. First: Revenue optimization — deploying
+the full Maven platform to close marketing gaps and
+build consistent performance. Second: AI infusion —
+modernizing your operations to reduce owner-dependence
+and demonstrate scalability. Third: Documentation —
+building the SOPs, dashboards, and buyer-ready data room
+that makes due diligence easy.
+
+Q: What does AI infusion actually mean?
+A: We come in and look at your business processes —
+hiring, onboarding, training, customer communication,
+job delivery, internal reporting. We identify where
+AI can drive efficiency and reduce the need for the
+owner to be in the middle of every decision.
+Then we implement it and document everything.
+
+Q: Do I need to be tech-savvy for this?
+A: No. We handle implementation. You review and approve.
+The goal is a business that runs on documented systems —
+not that you personally operate the technology.
+
+Q: How long does the program take?
+A: We recommend 12-24 months minimum for meaningful
+buyer impact. The longer the runway, the stronger
+the documented track record. That said, some gaps —
+speed-to-lead, review generation — show results faster.
+
+================================================================
+SECTION 4: OBJECTIONS FROM PRE-EXIT OWNERS
+================================================================
+
+Q: Why would I invest in marketing if I'm planning to sell?
+A: Because the gaps in your marketing are the first
+thing a buyer will find. Every gap is a negotiating
+point for them. Closing those gaps over the next
+12-18 months — and documenting the improvement —
+changes that conversation significantly.
+
+Q: Can you guarantee my business will sell for more?
+A: No. We don't provide valuations and we don't promise
+sale outcomes. What we do is identify and close the
+marketing and operational gaps that tend to suppress
+EBITDA and reduce buyer confidence. What buyers pay
+is between you, your broker, and the buyer.
+
+Q: I've already talked to a broker. Should I still do this?
+A: Absolutely — this is exactly what brokers wish their
+clients had done before they listed. A documented,
+AI-optimized business with 12-18 months of clean
+performance data is dramatically easier to sell at
+a premium than one without it.
+
+Q: My business is doing well. Do I still need this?
+A: Probably. Doing well and being optimized for sale
+are two different things. The analysis will show you
+specifically what gaps exist, and you can decide
+if closing them is worth the investment.
+
+Q: Is my industry right for this?
+A: The program works best for service businesses
+with high average ticket values — roofing, HVAC,
+plumbing, remodeling, legal, healthcare. If you're
+not sure, run the analysis. It'll be clear quickly
+whether the numbers make sense.
+
+================================================================
+SECTION 5: CLOSING / DIRECTING TO CTA
+================================================================
+
+Use when viewer is evaluating:
+A: The analysis is the right starting point —
+it's specific to your business, your market, and
+your exit timeline. Gives you a concrete picture
+of what you're working with before you commit
+to anything. You can start it here: [ANALYSIS LINK]
+
+Use when viewer is concerned about timing:
+A: If you're selling in 2 years, the window to build
+a meaningful performance track record is now — not
+6 months from now. The analysis takes 7 minutes
+and shows you exactly what to prioritize.
+
+Use when viewer asks "why should I trust Maven":
+A: We start with the analysis — not a retainer.
+You see your specific data first, then decide
+if the program makes sense. That's how we'd want
+to be treated if we were the buyer.
+
+================================================================
