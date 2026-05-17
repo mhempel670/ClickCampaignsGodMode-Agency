@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" remote -v)",
+      "PowerShell($env:PATH -split \";\" | ForEach-Object { \"$_\" })",
+      "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
+      "PowerShell([System.IO.Directory]::GetFiles\\(\"C:\\\\Users\\\\matth\\\\AppData\\\\Local\\\\GitHubDesktop\\\\app-3.5.8\", \"git.exe\", [System.IO.SearchOption]::AllDirectories\\) | Select-Object -First 5)",
+      "PowerShell($git = \"C:\\\\Users\\\\matth\\\\AppData\\\\Local\\\\GitHubDesktop\\\\app-3.5.8\\\\resources\\\\app\\\\git\\\\cmd\\\\git.exe\"; Set-Location \"c:\\\\Users\\\\matth\\\\OneDrive\\\\Documentos\\\\GitHub\\\\ClickCampaignsGodMode-Agency\"; & $git remote -v)",
+      "PowerShell($git = \"C:\\\\Users\\\\matth\\\\AppData\\\\Local\\\\GitHubDesktop\\\\app-3.5.8\\\\resources\\\\app\\\\git\\\\cmd\\\\git.exe\"; Set-Location \"c:\\\\Users\\\\matth\\\\OneDrive\\\\Documentos\\\\GitHub\\\\ClickCampaignsGodMode-Agency\"; & $git remote remove upstream; & $git remote -v)",
+      "mcp__claude_ai_Click_Campaigns__get_agent"
+    ]
+  }
+}

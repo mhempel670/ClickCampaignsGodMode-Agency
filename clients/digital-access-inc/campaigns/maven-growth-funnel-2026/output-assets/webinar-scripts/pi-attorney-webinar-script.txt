@@ -1,0 +1,767 @@
+# MAVEN BY DIGITAL ACCESS INC
+## Webinar Script — Personal Injury Attorneys (FINAL COMPLETE VERSION)
+**"The 7-Minute Case Audit: Where Your Firm Is Losing Cases Right Now — And What It's Actually Costing You"**
+
+**Runtime:** ~30 minutes | **Platform:** ReplayIQ.ai
+**Presenter:** [NAME] | digitalaccesspro.com
+
+---
+
+## PRODUCTION NOTES:
+- Use HeyGen or Synthesia AI presenter
+- Record 4-5 minute Maven screen demo (silent, legal vertical) — insert at [DEMO INSERT] marker
+- AI presenter provides ALL voiceover including demo narration
+- Upload to ReplayIQ.ai with trained chatbot enabled (legal chatbot response library — to be configured)
+- CTA button links to Maven legal-vertical chatbot ($39 legal pricing group)
+- Tone: Professional, authoritative — these are attorneys. Respect their intelligence.
+
+---
+
+# SEGMENT 1: THE HOOK (0:00 – 5:00)
+
+**[SLIDE: Black screen]**
+
+**[ON SCREEN TEXT:]**
+*"How many new cases do you want to close this year?"*
+
+**[PAUSE - 3 seconds]**
+
+**[SLIDE CHANGE: Presenter on screen]**
+
+That's the only number that matters in a personal injury practice.
+
+Not your impressions. Not your website traffic. Not how many people "engaged" with your last post.
+
+**How many cases. At what average value. Per year.**
+
+**[PAUSE - 2 seconds]**
+
+Because here's what I've found working with personal injury firms across the country:
+
+Most attorneys know their caseload. Most attorneys know their average settlement.
+
+But almost none of them know the answer to this question:
+
+*How many potential clients searched for help in your market last month — and found your competitor instead of you?*
+
+**[PAUSE]**
+
+Not because your firm isn't good.
+
+Not because your results aren't strong.
+
+But because of five specific, measurable, fixable gaps in how your firm shows up online — and how fast it responds when someone reaches out.
+
+**[PAUSE - 2 seconds]**
+
+In the next 30 minutes, I'm going to show you exactly what those gaps are.
+
+I'm going to show you a real analysis of a real PI firm — with real numbers.
+
+And I'm going to show you what a 12-month plan to close those gaps is projected to deliver.
+
+**[PAUSE]**
+
+Not "more leads." Not "better marketing."
+
+**Your** specific gaps. **Your** specific market. **Your** specific cases.
+
+**[SLIDE CHANGE]**
+
+Let me tell you about two personal injury firms in the same city.
+
+Same practice area. Both well-regarded. Both generating roughly $3 million in annual revenue from settlements.
+
+**[PAUSE]**
+
+Firm A ranks on **page one** for 14 high-intent search terms in their market.
+
+They have **387 Google reviews** with a 4.8 average rating.
+
+Their AI voice system answers every call within 30 seconds — including at midnight on a Saturday when a family is sitting in an emergency room and needs to talk to someone.
+
+**[PAUSE - 2 seconds]**
+
+Firm B ranks on **page three** for most of the same terms.
+
+They have **62 reviews**.
+
+Their calls go to voicemail after 5 PM.
+
+**[PAUSE]**
+
+Same city. Same case types. Same market size.
+
+Firm A is estimated to capture roughly **four times** the inbound case inquiries from search as Firm B.
+
+At $85,000 per average case value...
+
+That gap isn't a marketing problem.
+
+**That's a revenue problem.**
+
+**[PAUSE - 2 seconds]**
+
+And it's fixable. But only if you know your actual numbers first.
+
+**[SLIDE CHANGE: Maven logo / presenter]**
+
+My name is [NAME]. I run Maven by Digital Access Inc.
+
+We've built a 7-minute analysis system that shows personal injury firms exactly where their marketing is falling short — and what those gaps are costing them in projected cases per year.
+
+This analysis is built on:
+- **Eight years of proprietary campaign data** from local service businesses and law firms across the country
+- **Real-time competitor intelligence** pulled directly from your market
+- **Legal marketing benchmarks** specific to personal injury practices
+- **AI search visibility data** from platforms like ChatGPT, Gemini, and Perplexity — where an increasing share of legal inquiries are starting
+
+We're not guessing. We're showing you what the data says about **your firm** in **your market** — against **your specific competitors**.
+
+**[PAUSE]**
+
+And here's what makes this different from every marketing pitch you've heard:
+
+You get the full analysis — **completely customized to your firm** — before you spend a single dollar with us.
+
+No retainer. No sales call required. No proposal that promises things we can't deliver.
+
+**Your** data. **Your** gaps. **Your** plan. In 7 minutes.
+
+**[PAUSE - 2 seconds]**
+
+And you keep it — whether you work with us or not.
+
+**[SLIDE CHANGE]**
+
+Today I'm going to walk you through a real example.
+
+At the end, I'll show you how to get the same analysis for **your** firm for $39.
+
+Let's get into it.
+
+---
+
+# SEGMENT 2: THE 5 GAPS COSTING PI FIRMS CASES (5:00 – 13:00)
+
+**[SLIDE: "The 5 Gaps Costing Personal Injury Firms Cases Every Month"]**
+
+In almost every PI firm we analyze, we find the same five gaps.
+
+They're not exotic. They're not complicated.
+
+And none of them require you to become a marketing expert to fix.
+
+They just require knowing **your** specific numbers — and having a systematic plan to address them.
+
+Let me walk you through each one.
+
+---
+
+## GAP #1: THE AFTER-HOURS CALL
+
+**[SLIDE CHANGE: Image of a phone ringing in an ER waiting room]**
+
+Picture this:
+
+It's 11:47 PM on a Friday.
+
+A family is sitting in a hospital waiting room. Someone they love was in a serious car accident two hours ago. They're scared. They're overwhelmed. They need to talk to someone who can help.
+
+They pull out their phone. They Google "personal injury attorney near me."
+
+They see your firm. They call.
+
+**[PAUSE]**
+
+What happens next?
+
+**[PAUSE - 2 seconds]**
+
+If you're like most PI firms — especially after hours — that call goes to voicemail.
+
+*"Thank you for calling [Firm Name]. Our office hours are Monday through Friday, 9 to 5. Please leave a message and we'll return your call the next business day."*
+
+**[PAUSE]**
+
+They hang up.
+
+They call the next firm on the list. That firm answers — because they have a 24/7 AI intake system.
+
+By 9 AM Saturday morning, that case is signed.
+
+**[PAUSE - 2 seconds]**
+
+At an average case value of $120,000 — one missed after-hours call is a **$120,000 case** that walked to your competitor.
+
+Not because your firm isn't better. Not because your results aren't stronger.
+
+Because someone else picked up the phone.
+
+**[PAUSE]**
+
+Now here's what our data shows across personal injury firms nationally:
+
+The average PI firm misses a meaningful percentage of after-hours and overflow calls — calls that come in while staff is occupied, while attorneys are in court, or simply outside of office hours.
+
+At the case values involved in personal injury law, **you do not need to miss many** before you're talking about a significant amount of projected revenue walking to whoever answered faster.
+
+**[PAUSE - 2 seconds]**
+
+The Maven AI voice system solves this completely.
+
+It answers every call. Business hours. After hours. Weekends. Holidays.
+
+It conducts a professional intake — qualifying the case, gathering the relevant details, and routing immediately to the right person in your firm.
+
+Response time drops from "next business day" to **under 60 seconds**.
+
+**[PAUSE]**
+
+But here's what matters:
+
+This works **with** the other pieces of the system.
+
+Better SEO brings in more calls. Better review count increases conversion on those calls. The AI voice agent makes sure **none of them go unanswered**.
+
+**It's all connected.**
+
+And it's all designed to get **your** firm to **your** case volume goal.
+
+---
+
+## GAP #2: THE REVIEW GAP
+
+**[SLIDE CHANGE: Google search results — PI law firm comparison]**
+
+Here's a test.
+
+Pull up Google right now and search **"personal injury attorney [your city]"**.
+
+Look at the top result.
+
+How many reviews do they have?
+
+**[PAUSE - 2 seconds]**
+
+Now think about yours.
+
+**[PAUSE]**
+
+Here's what our data shows across PI markets nationally:
+
+The top-ranked firm in most markets has **four to six times** the review count of the second-ranked firm.
+
+That's not a coincidence. Reviews are one of the primary ranking signals for local legal searches. They're also one of the primary conversion factors — someone searching for an attorney after an accident reads reviews before they call.
+
+**[PAUSE]**
+
+Let me give you a real number.
+
+Imagine a PI firm in Atlanta with **71 reviews**. Their top competitor has **449**.
+
+That's a **376-review gap**.
+
+Based on ranking correlation data for the Atlanta personal injury market, that gap is estimated to cost this firm **4 to 6 ranking positions** on their most important keywords.
+
+At position 1 vs. position 5 on Google — the click-through rate difference is roughly **10 to 1**.
+
+**[PAUSE - 2 seconds]**
+
+10 to 1.
+
+For a firm generating $3 million in annual cases — the difference between ranking 1st and ranking 5th on their top keyword is not a minor inconvenience.
+
+**[PAUSE]**
+
+The Maven plan builds you a systematic review collection process:
+
+Automated review requests after every closed case. Customized to **your** firm. Integrated with **your** existing systems. Monthly tracking so you can see the gap closing.
+
+This works **with** the SEO strategy — more reviews boost rankings. It works **with** the website optimization — reviews displayed on your site increase call conversion.
+
+**It's all connected.**
+
+And it's all designed to get **your** firm to **your** case goal.
+
+---
+
+## GAP #3: THE VISIBILITY PROBLEM — GOOGLE AND AI SEARCH
+
+**[SLIDE CHANGE]**
+
+Two things are happening simultaneously in how people find PI attorneys — and most firms haven't addressed either one completely.
+
+**First: Traditional Google Rankings**
+
+Page one captures roughly 75% of all clicks. Page two and below captures most of the rest.
+
+If you're not ranking on page one for **"car accident lawyer [your city],"** **"personal injury attorney near me,"** and the 10 to 15 other high-intent terms your potential clients are searching —
+
+You're invisible to the majority of people who are actively looking for help right now.
+
+**[PAUSE]**
+
+Let me make this concrete.
+
+Imagine a PI firm in Houston. They go through the Maven analysis and discover they rank on **page three** for "car accident lawyer Houston" — a term searched **2,400 times per month** in their market.
+
+Their top competitor ranks **#1**.
+
+Based on click-through rate data and conversion benchmarks for personal injury in Houston, the AI projects that competitor is capturing an estimated **85 to 100 case inquiries per year** from that one keyword alone.
+
+At an average case value of $95,000...
+
+That's **$8 to $9.5 million in estimated annual case value** from one keyword.
+
+You're on page three.
+
+**[PAUSE - 2 seconds]**
+
+**Second: AI Search — The New Frontier**
+
+More potential clients are using ChatGPT, Gemini, and Perplexity to ask for legal help — especially in the hours right after an accident, when they're overwhelmed and looking for fast answers.
+
+*"Who's the best personal injury attorney in Dallas?"*
+*"What should I do after a car accident in Atlanta?"*
+*"Find me a personal injury lawyer near me who handles truck accidents."*
+
+These searches are happening. Right now. In your market.
+
+**[PAUSE]**
+
+Most PI firms have **zero presence** on these platforms.
+
+The firms establishing AI search presence now are capturing inquiries that never even reach Google.
+
+The Maven analysis shows you exactly where **your** firm stands on both — and builds a roadmap to close the gaps in **your** market.
+
+---
+
+## GAP #4: THE SPEED-TO-LEAD PROBLEM
+
+**[SLIDE CHANGE]**
+
+This one is particularly acute in personal injury.
+
+A prospect involved in an accident is not waiting calmly by the phone.
+
+They're stressed. They're in pain. They're making decisions quickly. And they're calling multiple firms simultaneously.
+
+**[PAUSE]**
+
+Research on lead conversion across legal verticals is unambiguous:
+
+A firm that responds within 5 minutes converts prospects at a rate **dramatically higher** than one that responds an hour later.
+
+**[PAUSE - 2 seconds]**
+
+At midnight on a Tuesday when someone calls about a $250,000 case —
+
+The first attorney to respond handles the intake.
+
+Every minute matters.
+
+**[PAUSE]**
+
+The Maven AI intake system responds to every inquiry — phone, web form, chat — in under 60 seconds. 24 hours a day.
+
+It conducts a professional intake. It qualifies the case. It gets the right information to the right person in your firm immediately.
+
+Response time drops from hours to seconds.
+
+And the cases that were walking to the firm that answered? They start staying.
+
+---
+
+## GAP #5: THE DATA VACUUM
+
+**[SLIDE CHANGE]**
+
+Here's the gap that ties everything together.
+
+Most PI firms don't know:
+- What they're actually spending per acquired case
+- Which marketing channels are generating cases and which are just generating invoices
+- How they rank for their 15 most important search terms
+- Where they stand vs. their top competitors on every measurable dimension
+- What their website converts at
+
+**[PAUSE - 2 seconds]**
+
+Without that data, every marketing decision is a guess.
+
+And in a practice where one case can be worth $500,000 or more — guessing is expensive.
+
+**[PAUSE]**
+
+Maven fixes that completely.
+
+When you get your analysis, you get a portal that shows you everything:
+
+Your exact gap scores. Your current rankings for your top keywords. Your review count vs. competitors. Your estimated case acquisition cost. Your 12-month roadmap.
+
+**[PAUSE]**
+
+That portal is **yours**.
+
+You can log in anytime. See where you stand. Track your progress as the gaps close.
+
+And if you work with us to execute the plan, you'll see in real time exactly how close you are to **your** case volume goal.
+
+No BS. No fluff. Just your actual numbers.
+
+---
+
+# SEGMENT 3: THE MAVEN DEMO (13:00 – 19:00)
+
+**[SLIDE: "The 7-Minute Analysis — Legal Vertical Live Walkthrough"]**
+
+What you're about to see is a real Maven marketing analysis for a personal injury firm in Charlotte, North Carolina.
+
+I'll walk you through exactly what the AI generates — and what it means in terms of **your** cases and **your** market.
+
+This is the same analysis you'll get for **your** firm. Same depth. Same specificity. Customized to your market, your competitors, your current performance, your case volume goal.
+
+Let's go.
+
+---
+
+**[DEMO RECORDING INSERT — 4-5 minutes]**
+
+**[Narrator voiceover over silent screen recording]**
+
+---
+
+### DEMO POINT 1: THE INTAKE (45 seconds)
+
+"Here's how it starts.
+
+The AI asks about 8 questions:
+- Firm name
+- Location
+- Website
+- Practice area (personal injury)
+- Average case value
+- Current annual revenue from cases
+- **How many cases do you want to add this year?**
+
+That last question is the most important. Everything the AI builds is designed around **your** number — not generic 'legal marketing,' but specifically how to get **your** firm to **your** case volume target.
+
+Takes about 5 minutes. The AI scrapes your website automatically and pulls competitor data from your market in real time."
+
+---
+
+### DEMO POINT 2: THE GAP ANALYSIS (90 seconds)
+
+"Here's the output.
+
+Seven categories. Real scores. Built specifically for **this firm** in **this market**.
+
+**Reviews**: 94 reviews. Top competitor in Charlotte: 502.
+
+That's a 408-review gap. Based on ranking data for personal injury search terms in the Charlotte market, this gap is estimated to cost this firm 5 to 7 ranking positions on their most competitive keywords.
+
+**Speed-to-Lead**: The AI estimates this firm is not answering approximately 28% of incoming calls during business hours — and has no coverage after 5 PM.
+
+The framing: at an average case value of $95,000, each uncaptured inquiry represents a meaningful number.
+
+**Website Conversion Score**: 39 out of 100.
+
+Specific issues identified on this firm's actual site:
+- No visible click-to-call button on mobile
+- No live chat integration
+- No trust signals (bar association badges, verdicts/settlements) above the fold
+- Hero section copy is generic — says what they do, not why a client should call them vs. a competitor
+
+The AI tells this firm: these three fixes could move their conversion score significantly — and two of them cost nothing but a developer's afternoon.
+
+**AI Search Visibility**: Zero presence detected on ChatGPT or Gemini for personal injury queries in the Charlotte market.
+
+These are **their** specific gaps. Built for **their** firm. **Their** market. **Their** competitors.
+
+When you run yours, you'll see the same level of specificity — but for **you**."
+
+---
+
+### DEMO POINT 3: CASE ACQUISITION COST (60 seconds)
+
+"Here's a number most PI firms have never calculated precisely: estimated case acquisition cost.
+
+For this Charlotte PI firm, the AI estimates **$1,240 per acquired case**.
+
+Their top competitor: estimated at **$880**.
+
+That $360 gap, multiplied across 100 cases per year, is **$36,000 in excess marketing cost**.
+
+At their average case value of $95,000, that gap also likely represents missed revenue from cases that went to the more efficient competitor.
+
+This is specifically calculated for **this firm** in **this market**. When you get your analysis, you'll see **your** case acquisition cost compared to **your** specific competitors."
+
+---
+
+### DEMO POINT 4: THE 12-MONTH ROADMAP (90 seconds)
+
+"Here's the plan. Month by month.
+
+This firm said they want to add **$1.2 million in additional annual case revenue**.
+
+The AI built all three options — Fastest to Goal, Most Cost-Effective, Most Budget-Friendly — specifically to get **them** to **that number** in **their** market.
+
+**Most Cost-Effective option:**
+
+**Month 1-3:** Fix the foundational gaps
+- Website conversion fixes (the specific issues identified on their site)
+- AI intake system deployment (24/7 coverage, under-60-second response)
+- Review collection system (systematic gap closure)
+- Call tracking and analytics
+
+**Month 4-6:** Visibility buildout
+- SEO targeting their top 20 keywords in the Charlotte PI market
+- GEO optimization for AI search platforms (ChatGPT, Gemini)
+- Content strategy specific to their practice areas and geography
+- Local citation building
+
+**Month 7-12:** Scale and optimize
+- Expand keyword targeting to long-tail variations
+- Paid search if organic momentum warrants
+- Continuous AI optimization based on what's working **for this firm**
+
+**[PAUSE]**
+
+These are projections. They're built from eight years of campaign data, real competitor analysis for this specific market, and legal marketing benchmarks for personal injury.
+
+They're not guarantees. Marketing doesn't work that way.
+
+But they're the most accurate, data-driven estimate available — built on real numbers, not generic assumptions.
+
+And the plan is **theirs**. They can take it to any legal marketing firm and have them execute it. Or they can work with us.
+
+Either way, the plan is **theirs**. Forever."
+
+---
+
+**[END DEMO RECORDING]**
+
+**[SLIDE: Back to presenter]**
+
+That's the analysis.
+
+Seven minutes.
+
+Completely customized to **your** firm, **your** market, **your** competitors, **your** case volume goal.
+
+And it's **yours** — whether you work with us or not.
+
+---
+
+# SEGMENT 4: OBJECTION HANDLING (19:00 – 24:00)
+
+---
+
+**OBJECTION #1: "I already have a marketing agency that handles our legal marketing."**
+
+**[SLIDE CHANGE]**
+
+Good. Run this analysis anyway.
+
+It'll show you exactly what they're doing well and where the gaps still are — specifically for **your** firm in **your** market.
+
+Either you'll confirm they're doing a solid job — or you'll find out what they've been missing.
+
+**[PAUSE]**
+
+Here's the thing most legal marketing agencies don't show you:
+
+Your exact ranking position for every keyword that matters in your market. Your review gap vs. your top three competitors. Your estimated case acquisition cost compared to the firm ranked above you. Your AI search visibility score.
+
+If your current agency isn't showing you these numbers — for **your** specific firm in **your** specific market — you're flying blind.
+
+This analysis gives you those numbers. Whether you do anything with them or not.
+
+---
+
+**OBJECTION #2: "Can you guarantee more cases?"**
+
+**[SLIDE CHANGE]**
+
+No. And we'd encourage you to be skeptical of anyone who does.
+
+Legal marketing is complex. Case values vary. Intake conversion depends on factors we don't control. We can't promise specific case outcomes.
+
+**[PAUSE]**
+
+What we can do is show you the data-driven projections for **your** firm based on eight years of campaign performance across similar businesses — and execute a systematic plan to close **your** specific gaps.
+
+If something isn't working in **your** market, the AI adjusts. You're never locked into a failing strategy.
+
+That's transparency. Not a guarantee. But in our experience, it's worth more.
+
+---
+
+**OBJECTION #3: "Legal marketing is different. General marketing tools don't understand PI."**
+
+**[SLIDE CHANGE]**
+
+Fair concern. Let me address it directly.
+
+The Maven analysis isn't built on generic marketing logic. It's built on:
+
+- Eight years of proprietary campaign data from local service businesses and law firms
+- Legal industry-specific benchmarks for personal injury
+- Real-time competitor analysis for **your** specific legal market
+- Understanding of PI-specific objections, case types, and client psychology
+
+**[PAUSE]**
+
+We're not treating your firm like a plumbing company. We're analyzing **your** specific competitive landscape — the review counts, rankings, and visibility of the other PI firms in **your** city.
+
+And we're building a plan that's relevant to a high-ticket, relationship-driven, reputation-dependent practice.
+
+---
+
+**OBJECTION #4: "I don't want another vendor relationship to manage."**
+
+**[SLIDE CHANGE]**
+
+You don't manage it. The system runs autonomously.
+
+No weekly calls. No monthly strategy decks. No approval cycles for every piece of content.
+
+The AI handles execution and optimization daily. You get a portal that shows your progress. If something significant changes, we tell you.
+
+**[PAUSE]**
+
+Your job is to handle the cases. Our job is to make sure the right cases find you first — and that your firm picks up the phone when they do.
+
+---
+
+# SEGMENT 5: THE OFFER & CTA (24:00 – 30:00)
+
+**[SLIDE: "Here's What I Want You to Do Right Now"]**
+
+Click the button below this video.
+
+You'll be taken to the Maven chatbot. It's going to ask you about 8 questions.
+
+The most important one: **"How many cases do you want to add this year?"**
+
+Everything the AI builds from that point is designed around **your** number — not generic legal marketing, but a specific plan to close **your** firm's specific gaps in **your** specific market.
+
+**[PAUSE]**
+
+In 7 minutes, you'll get:
+
+✓ **Full marketing gap analysis across 7 categories** — built for **your** firm in **your** legal market
+✓ **Your estimated case acquisition cost** compared to your top competitors
+✓ **Keyword ranking analysis** — where you stand for the 15 most important PI search terms in **your** city
+✓ **AI search visibility score** — your presence on ChatGPT, Gemini, and Perplexity
+✓ **Review gap analysis** — your count vs. your top 3 competitors and the ranking impact
+✓ **Website conversion score** with specific fixable issues on **your** actual site
+✓ **12-month case growth roadmap** — three options, customized to **your** revenue goal
+✓ **Portal access** so you can review your plan and track progress anytime
+✓ **A human available** to walk through it — no pitch, no pressure, just answers about **your specific situation**
+
+**[PAUSE - 2 seconds]**
+
+**[SLIDE CHANGE]**
+
+**What does this cost?**
+
+**$39.**
+
+**[PAUSE]**
+
+For a complete, firm-specific marketing analysis — with competitor benchmarks, ranking data, keyword research, and a 12-month roadmap — that a legal marketing consultant would charge $3,000 to $5,000 to produce.
+
+**[PAUSE - 2 seconds]**
+
+Why $39 and not free?
+
+Because we want attorneys who are serious about growing their caseload — not partners who'll download a PDF and do nothing with it.
+
+Thirty-nine dollars is a commitment filter.
+
+And if you're running a PI practice and you're not willing to invest $39 to see exactly where **your** firm is losing cases in **your** market...
+
+This probably isn't for you.
+
+**[SLIDE CHANGE]**
+
+Here's what happens after:
+
+1. You answer the 8 questions (5 minutes)
+2. The AI builds your custom analysis (2 minutes)
+3. You get the full report instantly
+4. You access **your** portal — review **your** plan, track progress anytime
+5. Optional: book a 15-minute call with our team to walk through it — no pitch, no pressure
+
+The plan is **yours**. Forever.
+
+**[PAUSE]**
+
+Now let me leave you with this.
+
+We talked about Firm A and Firm B at the beginning.
+
+Same city. Same practice area. Both doing $3 million.
+
+The difference between them was five measurable, fixable gaps.
+
+Firm A knew their numbers. Firm A closed the gaps systematically. Firm A built the review profile, the rankings, the 24/7 intake coverage.
+
+**[PAUSE - 2 seconds]**
+
+And Firm B is still wondering why growth feels so hard — while the cases they should be closing are walking to the firm that answered the phone.
+
+**[SLIDE CHANGE]**
+
+This $39 offer is only available through this webinar.
+
+After this test period, the same analysis moves to $297.
+
+You're in the test group.
+
+**[PAUSE]**
+
+Every week you wait is another week of:
+- After-hours cases going to whoever answered
+- Page 3 rankings keeping you invisible to thousands of searchers
+- AI search inquiries going to firms with a presence you don't have yet
+- Marketing spend with no accountability to your actual case volume goal
+
+**[PAUSE]**
+
+Or you take 7 minutes. See **your** real numbers. Know exactly where **your** firm stands.
+
+And start closing the gaps that are costing you cases right now.
+
+**[SLIDE CHANGE: Final CTA]**
+
+Click the button. Get your analysis. Own your roadmap.
+
+**Whatever you decide after that — the plan is yours. Forever.**
+
+[NAME] | Maven by Digital Access Inc | digitalaccesspro.com
+
+**[END OF SCRIPT]**
+
+---
+
+## WEBINAR PRODUCTION CHECKLIST
+
+- [ ] Record AI presenter reading this script (HeyGen/Synthesia)
+- [ ] Record 4-5 min Maven platform demo — legal vertical, PI firm example
+- [ ] Splice demo at [DEMO INSERT] marker
+- [ ] Upload to ReplayIQ.ai (separate instance from Home Services webinar)
+- [ ] Configure chatbot with legal-specific response library (to be written separately)
+- [ ] Set CTA button → Maven legal chatbot ($39 legal pricing group — 100% markup)
+- [ ] Set up post-registration email sequence (attorney version)
+- [ ] Test full flow before going live
+
+**TARGETING NOTE:** Facebook targeting for PI attorneys:
+Job title: Partner, Managing Partner, Founding Partner, Attorney/Lawyer
+Industry: Legal Services
+Interests: Legal marketing, personal injury law, trial lawyers
+Geography: Major metro markets with high PI case volume
+(Atlanta, Miami, Houston, Dallas, LA, Chicago, Philadelphia, NYC)

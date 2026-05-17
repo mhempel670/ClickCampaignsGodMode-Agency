@@ -1,0 +1,50 @@
+first_name,last_name,email,role,business_name,city,state,phone,linkedin,domain
+Henry,Fitzgerald,henry@beckroofing.com,Vice-president,Beck Roofing Corporation,Norfolk,VA,(757) 473-9010,https://linkedin.com/in/henry-fitzgerald-55aa807b,beckroofing.com
+Jeff,Thompson,jeff.thompson@abcsupply.com,Managing Partner,ABC Supply Co. Inc.,,,(757) 852-3600,https://www.linkedin.com/in/jeff-thompson-42a60946,abcsupply.com
+Tony,Schalliol,tschalliol@abcsupply.com,Managing Partner,ABC Supply Co. Inc.,Durham,NC,(757) 852-3600,,abcsupply.com
+Jade,Robinson,jade@abcsupply.com,Managing Partner,ABC Supply Co. Inc.,Beloit,WI,(757) 852-3600,https://www.linkedin.com/in/jade-robison-b0aa76158,abcsupply.com
+James,Harless,jharless@aapcohi.com,Owner,Aapco Of Richmond,Richmond,VA,(757) 520-3880,,aapcohi.com
+Robert,Andrews II,robert@andrewsroofing.com,President,Andrews Roofing,Portsmouth,VA,(757) 399-3066,https://linkedin.com/in/robert-andrews-ii-35098132,andrewsroofing.com
+Kimberly,Hull,khull@nbhandy.com,"Vice President, Human Resources",NB Handy,Lynchburg,VA,(757) 857-8300,,nbhandy.com
+Vivian,Williams,vivian@milesofseamlessgutters.com,President,Miles of Seamless Gutter,Norfolk,VA,(757) 363-8451,https://www.linkedin.com/in/vivian-williams-098128328,milesofseamlessgutters.com
+James,Freeman,jfreeman@pjfitz.com,Chief Executive Officer,P.J. Fitzpatrick,Narberth,PA,(866) 598-9762,,pjfitz.com
+Jason,Phillips,jphillips@pjfitz.com,"Vice President, Production",P.J. Fitzpatrick,New Castle,DE,(866) 598-9762,,pjfitz.com
+Richard,Stover,rstover@pjfitz.com,President,P.J. Fitzpatrick,New Castle,DE,(866) 598-9762,https://www.linkedin.com/in/rick-stover-1a9b6822,pjfitz.com
+Edgar,Bennington,ebennington@paxservicesgroup.com,President,PAX Services Group,Austin,TX,(757) 350-3055,,paxservicesgroup.com
+Michael,Gowl,mgowl@paxservicesgroup.com,Chief Executive Officer,PAX Services Group,Centreville,MD,(757) 350-3055,,paxservicesgroup.com
+Michael,Wade,mwade@paxservicesgroup.com,Ceo,PAX Services Group,Millersville,MD,(757) 350-3055,,paxservicesgroup.com
+Jason,Anderson,janderson@qxo.com,Vice President of Credit,QXO,Cleveland,OH,(757) 852-9073,,qxo.com
+Ermal,Shehu,eshehu@qxo.com,"Vice President, Strategic Pricing",QXO,Leesburg,VA,(757) 852-9073,,qxo.com
+David,Heusel,dheusel@qxo.com,Chief Operating Officer and Partner,QXO,Atlanta,GA,(757) 852-9073,,qxo.com
+Tyler,Marchione,t.marchione@searshomeservices.com,President and Owner,Home Sewing Machine Svc,Redding,CA,(804) 613-5700,,searshomeservices.com
+Elliot,Cohen,cohen_e@searshomeservices.com,Chief Executive Officer,Home Sewing Machine Svc,New York,NY,(804) 613-5700,,searshomeservices.com
+Mike,Finger,mike@gladstonehvac.com,Region Vice President,Home Sewing Machine Svc,Denver,CO,(804) 613-5700,,searshomeservices.com
+Cheryl,Sawyer,csawyer@ait-marine.com,Vice President,AIT Marine,Norfolk,VA,(757) 416-7400,,ait-marine.com
+Michael,Perry,mperry@simonroofing.com,Vice President,Simon Roofing,Virginia Beach,,(866) 641-7663,https://www.linkedin.com/in/michael-perry-0b443037,simonroofing.com
+Steve,Manser,smanser@simonroofing.com,President,Simon Roofing,Mooresville,,(866) 641-7663,https://www.linkedin.com/in/steve-manser-b3a1362a,simonroofing.com
+Jeffrey,Miller,jmiller@simonroofing.com,"General Manager, Operations",Simon Roofing,Cornelius,,(866) 641-7663,https://www.linkedin.com/in/jeffrey-miller-863736206,simonroofing.com
+Dan,Worstell,danw@pyramidroofing.com,President,Pyramid Roofing,Wylie,TX,(757) 574-9995,,pyramidroofing.com
+Kyle,Miller,kyle.miller@srsdistribution.com,"Vice President, Corporate Controller",Crown C Supply,Mc Kinney,TX,(757) 663-5531,https://www.linkedin.com/in/kyle-miller-a102b519,srsdistribution.com
+Jeremy,Hammett,jhammett@srsdistribution.com,"Senior Vice President, Chief Accounting Officer",Crown C Supply,Mc Kinney,TX,(757) 663-5531,https://www.linkedin.com/in/jeremy-hammett-3789916,srsdistribution.com
+Srini,Naravatla,snaravatla@srsdistribution.com,"Ai & Innovation Vice President, Data",Crown C Supply,Mc Kinney,TX,(757) 663-5531,https://www.linkedin.com/in/naravatla,srsdistribution.com
+Eliza,Johnston,ejohnston@angi.com,"Senior Vice President, Associate General Counsel",Angi,Denver,CO,(757) 822-9570,,angi.com
+David,Wu,dwu@angi.com,"Vice President, Analytics",Angi,Denver,CO,(757) 822-9570,,angi.com
+Amanda,Howles,ahowles@angi.com,"Vice President, Accounting",Angi,Denver,CO,(757) 822-9570,https://www.linkedin.com/in/amanda-howles-cpa-247462b0,angi.com
+Scott,Brooker,scott@strongridge.net,Partner,Strong Ridge Construction,,,(757) 233-0575,https://linkedin.com/in/scott-brooker-8b59295,strongridge.net
+William,Gresham,gresham@etgresham.com,Vice President,E.T. Gresham Company,Norfolk,VA,(757) 627-4583,https://www.linkedin.com/in/wgreshamjr,etgresham.com
+R.,Gresham,rgresham@etgresham.com,Principal,E.T. Gresham Company,Norfolk,VA,(757) 627-4583,,etgresham.com
+Alexis,Cote-Coble,acote-coble@pro-vost.com,Co-owner,Provost Construction,Norfolk,VA,(757) 651-3455,,pro-vost.com
+Karl,Stevens,karlstevens@stevensroofingcorp.com,President,Stevens Roofing Corp,Chesapeake,VA,(757) 231-9688,,stevensroofingcorp.com
+Kyle,Ryder,kryder@compoconstruction.com,Vice President,Compo Construction,Norfolk,VA,(757) 858-2184,https://www.linkedin.com/in/kyle-ryder-80096b159,compoconstruction.com
+George,Compo,georgec@compoconstruction.com,President,Compo Construction,Norfolk,VA,(757) 858-2184,https://www.linkedin.com/in/george-compo-17496bb5,compoconstruction.com
+Donna,Cheefetz,dcheefetz@compoconstruction.com,"Vice President, Finance",Compo Construction,Norfolk,VA,(757) 858-2184,https://www.linkedin.com/in/donna-cheefetz-01a69b323,compoconstruction.com
+Mohanad,Ahmed,mahmed@homefixcustomremodeling.com,"Vice President, Operations",Homefix Custom Remodeling,Laurel,MD,(757) 852-0370,,homefixcustomremodeling.com
+Lindsey,Nicholas,lnicholas@ir-roof.com,President,International Roofing,Richmond,VA,(757) 390-0068,https://www.linkedin.com/in/lindsey-b-nicholas-4b733b21,ir-roof.com
+Rob,Brace,rob.brace@eriehome.com,"Vice President, Strategic Insights & Pricing",Erie Home,Toledo,OH,(757) 294-8371,,eriehome.com
+Randy,Hamilton,rhamilton@eriehome.com,President,Erie Home,Toledo,OH,(757) 294-8371,https://www.linkedin.com/in/randy-hamilton-53516410,eriehome.com
+John,Trier,jtrier@eriehome.com,President & Chief Executive Officer & Chief Financial Officer & Chief of Staff & Prime Minister,Erie Home,Toledo,OH,(757) 294-8371,,eriehome.com
+Robert,Howerin,robert@howerinconstruction.com,President,Howerin Construction,Norfolk,VA,(757) 260-5100,,howerinconstruction.com
+Bill,Coughlin,bcoughlin@marsupply.com,Vice President Commercial Roofing and Partner A2,Mid-Atlantic Roofing Supply,,,(757) 720-6430,https://www.linkedin.com/in/bill-coughlin-8a588258,marsupply.com
+Joey,Malone,jmalone@marsupply.com,President,Mid-Atlantic Roofing Supply,Stanley,NC,(757) 720-6430,,marsupply.com
+Kris,Stites,kstites@marsupply.com,Managing Partner,Mid-Atlantic Roofing Supply,,FL,(757) 720-6430,,marsupply.com
+Dan,Swain,dan@mastercontractors.net,President,Master Contractors of VA,Norfolk,VA,(757) 480-7777,https://www.linkedin.com/in/dan-swain-026b2aa,mastercontractors.net

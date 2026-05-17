@@ -1,0 +1,218 @@
+================================================================
+MAVEN BY DIGITAL ACCESS INC
+ReplayIQ Chatbot Response Library — Growth Mode
+Webinar: "What Your Marketing Is Costing You"
+================================================================
+
+SETUP NOTES FOR REPLAYIQ:
+- Configure chatbot to appear at timestamp 10:00 (demo section)
+- Bot name: "Maven AI"
+- Welcome message triggers when viewer is idle 30+ seconds
+- Primary CTA in every response: analysis link
+- Tone: plain, direct, slightly dry — matches brand voice
+- Language policy: no "guarantee," no "proven," no "free"
+
+WELCOME MESSAGE (triggers at 10:00 or on first chat):
+"Hey — watching the webinar? Happy to answer questions while
+you watch. What's on your mind?"
+
+================================================================
+SECTION 1: GENERAL QUESTIONS ABOUT MAVEN
+================================================================
+
+Q: What exactly is Maven?
+A: Maven is an autonomous marketing system — AI-driven,
+continuously optimized — that identifies where your business
+is losing revenue vs. competitors and builds a custom plan
+to fix it. No account managers. No status calls. The system
+runs, optimizes, and reports on its own.
+
+Q: Is this a marketing agency?
+A: No. Traditional agencies sell you services and report
+on activity. We show you the projected revenue impact of
+your marketing gaps first — then execute a plan to close them
+autonomously. Different model entirely.
+
+Q: Who is this for?
+A: Local service business owners. Roofers, HVAC, plumbers,
+remodelers, electricians, personal injury attorneys — any
+high-ticket service business where missed calls, weak rankings,
+and low review counts directly cost you jobs or cases.
+
+Q: How is Maven different from other marketing companies?
+A: A few things: We show you the data before you spend a dime.
+No retainer required to see your analysis. The system runs
+autonomously — no account manager calling you for approvals.
+And costs are transparent — monthly spend may shift 5-10%
+as the AI optimizes, and we tell you in advance every time.
+
+Q: Who's behind Maven?
+A: Maven is operated by Digital Access Inc at
+digitalaccesspro.com. The platform is AI-powered and
+continuously optimized.
+
+================================================================
+SECTION 2: ABOUT THE 7-MINUTE ANALYSIS
+================================================================
+
+Q: What's in the analysis?
+A: Seven categories: Google rankings, review count vs.
+competitors, website conversion score (with specific issues
+identified), speed-to-lead/missed call estimate, GEO presence
+(AI search visibility), customer acquisition cost estimate,
+and a 12-month growth roadmap with three budget options.
+
+Q: Is the analysis really free?
+A: It's available at no cost for qualifying businesses during
+our current market research phase. Takes 7 minutes to complete.
+
+Q: How accurate is the analysis?
+A: It's built from live competitor data, Semrush API integration,
+Google Ads benchmarks, and eight years of campaign data across
+similar businesses in your niche. Results are projections
+based on real data — not guesses, but not guarantees either.
+
+Q: Do I need to give you my credit card for the analysis?
+A: No. The analysis doesn't require a credit card or any
+commitment.
+
+Q: How long does it take?
+A: About 5 minutes to answer the chatbot questions.
+Analysis generates in 5-7 minutes after that.
+
+Q: What do I need to have ready?
+A: Your business website URL, your city/service area,
+average job value, and your revenue goal. That's it.
+The AI handles the rest.
+
+Q: Will someone try to sell me something after I get the analysis?
+A: There's an option inside the plan to talk with someone
+from our team — but it's completely optional. Plenty of
+people take the plan and execute it on their own or with
+another vendor. We're fine with that.
+
+================================================================
+SECTION 3: RESULTS AND PROJECTIONS
+================================================================
+
+Q: Can you guarantee results?
+A: No. And we'd be skeptical of anyone who does. Marketing
+doesn't work that way. What we do is build projections
+from real market data, execute with discipline, and continuously
+optimize. The transparency is the product.
+
+Q: What kind of results do businesses typically see?
+A: It varies significantly by niche, market, and current
+starting point. The analysis will show you projected results
+specific to your business and market — based on what we've
+seen in comparable campaigns.
+
+Q: How long does it take to see results?
+A: Depends on which gaps you're closing. Speed-to-lead
+improvements (AI voice agent) can impact conversion rate
+almost immediately. SEO and review generation typically
+show meaningful movement in 60-120 days. The full plan
+is built over 12 months.
+
+Q: What if it doesn't work for my business?
+A: If results aren't tracking toward projections, the AI
+adjusts the strategy. That's what continuous optimization
+means — not setting and forgetting, but measuring and
+adapting. And you can cancel at any time.
+
+================================================================
+SECTION 4: PRICING AND COMMITMENT
+================================================================
+
+Q: How much does it cost?
+A: Your analysis will show three options at different
+budget levels — Fastest to Goal, Most Cost-Effective,
+and Most Budget-Friendly. Pricing varies by niche and
+market. Home services markup is 70-75%. Legal is 100%.
+
+Q: Is there a contract?
+A: No long-term contract required. Month-to-month after
+the initial setup period.
+
+Q: Why might my monthly cost change?
+A: The AI continuously adjusts your campaigns —
+reallocating budget toward what's performing, scaling
+back what isn't. Monthly costs may shift within
+approximately 5-10% of your initial quote. You're
+always notified in advance and can opt out of any change.
+
+Q: What's the minimum commitment?
+A: The plan is structured as 12 months, but you can
+cancel at any time. We're not interested in keeping
+clients who aren't seeing results.
+
+================================================================
+SECTION 5: COMMON OBJECTIONS
+================================================================
+
+Q: I already have a marketing company / I'm already
+doing SEO / I already run ads.
+A: Good. The analysis will show you exactly what's
+working and what gaps still exist. You might confirm
+your current setup is solid — or you might find something
+worth fixing. Either way, 7 minutes is worth knowing.
+
+Q: I get most of my work from referrals.
+A: Referrals are great. But referral-dependent businesses
+are also vulnerable — one slow season and the pipeline
+dries up. The analysis shows you what a diversified,
+data-driven lead system could mean alongside your
+referral base.
+
+Q: I'm too busy right now.
+A: The analysis takes 7 minutes. And if you're too busy,
+that's actually a sign you should look at your operations —
+because the AI handles marketing execution without
+needing your time on a regular basis.
+
+Q: I've tried marketing before and it didn't work.
+A: Most marketing fails because it's generic and
+measured against the wrong metrics. This is niche-specific,
+location-specific, and measured against one thing:
+are you moving toward your revenue goal?
+
+Q: My business is too small for this.
+A: The minimum viable market for Maven is a service area
+of 400,000+ population and an average ticket value that
+makes the math work. If you're not sure, the analysis
+will tell you quickly.
+
+Q: I'm not tech-savvy.
+A: You don't need to be. The system runs autonomously.
+You answer a few questions, get a plan, and decide
+if you want us to execute it. No dashboard management
+required on your end.
+
+================================================================
+SECTION 6: CLOSING / DIRECTING TO CTA
+================================================================
+
+Use when viewer is hesitating or asking general questions:
+A: Honestly, the fastest way to answer most of these
+questions is to run your own analysis — it's specific
+to your business and your market. You can do it here:
+[ANALYSIS LINK]. Takes 7 minutes.
+
+Use when viewer seems ready:
+A: Sounds like you're in the right place. Click the
+button below the video to start your analysis.
+It takes about 5 minutes and the plan generates
+in 7 minutes after that.
+
+Use when viewer expresses skepticism:
+A: Fair. That's exactly why we start with the analysis
+instead of a sales call. See your specific numbers first.
+If it's not interesting, it cost you nothing but time.
+
+Use when viewer asks "is this legit":
+A: Maven is operated by Digital Access Inc at
+digitalaccesspro.com. We're happy to answer any
+questions before you run the analysis. What's
+the specific concern?
+
+================================================================
