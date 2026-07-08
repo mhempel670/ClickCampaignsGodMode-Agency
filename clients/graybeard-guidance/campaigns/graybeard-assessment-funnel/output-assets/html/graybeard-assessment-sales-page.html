@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graybeard Assessment — Don't Let Your Wisdom Fade Away</title>
+  <meta name="description" content="Men 50+. Your hard-won wisdom is locked in your head. The Graybeard Assessment helps you map it, see it clearly, and get clarity on what's next — $199.">
+  <!--
+    CENTRIPE SETUP (paste your values when ready):
+    graybeard-assessment-checkout.html  = your checkout / payment page URL
+    [CENTRIPE_FORM_ACTION_URL] = form action URL if using embedded purchase form
+  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --charcoal: #2B2B2B;
+      --ink: #121212;
+      --gold: #D4A017;
+      --brick: #8C2F26;
+      --warm: #F7F5F0;
+    }
+    body {
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      font-size: 1.125rem; /* 18px — readable for 50+ */
+      line-height: 1.7;
+      background-color: var(--warm);
+      color: var(--ink);
+    }
+    h1, h2, h3 { font-family: 'Roboto Slab', Georgia, serif; line-height: 1.25; color: var(--ink); }
+    .section-dark { background-color: var(--charcoal); color: var(--warm); }
+    .section-dark h1, .section-dark h2, .section-dark h3 { color: #FFFFFF; }
+    .text-muted { font-size: 1rem; color: #4a4a4a; } /* 16px minimum for secondary */
+    .text-muted-light { font-size: 1rem; color: rgba(247, 245, 240, 0.85); }
+    .text-label { font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; } /* 15px — never smaller */
+    .text-footer { font-size: 0.9375rem; line-height: 1.6; color: rgba(247, 245, 240, 0.55); }
+    .cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .cta:hover { background: #c49214; transform: translateY(-1px); }
+    .letter-drop::first-letter {
+      float: left;
+      font-family: 'Roboto Slab', Georgia, serif;
+      font-size: 3.5rem;
+      line-height: 0.82;
+      font-weight: 700;
+      color: var(--gold);
+      margin: 0.05rem 0.65rem 0 0;
+    }
+    .pull-quote { border-left: 4px solid var(--gold); }
+    .img-frame {
+      border-radius: 0.75rem;
+      overflow: hidden;
+      background-color: var(--charcoal);
+      min-height: 260px;
+      position: relative;
+    }
+    .img-frame img { width: 100%; object-fit: cover; display: block; max-height: 400px; }
+    .img-frame .img-fallback {
+      display: none;
+      position: absolute;
+      inset: 0;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      color: var(--gold);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .img-frame.is-missing img { display: none; }
+    .img-frame.is-missing .img-fallback { display: flex; }
+  </style>
+  <script>
+    function imgFallback(el) {
+      el.closest('.img-frame').classList.add('is-missing');
+    }
+  </script>
+</head>
+<body class="antialiased">
+
+  <!-- ATTENTION -->
+  <div style="background-color:#8C2F26;" class="text-white text-center py-3 px-4 font-bold leading-snug">
+    <p class="text-base md:text-lg">ATTENTION: Men Aged 50–70 Ready to Turn Decades of Expertise Into a Lasting Legacy — Before It Walks Out the Door With You</p>
+  </div>
+
+  <!-- HERO -->
+  <section class="section-dark pt-12 pb-10 md:pt-16 md:pb-12 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-label mb-5" style="color:#D4A017;">The Graybeard Project Presents</p>
+
+      <h1 class="text-3xl md:text-4xl font-bold mb-5 leading-tight" style="color:#FFFFFF;">
+        Your Decades of Hard-Won Wisdom Are Exactly What the World Needs Right Now.
+      </h1>
+
+      <p class="text-lg md:text-xl mb-4 max-w-2xl mx-auto leading-relaxed text-muted-light">
+        Stop watching your <strong style="color:#fff;">crystallized intelligence</strong> sit locked inside your head while younger, less experienced "experts" get the attention.
+      </p>
+
+      <p class="text-base md:text-lg mb-8 max-w-xl mx-auto text-muted-light">
+        We'll help you get it out of your head, see it clearly, and map a path to impact and income — without tech overwhelm, corporate BS, or starting from scratch.
+      </p>
+
+      <a href="graybeard-assessment-checkout.html" class="cta px-10 py-4 rounded-lg text-lg uppercase tracking-wide shadow-xl mb-4">
+        Get Your Graybeard Assessment — $199
+      </a>
+
+      <p class="font-semibold text-base" style="color:#D4A017;">No Tech Skills Required · Built for Men 50+</p>
+      <p class="text-muted-light mt-2">60-minute conversation · Master Document in 5–7 days</p>
+    </div>
+  </section>
+
+  <!-- HERO IMAGE -->
+  <div class="section-dark pb-12 px-6">
+    <div class="max-w-4xl mx-auto img-frame shadow-2xl ring-1 ring-white/10">
+      <img src="../images/hero.png" alt="Seasoned professionals from every path — boardroom, job site, and trades" onerror="imgFallback(this)">
+      <div class="img-fallback">
+        <span>Hero image missing — add output-assets/images/hero.png</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CROSSROADS CONTEXT -->
+  <section class="py-10 md:py-12 px-6 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-5">Why You're Here</h2>
+      <p class="text-lg leading-relaxed" style="color:#4a4a4a;">
+        Most men who land on this page are at a crossroads — not in crisis, but at a decision point. Maybe work has left you disillusioned. Maybe retirement is coming, or already here. Maybe you're just <em>tired</em> — ready for something different, but not another full-time grind or enterprise from scratch. Golf and fishing are fine. But you want your next chapter to include <strong>meaningful work</strong> — on your terms, without the pace and pressure of the last thirty years. If that's you, keep reading.
+      </p>
+    </div>
+  </section>
+
+  <!-- DEAR SEASONED PROFESSIONAL -->
+  <section class="py-14 md:py-16 px-6" style="background-color:#F7F5F0;">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Dear Seasoned Professional,</h2>
+      <div class="space-y-5 text-lg">
+        <p class="letter-drop">You've spent decades in the trenches.</p>
+        <p>Maybe you spent them in a <strong>boardroom</strong> — navigating complex projects, leading high-stakes teams, making calls that actually mattered.</p>
+        <p>Or maybe you spent them on a <strong>job site</strong> — mastering a trade that requires precision, grit, and practical problem-solving they don't teach in MBA programs.</p>
+        <p>You've solved the problems. You've survived the downturns. You've managed the people.</p>
+        <p class="text-xl font-bold pt-2">And now, you're at a crossroads.</p>
+        <p>Society tells you that you're <em>"past your prime."</em></p>
+        <p class="font-bold text-2xl" style="color:#8C2F26;">They're wrong.</p>
+        <p>In a youth-obsessed culture, the value of crystallized intelligence gets overlooked every single day. But here is the truth:</p>
+        <blockquote class="pull-quote pl-5 py-3 my-6 bg-white rounded-r-xl shadow-sm">
+          <p class="text-xl font-bold leading-snug">You have forgotten more than most people will ever know.</p>
+          <p class="text-muted mt-2">Your "obvious" knowledge is someone else's expensive mistake avoided.</p>
+        </blockquote>
+        <p>The question isn't whether you have something worth sharing. <strong>You do.</strong> The question is — what do you do with it now?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DYING WITH YOUR WISDOM -->
+  <section class="section-dark py-14 md:py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">When Your Wisdom Stays Locked Away</h2>
+      <p class="text-center text-lg text-muted-light mb-10 max-w-xl mx-auto">
+        The tragedy isn't that your career might be winding down.<br>
+        <strong style="color:#D4A017;">The tragedy is that your hard-won wisdom is still locked inside your head.</strong>
+      </p>
+      <div class="space-y-4 mb-12">
+        <div class="rounded-xl p-6 md:p-7 border border-white/10" style="background:rgba(18,18,18,0.5);">
+          <h3 class="font-bold text-lg mb-2" style="color:#D4A017;">The Fear of Irrelevance</h3>
+          <p class="text-muted-light">Watching younger, less experienced "experts" get the spotlight — while you sit on decades of real know-how nobody's asking for.</p>
+        </div>
+        <div class="rounded-xl p-6 md:p-7 border border-white/10" style="background:rgba(18,18,18,0.5);">
+          <h3 class="font-bold text-lg mb-2" style="color:#D4A017;">The Wasted Legacy</h3>
+          <p class="text-muted-light">Knowing that when you finally step back, all those years of experience walk out the door with you — undocumented, unshared, gone.</p>
+        </div>
+        <div class="rounded-xl p-6 md:p-7 border border-white/10" style="background:rgba(18,18,18,0.5);">
+          <h3 class="font-bold text-lg mb-2" style="color:#D4A017;">The Tech Barrier</h3>
+          <p class="text-muted-light">Wanting to share what you know — but feeling like the modern digital world was built for 20-somethings in Silicon Valley, not for a man who's actually done the work.</p>
+        </div>
+      </div>
+      <div class="text-center max-w-xl mx-auto space-y-4">
+        <p class="text-lg text-muted-light">For decades, there was a gap. You had the wisdom — but no clear way to get it out of your head, see it for what it was, and put it to work.</p>
+        <p class="text-xl font-bold" style="color:#fff;">That gap has finally closed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASTERY -->
+  <section class="py-12 px-6" style="background-color:#F7F5F0;">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div class="img-frame shadow-lg order-2 md:order-1">
+        <img src="../images/mastery.png" alt="A seasoned professional at the crossroads — choosing what's next" style="min-height:280px; max-height:320px;" onerror="imgFallback(this)">
+        <div class="img-fallback">
+          <span>Mastery image missing — add output-assets/images/mastery.png</span>
+        </div>
+      </div>
+      <div class="order-1 md:order-2">
+        <p class="text-label mb-2" style="color:#8C2F26;">Mastery at Work</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Whether Boardroom or Job Site — Mastery Is Mastery.</h2>
+        <p class="text-muted text-lg leading-relaxed">Blue collar, white collar — doesn't matter. Decades of real-world doing beats credentials every time. The problem was never your experience. It was never having a process to get it out of your head and see it clearly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR -->
+  <section class="py-14 md:py-16 px-6 bg-white border-t border-gray-100">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-3">Who This Is For</h2>
+      <p class="text-center text-muted mb-10 text-lg max-w-2xl mx-auto">
+        If you've spent decades getting good at something real — in an office, on a job site, or running your own shop — scan this list. You'll probably see yourself.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 md:gap-6 text-left">
+        <div>
+          <p class="text-label mb-4" style="color:#8C2F26;">Corporate &amp; Professional</p>
+          <ul class="space-y-2.5 text-base text-muted" style="list-style:none; padding:0; margin:0;">
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Engineers &amp; software developers</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Financial experts &amp; accountants</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Insurance &amp; financial services leaders</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Sales leaders &amp; business developers</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Management consultants</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Educators, professors &amp; senior trainers</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Scientists &amp; researchers</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-label mb-4" style="color:#8C2F26;">Operations, Leadership &amp; Service</p>
+          <ul class="space-y-2.5 text-base text-muted" style="list-style:none; padding:0; margin:0;">
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Project &amp; program managers</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Plant managers &amp; manufacturing foremen</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Logistics &amp; distribution leaders</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Aviation &amp; transportation professionals</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Power, water &amp; public utility professionals</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Law enforcement, fire &amp; first responders</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Nonprofit &amp; public-sector leaders</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-label mb-4" style="color:#8C2F26;">Trades, Field &amp; Business Owners</p>
+          <ul class="space-y-2.5 text-base text-muted" style="list-style:none; padding:0; margin:0;">
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Construction managers &amp; trades contractors</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Home services &amp; restoration experts</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Auto, machine &amp; tooling specialists</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Healthcare professionals</li>
+            <li class="flex gap-2"><span style="color:#D4A017;">·</span> Small business owners &amp; retired military</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center mt-8 text-base font-bold" style="color:#121212;">
+        …and hundreds of others.
+      </p>
+      <p class="text-center text-muted mt-4 text-base max-w-xl mx-auto">
+        Blue collar, white collar, employee, owner, manager, or leader — if your expertise was earned in the real world, you belong here.
+      </p>
+    </div>
+  </section>
+
+  <!-- THE OFFER -->
+  <section class="py-14 md:py-16 px-6 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-label mb-3" style="color:#8C2F26;">Your Fourth Quarter Starts With Clarity</p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Introducing: The Graybeard Assessment</h2>
+      <p class="text-xl text-muted mb-2 max-w-2xl mx-auto leading-relaxed">
+        The first step in turning decades of doing into a legacy that pays you back.
+      </p>
+      <p class="text-muted mb-8 max-w-xl mx-auto">
+        Not a course. Not a coaching program. A one-time clarity process that shows you — in black and white — what you actually know, what's worth exploring, and what paths might fit — before you commit to any single direction.
+      </p>
+      <div class="rounded-2xl p-8 md:p-10 text-left max-w-lg mx-auto mb-8 shadow-sm ring-1 ring-gray-200" style="background:#F7F5F0;">
+        <p class="text-label mb-4" style="color:#8C2F26;">What You Get</p>
+        <ul class="space-y-4 text-base">
+          <li class="flex gap-3"><span style="color:#D4A017;" class="font-bold flex-shrink-0">✓</span> <span><strong>60-minute guided conversation</strong> — a deep-dive into your expertise, on your schedule</span></li>
+          <li class="flex gap-3"><span style="color:#D4A017;" class="font-bold flex-shrink-0">✓</span> <span><strong>Your Master Document</strong> — personalized possibilities and path options, delivered in 5–7 days</span></li>
+          <li class="flex gap-3"><span style="color:#D4A017;" class="font-bold flex-shrink-0">✓</span> <span><strong>A clear view of what's next</strong> — expertise mapped, options ranked, curiosity sparked — not a final plan (that's the next step if you want it)</span></li>
+        </ul>
+      </div>
+      <a href="graybeard-assessment-checkout.html" class="cta px-10 py-4 rounded-lg text-lg uppercase tracking-wide shadow-lg">
+        Get Your Assessment — $199
+      </a>
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="section-dark py-14 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-3">This Isn't Just About Income.</h2>
+      <p class="text-center text-muted-light mb-10 text-lg">It's about staying in the game — on your terms.</p>
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="rounded-xl p-7 border border-white/10 text-center" style="background:rgba(18,18,18,0.4);">
+          <p class="text-3xl font-bold mb-3" style="color:#D4A017;">01</p>
+          <h3 class="font-bold text-lg mb-2" style="color:#fff;">Health &amp; Longevity</h3>
+          <p class="text-muted-light">Purpose-driven work keeps your mind sharp and your body engaged. It's the strongest predictor of quality of life in your fourth quarter.</p>
+        </div>
+        <div class="rounded-xl p-7 border text-center ring-1" style="background:rgba(18,18,18,0.4); border-color:rgba(212,160,23,0.35);">
+          <p class="text-3xl font-bold mb-3" style="color:#D4A017;">02</p>
+          <h3 class="font-bold text-lg mb-2" style="color:#fff;">Purpose &amp; Impact</h3>
+          <p class="text-muted-light">Turn decades of doing into a legacy that mentors the next generation — and pays you for it.</p>
+        </div>
+        <div class="rounded-xl p-7 border border-white/10 text-center" style="background:rgba(18,18,18,0.4);">
+          <p class="text-3xl font-bold mb-3" style="color:#D4A017;">03</p>
+          <h3 class="font-bold text-lg mb-2" style="color:#fff;">Connection</h3>
+          <p class="text-muted-light">Men who respect your expertise and understand your journey. No one should have to figure this out alone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-14 md:py-16 px-6" style="background-color:#F7F5F0;">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-3">How It Works: From Locked-In Wisdom to Clarity</h2>
+      <p class="text-center text-muted mb-10 text-lg">You provide the decades. We provide the process.</p>
+      <div class="space-y-6">
+        <div class="flex gap-5 items-start bg-white rounded-xl p-6 shadow-sm">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style="background:#D4A017; color:#121212;">1</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Purchase Your Assessment — $199</h3>
+            <p class="text-muted">One time. No subscription. No hidden fees. You're in.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-start bg-white rounded-xl p-6 shadow-sm">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style="background:#D4A017; color:#121212;">2</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1">The Guided Conversation — 60 Minutes</h3>
+            <p class="text-muted">A guided deep-dive into your career, your craft, your mistakes, your wins. It's a conversation — not a test. If you can talk, you can do this.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-start bg-white rounded-xl p-6 shadow-sm">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style="background:#D4A017; color:#121212;">3</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Your Master Document — 5–7 Days</h3>
+            <p class="text-muted">A thorough, personalized first look: your strengths, marketable expertise, business path <em>options</em>, and brand direction — designed to expand what you think is possible and spark real curiosity about what's next.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-start bg-white rounded-xl p-6 shadow-sm">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style="background:#D4A017; color:#121212;">4</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Review, Reflect — Then Decide Your Next Move</h3>
+            <p class="text-muted">Sit with your options. Run with the Master Document on your own — or book a Strategy Session with Matt to turn what resonates into a concrete <strong>90-Day Action Plan</strong>. Either way, you'll finally <em>see</em> what you've been sitting on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-14 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Straight Talk From the Brotherhood</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <blockquote class="rounded-xl p-7 border-l-4 shadow-sm" style="background:#F7F5F0; border-color:#D4A017;">
+          <p class="leading-relaxed mb-5 italic">"I spent 28 years running commercial HVAC crews. I thought my knowledge was just 'common sense.' The Graybeard Project showed me how to turn my leadership mistakes into a coaching program for new foremen. I'm making more now working 10 hours a week than I did on the 60-hour grind."</p>
+          <footer class="font-bold">— Jim R., Master Tradesman &amp; Consultant</footer>
+        </blockquote>
+        <blockquote class="rounded-xl p-7 border-l-4 shadow-sm" style="background:#F7F5F0; border-color:#D4A017;">
+          <p class="leading-relaxed mb-5 italic">"As a former CFO, I didn't want to just stop working, but I hated the corporate politics. This system let me package my financial wisdom into a service for small businesses. It's meaningful, it's profitable, and I'm helping people avoid the traps I saw for years."</p>
+          <footer class="font-bold">— David L., Retired Executive</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- BROTHERHOOD IMAGE — drop photo at brotherhood.jpg (replaces old digital/woman stock) -->
+  <section class="px-6 pb-4">
+    <div class="max-w-4xl mx-auto img-frame shadow-lg">
+      <img src="../images/brotherhood.png" alt="Seasoned professional teaching and sharing decades of real-world expertise" style="max-height:360px;" onerror="imgFallback(this)">
+      <div class="img-fallback">
+        <span>Brotherhood image missing — add output-assets/images/brotherhood.png</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER BOX + optional Centripe form hook -->
+  <section class="section-dark py-14 px-6">
+    <div class="max-w-lg mx-auto">
+      <div class="rounded-2xl p-8 md:p-10 text-center ring-2 shadow-2xl" style="background:#121212; border-color:#D4A017;">
+        <p class="text-label mb-3" style="color:#D4A017;">Start Here · Most Men Do</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-1" style="color:#fff;">The Graybeard Assessment</h2>
+        <p class="text-muted-light mb-4">Your Master Document — possibilities &amp; path options</p>
+        <p class="text-5xl font-bold mb-6" style="color:#D4A017; font-family:'Roboto Slab',Georgia,serif;">$199</p>
+        <a href="graybeard-assessment-checkout.html" class="cta block w-full py-4 rounded-lg text-lg uppercase tracking-wide mb-4">
+          Secure Your Spot — Get Started
+        </a>
+        <!-- If your Centripe form IS the checkout, replace the link above with your form embed or set form action:
+        <form action="[CENTRIPE_FORM_ACTION_URL]" method="POST"> ... </form>
+        -->
+        <p class="text-muted-light">One-time payment · 60-min conversation · Master Document in 5–7 days · No tech skills required</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section class="py-12 px-6" style="background:#F7F5F0;">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-xl font-bold mb-5">The Graybeard Promise</h2>
+      <blockquote class="italic text-lg text-muted leading-relaxed">
+        "We aren't tech bros. We are men like you. You'll get a real Master Document built from your experience — curated options and possibilities, not a generic template. Your wisdom is the asset. We help you see what's there — and what's possible."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-14 px-6 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+      <div class="space-y-8">
+        <div>
+          <h3 class="font-bold text-lg mb-2">"I'm not tech-savvy. Can I really do this?"</h3>
+          <p class="text-muted">Yes. That is exactly why we built it this way. It's a conversation — not software, not a course. If you can use a smartphone, you can do this.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-2">"How much time does this take?"</h3>
+          <p class="text-muted">About 60 minutes for the conversation. Your Master Document arrives within 5–7 days.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-2">"Is my blue-collar experience really valuable online?"</h3>
+          <p class="text-muted">Absolutely. Master tradespeople are often our strongest success stories. Your "common sense" is someone else's competitive advantage.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-2">"I don't think my experience is worth much."</h3>
+          <p class="text-muted">That's the most common thing we hear — and exactly why this exists. The Assessment is how you finally see the difference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section-dark py-16 md:py-20 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-5 leading-tight" style="color:#fff;">Don't Let Your Wisdom Fade Away Quietly.</h2>
+      <p class="text-lg md:text-xl text-muted-light mb-3">You've earned this knowledge through decades of effort.</p>
+      <p class="text-lg font-semibold mb-8" style="color:#D4A017;">Now let it work for you. Find your people. Build your legacy — starting with clarity.</p>
+      <a href="graybeard-assessment-checkout.html" class="cta px-10 py-4 rounded-lg text-lg uppercase tracking-wide shadow-xl">
+        Get Your Assessment — $199
+      </a>
+      <p class="text-muted-light mt-6">
+        Questions? <a href="mailto:matt@graybeardguidance.com" style="color:#D4A017;">matt@graybeardguidance.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 px-6 text-footer" style="background:#121212;">
+    <div class="max-w-3xl mx-auto text-center space-y-4">
+      <p class="font-bold text-base" style="color:#F7F5F0; font-family:'Roboto Slab',Georgia,serif;">The Graybeard Project</p>
+      <p>© 2026 The Graybeard Project. All Rights Reserved. · graybeardassessment.com</p>
+      <p class="max-w-2xl mx-auto" style="color:rgba(247,245,240,0.45);">
+        <strong>EARNINGS DISCLAIMER:</strong> We do not believe in get-rich-quick schemes. We believe in hard work, adding value, and serving others. As stipulated by law, we cannot and do not make any guarantees about your ability to get results or earn any money with our ideas, information, tools or strategies. Your results will vary and will be based on your level of individual capacity, business experience, expertise, and level of desire.
+      </p>
+      <p style="color:rgba(247,245,240,0.45);">Privacy Policy · Terms of Service · Contact Support</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+GRAYBEARD ASSESSMENT — BETA SHARING FOR TESTERS
+================================================
+For: Matt (non-technical quick guide)
+Last updated: June 2026
+
+WHY NOT USE THE PROSPECTCONNECT LINK?
+-------------------------------------
+Links like funnel.prospectconnect.ai/...?preview=true are hosted on Centripe's
+platform account. Visitors see Centripe branding and free-trial prompts — not
+your clean buyer experience. This beta-share folder is Centripe-free.
+
+
+WHAT'S IN THIS FOLDER
+---------------------
+  index.html      — Simple menu (starts with delivery page)
+  delivery.html   — Conversation guide + voice agent (what testers need now)
+
+No Centripe URLs. The voice agent loads from voiceagents.tech (required for
+the AI conversation). Google Fonts load from the internet (page still works
+without them, just plainer text).
+
+
+================================================================================
+OPTION A — RECOMMENDED: NETLIFY DROP (free, 2 minutes)
+================================================================================
+
+Best for: Sharing a real https:// link. Voice agent + microphone work.
+
+Steps:
+  1. Open this folder on your computer:
+       clients\graybeard-guidance\campaigns\graybeard-assessment-funnel\
+       output-assets\beta-share
+
+  2. In your browser, go to:  https://app.netlify.com/drop
+
+  3. Drag the entire "beta-share" FOLDER onto the page (not individual files).
+
+  4. Netlify gives you a random URL, e.g.:
+       https://random-name-12345.netlify.app
+
+  5. Send testers THIS link (or add /delivery.html to skip the menu):
+       https://random-name-12345.netlify.app/delivery.html
+
+  6. Optional: In Netlify, click "Site settings" → "Change site name" to get
+     something readable like graybeard-beta-test.netlify.app
+
+To update later: drag the folder again (same Netlify site) or replace files
+in the Netlify dashboard.
+
+No account required for a quick drop (you can sign up free to keep the same URL).
+
+
+================================================================================
+OPTION B — FALLBACK: ZIP AND EMAIL
+================================================================================
+
+Best for: Quick offline peek at the written guide only.
+
+Steps:
+  1. Right-click the "beta-share" folder → Send to → Compressed (zipped) folder
+  2. Email the .zip to your tester
+  3. Tell them to unzip and double-click index.html or delivery.html
+
+WHAT WORKS from a zip (opening files on their computer):
+  ✓ Reading the conversation guide text
+  ✓ Page layout and styling (mostly)
+
+WHAT DOES NOT WORK reliably from a zip (file:// on their computer):
+  ✗ Microphone / voice agent — browsers block mic on local files for security
+  ✗ Voice agent panel may show blank or error
+  ✗ Some browsers block the voice widget iframe on local files
+
+Bottom line: Zip is OK to preview the guide copy. For the full voice
+conversation test, use Option A (Netlify) so testers have an https:// link.
+
+
+================================================================================
+EMAIL TEMPLATE FOR TESTERS (copy/paste)
+================================================================================
+
+Subject: Graybeard Assessment — beta test link
+
+Hi [Name],
+
+Thanks for helping test the Graybeard Assessment experience. Please use
+this link on a laptop (Chrome or Edge): [YOUR-NETLIFY-URL]/delivery.html
+
+Allow microphone access when prompted, click "Start conversation," and
+follow the guide on the left while you talk with the AI on the right. Plan
+about 60 minutes. Reply with any confusion, bugs, or feedback.
+
+Thanks,
+Matt
+
+
+================================================================================
+ADDING THE SALES PAGE LATER
+================================================================================
+
+When you want testers to see the full funnel:
+  1. Copy graybeard-assessment-sales-page.html from the html\ folder into
+     beta-share\ and rename to sales-page.html
+  2. Copy the images\ folder (hero.png, mastery.png, brotherhood.png) into
+     beta-share\images\
+  3. In sales-page.html, change image paths from ../images/ to images/
+  4. Update index.html to link to sales-page.html
+  5. Re-deploy to Netlify (drag folder again)
+
+Checkout and payment pages stay on your live funnel host — not needed for
+delivery-page beta testing.
+
+
+QUESTIONS?
+----------
+matt@graybeardguidance.com — or ask Alex to update this folder.
