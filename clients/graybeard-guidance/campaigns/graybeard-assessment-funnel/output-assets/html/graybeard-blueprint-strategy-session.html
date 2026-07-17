@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blueprint Strategy Session — From Options to Action Plan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --charcoal: #2B2B2B;
+      --ink: #121212;
+      --gold: #D4A017;
+      --brick: #8C2F26;
+      --warm: #F7F5F0;
+    }
+    body {
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.7;
+      background: var(--warm);
+      color: var(--ink);
+      margin: 0;
+    }
+    h1, h2, h3 { font-family: 'Roboto Slab', Georgia, serif; line-height: 1.25; }
+    .cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .cta:hover { background: #c49214; transform: translateY(-1px); }
+    .cta-outline {
+      display: inline-block;
+      border: 2px solid var(--brick);
+      color: var(--brick);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.85rem 1.75rem;
+      border-radius: 0.5rem;
+    }
+    .top-bar { background: var(--brick); color: #fff; text-align: center; padding: 0.75rem 1rem; font-weight: 600; font-size: 1rem; }
+    .hero { background: var(--charcoal); color: #F7F5F0; padding: 3rem 1.5rem; text-align: center; }
+    .hero h1 { color: #fff; font-size: 2rem; max-width: 40rem; margin: 0 auto 1rem; }
+    .hero .sub { font-size: 1.2rem; color: rgba(247,245,240,0.9); max-width: 36rem; margin: 0 auto 1.5rem; }
+    .price-tag { font-size: 2.5rem; font-weight: 700; color: var(--gold); font-family: 'Roboto Slab', Georgia, serif; }
+    .container { max-width: 42rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+    .card {
+      background: #fff;
+      border-radius: 0.75rem;
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .card-dark { background: var(--charcoal); color: #F7F5F0; }
+    .card-dark h2, .card-dark h3 { color: #fff; }
+    .card-gold { border: 2px solid var(--gold); background: #fffef8; }
+    ul.check { list-style: none; padding: 0; margin: 0; }
+    ul.check li { padding-left: 1.5rem; position: relative; margin-bottom: 0.65rem; }
+    ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+    .vs-grid { display: grid; gap: 1rem; }
+    @media (min-width: 640px) { .vs-grid { grid-template-columns: 1fr 1fr; } }
+    .vs-box { padding: 1.25rem; border-radius: 0.5rem; font-size: 1.0625rem; }
+    .vs-without { background: #f3f4f6; color: #6b7280; }
+    .vs-with { background: #fff; border: 2px solid var(--gold); }
+    footer { background: var(--ink); color: rgba(247,245,240,0.5); text-align: center; padding: 2rem 1.5rem; font-size: 1rem; }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">For Graybeard Assessment Buyers — Reserve Your Session</div>
+
+  <section class="hero">
+    <p style="color:#D4A017; font-size:0.9375rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:1rem;">The Blueprint Strategy Session</p>
+    <h1>Your Master Document Gives You Options.<br>This Session Gives You a <span style="color:#D4A017;">Plan.</span></h1>
+    <p class="sub">90 minutes live with Matt — the founder who designed this process. Review what resonated from your Master Document, choose your direction, and receive a written <strong>90-Day Action Plan</strong> you can actually execute.</p>
+    <p class="price-tag">$897</p>
+    <p style="color:rgba(247,245,240,0.7); font-size:1rem; margin-bottom:1.5rem;">Already checking out? Add it for <strong style="color:#D4A017;">$697</strong> and save $200.</p>
+    <a href="graybeard-assessment-checkout.html" class="cta px-8 py-4 rounded-lg text-lg uppercase tracking-wide">Reserve My Session — $897</a>
+    <p style="margin-top:1rem; font-size:0.9375rem; color:rgba(247,245,240,0.55);">Scheduled after your Master Document is delivered · Not for everyone — and that's intentional</p>
+  </section>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>What the Assessment Gives You vs. What This Session Adds</h2>
+      <p>Your $199 Assessment produces a <strong>Master Document</strong> — a thorough, personalized first look. Marketable expertise. Business path <em>options</em>. Brand direction. Possibilities designed to expand your thinking and spark curiosity. <strong>That's breadth — and it's valuable.</strong></p>
+      <p style="margin-bottom:0;">This session is where you go deeper. Matt takes what you <em>liked</em> from your Master Document — your strengths, preferences, what to avoid — and helps you build a <strong>concrete, customized 90-Day Action Plan</strong>. Not twelve ideas. One chosen direction with specific next steps. It's also a natural first step toward our <strong>premium group coaching program</strong> (in development) — where that plan gets built out and executed with support.</p>
+    </div>
+
+    <div class="vs-grid card" style="padding:1.5rem;">
+      <div class="vs-box vs-without">
+        <strong>Without this session</strong>
+        <ul style="margin:0.75rem 0 0; padding-left:1.1rem; font-size:1rem;">
+          <li>Rich Master Document, no chosen path</li>
+          <li>Strong options, nothing committed</li>
+          <li>Curiosity fades in two weeks</li>
+          <li>Back to "I'll figure it out someday"</li>
+        </ul>
+      </div>
+      <div class="vs-box vs-with">
+        <strong>With this session</strong>
+        <ul style="margin:0.75rem 0 0; padding-left:1.1rem; font-size:1rem;">
+          <li>One direction chosen together</li>
+          <li>What to ignore — clearly named</li>
+          <li>90-Day Action Plan in writing</li>
+          <li>Momentum while the fire is still lit</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card card-gold">
+      <h2>What You Get — Every Dollar Has a Job</h2>
+      <ul class="check">
+        <li><strong>Matt reads your Master Document before you meet</strong> — not cold, not generic. Your session starts with context.</li>
+        <li><strong>90-minute live 1:1 strategy session</strong> with Matt — founder, process designer, peer. Real conversation, not a script.</li>
+        <li><strong>Structured working session</strong> — we go through your Master Document together: what fits you, what doesn't, what matters for the next few years of this chapter — not just business, but life.</li>
+        <li><strong>Path selection</strong> — volunteer, part-time, consult, coach, teach, build, or stay put. We pick what fits <em>you</em>, not a template.</li>
+        <li><strong>Your 90-Day Action Plan</strong> (written deliverable) — customized steps based on your expertise, preferences, strengths, and what to avoid. The first phase of what our coaching program helps you execute.</li>
+        <li><strong>Follow-up summary email</strong> — decisions captured so nothing gets lost after the call.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Why 90 Minutes Is Enough</h2>
+      <p>We're not starting from scratch — your Master Document does the heavy lifting. Matt comes prepared. The session is focused: review what resonated, choose a direction, build your action plan. Ninety minutes of focused work with someone who's done this before beats three hours of spinning on your own.</p>
+      <p style="margin-bottom:0;">If you want help <strong>executing</strong> that plan — that's what our premium group coaching program is for (in development — small cohorts, real implementation support). This session gets you <strong>unstuck, decided, and moving</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Who This Is For — And Who It Isn't</h2>
+      <p><strong>This is for you if:</strong></p>
+      <ul class="check">
+        <li>You've completed (or will complete) The Graybeard Assessment</li>
+        <li>You want a real human to help you choose — not more reading material</li>
+        <li>You're ready to invest in clarity, not just collect ideas</li>
+        <li>You respect your own time enough to pay for focus</li>
+      </ul>
+      <p style="margin-top:1.25rem;"><strong>This is NOT for you if:</strong></p>
+      <ul style="padding-left:1.25rem; color:#4a4a4a;">
+        <li>You're still browsing and not committed to the Assessment</li>
+        <li>You want someone to "build it for you" (that's the done-for-you tier)</li>
+        <li>You're looking for a magic income promise — we don't do that</li>
+      </ul>
+    </div>
+
+    <div class="card card-dark">
+      <h2>100% Credit Toward Premium Coaching</h2>
+      <p>Everything you invest in the Assessment and this Strategy Session credits dollar-for-dollar toward enrollment in our <strong>premium group coaching program</strong> when it launches. We're building it now — small cohorts, real implementation support, the next step after your Action Plan.</p>
+      <p style="margin-bottom:0; color:#D4A017; font-weight:600;">You're not spending money twice. You're building toward something bigger — and we'll honor every dollar when coaching opens.</p>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h2>How It Works</h2>
+      <ol style="text-align:left; max-width:28rem; margin:0 auto 1.5rem; padding-left:1.25rem; color:#4a4a4a;">
+        <li style="margin-bottom:0.5rem;">Complete your Graybeard Assessment conversation</li>
+        <li style="margin-bottom:0.5rem;">Receive your Master Document (5–7 days)</li>
+        <li style="margin-bottom:0.5rem;">We schedule your Blueprint Strategy Session</li>
+        <li style="margin-bottom:0.5rem;">Matt reviews your document before the call</li>
+        <li style="margin-bottom:0.5rem;">90-minute live session + your 90-Day Action Plan delivered after</li>
+      </ol>
+      <p class="price-tag" style="font-size:2rem;">$897</p>
+      <p style="color:#6b7280; margin-bottom:1.25rem;">Save $200 — add at checkout for <strong>$697</strong></p>
+      <a href="graybeard-assessment-checkout.html" class="cta px-8 py-4 rounded-lg text-lg uppercase tracking-wide">Reserve My Session</a>
+      <p style="margin-top:1rem; font-size:0.9375rem; color:#9ca3af;">Questions? <a href="mailto:matt@graybeardguidance.com" style="color:#8C2F26;">matt@graybeardguidance.com</a></p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p><strong style="color:#F7F5F0;">The Graybeard Project</strong> · Graybeard Guidance</p>
+    <p style="margin-top:0.5rem;">© 2026 · Blueprint Strategy Session</p>
+  </footer>
+
+</body>
+</html>

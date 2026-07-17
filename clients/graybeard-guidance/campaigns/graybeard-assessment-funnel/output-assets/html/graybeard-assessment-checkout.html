@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — The Graybeard Assessment ($199)</title>
+  <!--
+    CENTRIPE SETUP (confirmed March 2026 — see documents/centripe-response-summary.md):
+    Products in Centripe (NOT a cart — checkbox switches which product/embed loads):
+      1. Graybeard Assessment — $199
+      2. Assessment + Strategy Session Bundle — $896
+    [CENTRIPE_STEP1_EMBED]     = lead capture embed (name + email)
+    [CENTRIPE_CHECKOUT_199]    = payment embed for $199 product only
+    [CENTRIPE_CHECKOUT_896]    = payment embed for $896 bundle
+    Checkbox toggles visibility between the two checkout embeds.
+    After payment → redirect to graybeard-assessment-thank-you.html
+    Post-Master Document upsell ($897): Centripe workflow + graybeard-blueprint-strategy-session.html
+  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --charcoal: #2B2B2B;
+      --ink: #121212;
+      --gold: #D4A017;
+      --brick: #8C2F26;
+      --warm: #F7F5F0;
+    }
+    body {
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.65;
+      background-color: var(--warm);
+      color: var(--ink);
+    }
+    h1, h2, h3 { font-family: 'Roboto Slab', Georgia, serif; }
+    .field {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 2px solid #d1d5db;
+      border-radius: 0.5rem;
+      font-size: 1.0625rem;
+      background: #fff;
+    }
+    .field:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.25);
+    }
+    .field:disabled { background: #f3f4f6; color: #6b7280; }
+    .label { display: block; font-weight: 600; margin-bottom: 0.35rem; font-size: 1rem; }
+    .cta {
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cta:hover:not(:disabled) { background: #c49214; }
+    .cta:disabled { opacity: 0.5; cursor: not-allowed; }
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      flex-shrink: 0;
+    }
+    .step-badge.active { background: var(--gold); color: var(--ink); }
+    .step-badge.done { background: #16a34a; color: #fff; }
+    .step-badge.waiting { background: #9ca3af; color: #fff; }
+    /* Step 2 locked state */
+    #payment-panel.step-locked { opacity: 0.55; }
+    #payment-panel.step-locked .locked-overlay {
+      display: flex;
+    }
+    #payment-panel.step-locked .payment-interactive {
+      pointer-events: none;
+      user-select: none;
+      filter: grayscale(0.35);
+    }
+    .locked-overlay {
+      display: none;
+      position: absolute;
+      inset: 0;
+      background: rgba(43, 43, 43, 0.08);
+      border-radius: 0.75rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+      z-index: 2;
+    }
+    .locked-overlay p {
+      background: var(--charcoal);
+      color: var(--warm);
+      padding: 1rem 1.25rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      max-width: 16rem;
+      line-height: 1.4;
+    }
+    .stripe-placeholder {
+      border: 2px dashed #9ca3af;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      text-align: center;
+      background: #f9fafb;
+      font-size: 1rem;
+      color: #6b7280;
+    }
+    .error-msg { color: #8C2F26; font-size: 0.9375rem; font-weight: 600; margin-top: 0.5rem; display: none; }
+    .error-msg.show { display: block; }
+    .success-msg { color: #16a34a; font-size: 0.9375rem; font-weight: 600; margin-top: 0.5rem; display: none; }
+    .success-msg.show { display: block; }
+    .upsell-bump {
+      border: 2px solid var(--gold);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.35rem;
+      background: #fffef8;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .upsell-bump:hover { background: #fff9e6; }
+    .upsell-bump.selected { background: #fff9e6; box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.35); }
+    .upsell-bump input[type="checkbox"] {
+      width: 1.35rem;
+      height: 1.35rem;
+      accent-color: var(--gold);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+      cursor: pointer;
+    }
+    .upsell-save {
+      display: inline-block;
+      background: var(--brick);
+      color: #fff;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.25rem;
+      margin-left: 0.35rem;
+    }
+    .line-item { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.35rem; font-size: 1rem; }
+    .line-item.hidden { display: none; }
+    .total-row { border-top: 2px solid #121212; padding-top: 1rem; margin-top: 0.75rem; }
+  </style>
+</head>
+<body class="antialiased min-h-screen">
+
+  <!-- Top bar -->
+  <div style="background:#121212;" class="text-white text-center py-2.5 px-4 font-semibold text-base">
+    🔒 Secure Checkout — The Graybeard Assessment
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 py-4 px-6">
+    <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div>
+        <p class="text-label text-sm font-bold uppercase tracking-widest mb-0.5" style="color:#D4A017;">The Graybeard Project</p>
+        <p class="font-bold text-lg" style="font-family:'Roboto Slab',Georgia,serif;">Complete Your Order</p>
+      </div>
+      <a href="graybeard-assessment-sales-page.html" class="text-base font-semibold" style="color:#8C2F26;">← Back to sales page</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8 md:py-12">
+
+    <h1 class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left">You're One Step Away From Clarity</h1>
+    <p class="text-muted text-lg mb-8 text-center md:text-left" style="color:#4a4a4a;">Start with your name and email on the left. Payment unlocks on the right once Step 1 is complete — so we have your info even if you need a minute before paying.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
+
+      <!-- ═══ STEP 1 — CONTACT (LEFT) ═══ -->
+      <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <span id="step1-badge" class="step-badge active">1</span>
+          <div>
+            <h2 class="text-xl font-bold">Your Information</h2>
+            <p class="text-base" style="color:#6b7280;">Name and email to get started</p>
+          </div>
+        </div>
+
+        <!-- Posts to Centripe on Continue — captures lead even if they abandon payment -->
+        <form id="step1-form" action="[CENTRIPE_STEP1_FORM_URL]" method="POST" class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="label" for="first_name">First Name <span style="color:#8C2F26;">*</span></label>
+              <input type="text" id="first_name" name="first_name" class="field" required placeholder="John" autocomplete="given-name">
+            </div>
+            <div>
+              <label class="label" for="last_name">Last Name <span style="color:#8C2F26;">*</span></label>
+              <input type="text" id="last_name" name="last_name" class="field" required placeholder="Smith" autocomplete="family-name">
+            </div>
+          </div>
+          <div>
+            <label class="label" for="email">Email Address <span style="color:#8C2F26;">*</span></label>
+            <input type="email" id="email" name="email" class="field" required placeholder="you@email.com" autocomplete="email">
+            <p class="text-base mt-1.5" style="color:#6b7280;">Your assessment instructions and blueprint updates go here.</p>
+          </div>
+          <p id="step1-error" class="error-msg">Please enter your first name, last name, and a valid email.</p>
+          <p id="step1-success" class="success-msg">✓ Got it — payment is now unlocked on the right.</p>
+          <button type="button" id="continue-btn" class="cta w-full py-4 rounded-lg text-lg uppercase tracking-wide">
+            Continue to Payment →
+          </button>
+        </form>
+
+        <p class="text-base mt-5 text-center" style="color:#9ca3af;">Step 1 of 2 · Takes about 30 seconds</p>
+      </div>
+
+      <!-- ═══ STEP 2 — PAYMENT (RIGHT) ═══ -->
+      <div id="payment-panel" class="step-locked relative">
+        <div class="locked-overlay" aria-hidden="true">
+          <p>Complete Step 1 on the left to unlock payment</p>
+        </div>
+
+        <div class="payment-interactive space-y-6">
+
+          <!-- Order summary -->
+          <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+            <div class="flex items-center gap-3 mb-5">
+              <span id="step2-badge" class="step-badge waiting">2</span>
+              <div>
+                <h2 class="text-xl font-bold">Payment</h2>
+                <p class="text-base" style="color:#6b7280;">The Graybeard Assessment — $199</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start mb-5 pb-5 border-b border-gray-100">
+              <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 font-bold text-xl text-white" style="background:#2B2B2B;">G</div>
+              <div>
+                <p class="font-bold text-lg leading-tight">The Graybeard Assessment</p>
+                <p class="text-base" style="color:#6b7280;">The Graybeard Assessment · Master Document in 5–7 days</p>
+              </div>
+            </div>
+
+            <ul class="space-y-2 text-base mb-5" style="color:#4a4a4a;">
+              <li class="flex gap-2"><span style="color:#D4A017;">✓</span> 60-minute guided conversation</li>
+              <li class="flex gap-2"><span style="color:#D4A017;">✓</span> Your Master Document — possibilities &amp; path options</li>
+              <li class="flex gap-2"><span style="color:#D4A017;">✓</span> Top expertise areas mapped and ranked</li>
+              <li class="flex gap-2"><span style="color:#D4A017;">✓</span> One-time payment — no subscription</li>
+            </ul>
+
+            <div id="order-lines">
+              <div class="line-item">
+                <span>The Graybeard Assessment</span>
+                <span class="font-semibold">$199.00</span>
+              </div>
+              <div id="upsell-line" class="line-item hidden">
+                <span>Blueprint Strategy Session</span>
+                <span class="font-semibold">$697.00</span>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center total-row">
+              <span class="font-bold text-lg">Total Today</span>
+              <span id="order-total" class="font-bold text-2xl" style="color:#121212; font-family:'Roboto Slab',Georgia,serif;">$199.00</span>
+            </div>
+          </div>
+
+          <!-- ORDER BUMP — Blueprint Strategy Session -->
+          <div id="upsell-bump" class="upsell-bump payment-interactive" role="group" aria-labelledby="upsell-title">
+            <label class="flex gap-3 items-start cursor-pointer" style="cursor:pointer;">
+              <input type="checkbox" id="upsell-checkbox" name="add_strategy_session" value="697">
+              <div>
+                <p id="upsell-title" class="font-bold text-lg leading-snug mb-1" style="color:#121212;">
+                  Yes — Add the Blueprint Strategy Session
+                  <span class="upsell-save">Save $200</span>
+                </p>
+                <p class="text-base mb-2" style="color:#4a4a4a;">
+                  After your Master Document arrives, sit down with <strong>Matt</strong> for 90 minutes. You'll choose what resonated from your options and receive a written <strong>90-Day Action Plan</strong> — concrete steps, not more possibilities.
+                </p>
+                <ul class="text-base space-y-1 mb-2" style="color:#4a4a4a; padding-left:0; list-style:none;">
+                  <li>✓ Matt reads your Master Document before the call</li>
+                  <li>✓ Live 1:1 — turn options into a chosen direction</li>
+                  <li>✓ Written 90-Day Action Plan after your session</li>
+                  <li>✓ <strong>100% credits</strong> toward our premium group coaching program when it launches</li>
+                </ul>
+                <p class="text-base font-bold" style="color:#8C2F26;">+$697 today · <span style="font-weight:400; color:#6b7280;">$897 if you wait</span></p>
+                <a href="graybeard-blueprint-strategy-session.html" target="_blank" class="text-base font-semibold" style="color:#8C2F26;" onclick="event.stopPropagation();">Read full details →</a>
+              </div>
+            </label>
+          </div>
+
+          <!-- Not for everyone note -->
+          <p class="text-base text-center payment-interactive" style="color:#6b7280; font-size:0.9375rem;">
+            The session is optional — and intentionally selective. The Assessment alone delivers real value.
+          </p>
+
+          <!-- Order / payment — Centripe embeds (two products, not a cart) -->
+          <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8 payment-interactive">
+            <p class="label mb-3">Complete Your Order</p>
+
+            <!-- $199 Assessment only — shown when bump unchecked -->
+            <div id="centripe-checkout-199" class="centripe-embed-slot">
+              <div class="stripe-placeholder">
+                <p class="font-semibold mb-2" style="color:#4a4a4a;">Centripe Embed — Assessment ($199)</p>
+                <p>Paste embed code from Centripe for the <strong>$199 product</strong> here.<br>On onboarding call, ask Zaid for <code>[CENTRIPE_CHECKOUT_199]</code></p>
+              </div>
+            </div>
+
+            <!-- $896 Bundle — shown when bump checked -->
+            <div id="centripe-checkout-896" class="centripe-embed-slot hidden">
+              <div class="stripe-placeholder">
+                <p class="font-semibold mb-2" style="color:#4a4a4a;">Centripe Embed — Bundle ($896)</p>
+                <p>Paste embed code from Centripe for the <strong>$896 bundle</strong> here.<br>On onboarding call, ask Zaid for <code>[CENTRIPE_CHECKOUT_896]</code></p>
+              </div>
+            </div>
+
+            <p class="text-base flex items-start gap-2 mt-4" style="color:#6b7280;">
+              <span>🔒</span>
+              <span>256-bit SSL · Powered by Stripe · Payment handled by Centripe</span>
+            </p>
+
+            <p id="pay-hint" class="text-base text-center mt-4 font-semibold" style="color:#121212;">
+              Total today: <span id="pay-amount">$199</span> — complete payment in the form above
+            </p>
+
+            <p class="text-base text-center mt-2" style="color:#9ca3af;">One-time charge. No hidden fees.</p>
+          </div>
+
+          <!-- After payment -->
+          <div class="rounded-xl p-5 border" style="background:#fefce8; border-color:#D4A017;">
+            <p class="font-bold text-base mb-2" style="color:#121212;">What happens after you pay:</p>
+            <ol class="text-base space-y-1 list-decimal list-inside" style="color:#4a4a4a;">
+              <li>Confirmation email to the address you provided</li>
+              <li>Link to schedule your 60-minute guided conversation</li>
+              <li>Your Master Document (possibilities &amp; options) within 5–7 days</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="py-8 px-6 text-center text-base" style="background:#121212; color:rgba(247,245,240,0.5);">
+    <p class="font-bold mb-1" style="color:#F7F5F0;">The Graybeard Project · Graybeard Guidance</p>
+    <p>Questions? <a href="mailto:matt@graybeardguidance.com" style="color:#D4A017;">matt@graybeardguidance.com</a></p>
+    <p class="mt-4 max-w-xl mx-auto text-sm" style="color:rgba(247,245,240,0.4);">One-time purchase of $199. Individual results vary. See earnings disclaimer on sales page.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var step1Complete = false;
+      var panel = document.getElementById('payment-panel');
+      var continueBtn = document.getElementById('continue-btn');
+      var checkout199 = document.getElementById('centripe-checkout-199');
+      var checkout896 = document.getElementById('centripe-checkout-896');
+      var step1Badge = document.getElementById('step1-badge');
+      var step2Badge = document.getElementById('step2-badge');
+      var err = document.getElementById('step1-error');
+      var ok = document.getElementById('step1-success');
+      var step1Form = document.getElementById('step1-form');
+      var upsellCheckbox = document.getElementById('upsell-checkbox');
+      var upsellBump = document.getElementById('upsell-bump');
+      var upsellLine = document.getElementById('upsell-line');
+      var orderTotal = document.getElementById('order-total');
+      var payAmount = document.getElementById('pay-amount');
+      var ASSESSMENT = 199;
+      var BUNDLE = 896;
+
+      function formatMoney(n) {
+        return '$' + n.toFixed(2).replace(/\.00$/, '');
+      }
+
+      function updateOrderTotal() {
+        var withBundle = upsellCheckbox && upsellCheckbox.checked;
+        var total = withBundle ? BUNDLE : ASSESSMENT;
+        if (upsellLine) upsellLine.classList.toggle('hidden', !withBundle);
+        if (upsellBump) upsellBump.classList.toggle('selected', withBundle);
+        if (orderTotal) orderTotal.textContent = formatMoney(total) + '.00';
+        if (payAmount) payAmount.textContent = formatMoney(total);
+        if (checkout199) checkout199.classList.toggle('hidden', withBundle);
+        if (checkout896) checkout896.classList.toggle('hidden', !withBundle);
+      }
+
+      if (upsellCheckbox) {
+        upsellCheckbox.addEventListener('change', updateOrderTotal);
+        upsellBump.addEventListener('click', function (e) {
+          if (e.target.tagName !== 'A' && e.target.type !== 'checkbox') {
+            upsellCheckbox.checked = !upsellCheckbox.checked;
+            updateOrderTotal();
+          }
+        });
+      }
+
+      function getFields() {
+        return {
+          first: document.getElementById('first_name').value.trim(),
+          last: document.getElementById('last_name').value.trim(),
+          email: document.getElementById('email').value.trim()
+        };
+      }
+
+      function validEmail(e) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+      }
+
+      function validateStep1() {
+        var f = getFields();
+        return f.first.length > 0 && f.last.length > 0 && validEmail(f.email);
+      }
+
+      function unlockPayment() {
+        step1Complete = true;
+        panel.classList.remove('step-locked');
+        step1Badge.className = 'step-badge done';
+        step1Badge.textContent = '✓';
+        step2Badge.className = 'step-badge active';
+        document.getElementById('first_name').readOnly = true;
+        document.getElementById('last_name').readOnly = true;
+        document.getElementById('email').readOnly = true;
+        continueBtn.textContent = 'Step 1 Complete ✓';
+        continueBtn.disabled = true;
+        ok.classList.add('show');
+        err.classList.remove('show');
+      }
+
+      function submitStep1ToCentripe(callback) {
+        var action = step1Form.getAttribute('action');
+        if (!action || action.indexOf('[CENTRIPE') === 0) {
+          callback(true);
+          return;
+        }
+        var data = new FormData(step1Form);
+        fetch(action, { method: 'POST', body: data, mode: 'no-cors' })
+          .then(function () { callback(true); })
+          .catch(function () { callback(true); });
+      }
+
+      continueBtn.addEventListener('click', function () {
+        if (step1Complete) return;
+        if (!validateStep1()) {
+          err.classList.add('show');
+          ok.classList.remove('show');
+          return;
+        }
+        continueBtn.disabled = true;
+        continueBtn.textContent = 'Saving…';
+        submitStep1ToCentripe(function () {
+          unlockPayment();
+        });
+      });
+
+      ['first_name', 'last_name', 'email'].forEach(function (id) {
+        document.getElementById(id).addEventListener('input', function () {
+          if (validateStep1()) err.classList.remove('show');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

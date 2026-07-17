@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Thank You — The Graybeard Assessment</title>
+  <!--
+    CENTRIPE SETUP:
+    Success redirect from checkout lands here.
+    VIDEO (recommended): Ask Yash to upload Matt's MP4 to Centripe media, then replace
+    [CENTRIPE_SELF_HOSTED_VIDEO_URL] below — plays inline everywhere, no YouTube issues.
+    YouTube fallback ID: HkgtyBFRNR8 (click-to-play; avoids Error 153 on auto-load).
+    Replace [CENTRIPE_STRATEGY_SESSION_697_URL] with Centripe checkout for $697 session.
+  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --charcoal: #2B2B2B;
+      --ink: #121212;
+      --gold: #D4A017;
+      --brick: #8C2F26;
+      --warm: #F7F5F0;
+    }
+    body {
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.7;
+      background-color: var(--warm);
+      color: var(--ink);
+    }
+    h1, h2 { font-family: 'Roboto Slab', Georgia, serif; }
+    .check-circle {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 9999px;
+      background: #16a34a;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin: 0 auto 1.5rem;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: var(--charcoal);
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+    .video-wrap iframe,
+    .video-wrap video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-facade {
+      position: absolute;
+      inset: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background: linear-gradient(145deg, #1a1a1a 0%, #2B2B2B 50%, #1f1f1f 100%);
+      display: block;
+    }
+    .video-facade img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.85;
+    }
+    .video-facade-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: rgba(18, 18, 18, 0.35);
+      color: #F7F5F0;
+      text-align: center;
+      padding: 1.5rem;
+      transition: background 0.2s;
+    }
+    .video-facade:hover .video-facade-overlay,
+    .video-facade:focus-visible .video-facade-overlay {
+      background: rgba(18, 18, 18, 0.5);
+    }
+    .video-facade:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+    .play-icon {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 9999px;
+      background: var(--gold);
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      line-height: 1;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+    .video-fallback-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #8C2F26;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .video-fallback-link:hover { color: #6b2420; }
+    .upsell-box {
+      border: 2px solid var(--gold);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      background: #fffef8;
+      text-align: left;
+    }
+    .upsell-box input[type="checkbox"] {
+      width: 1.35rem;
+      height: 1.35rem;
+      accent-color: var(--gold);
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+      cursor: pointer;
+    }
+    .cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+    }
+    .cta:hover:not(:disabled) { background: #c49214; }
+    .cta:disabled { opacity: 0.45; cursor: not-allowed; }
+    .credit-note {
+      font-size: 1rem;
+      color: #6b7280;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+  <div style="background:#121212;" class="text-white text-center py-2.5 px-4 font-semibold text-base">
+    Order Confirmed — The Graybeard Project
+  </div>
+
+  <main class="flex-1 px-6 py-12 md:py-16">
+    <div class="max-w-xl w-full mx-auto text-center">
+
+      <div class="check-circle">✓</div>
+
+      <p class="font-bold uppercase tracking-widest mb-3" style="color:#D4A017; font-size:0.9375rem;">Thank You</p>
+
+      <h1 class="text-3xl md:text-4xl font-bold mb-5 leading-tight">
+        Your Order Is Complete.
+      </h1>
+
+      <p class="text-lg md:text-xl mb-8 leading-relaxed" style="color:#4a4a4a;">
+        We've received your payment for <strong>The Graybeard Assessment</strong>. You're in.
+      </p>
+
+      <!-- NEXT STEPS — always first -->
+      <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8 md:p-10 text-left mb-8">
+        <h2 class="text-xl font-bold mb-4 text-center">Check Your Email — Next Steps Are There</h2>
+        <p class="text-base mb-4" style="color:#4a4a4a;">
+          Within the next few minutes, look for an email from <strong>Graybeard Guidance</strong> (<a href="mailto:matt@graybeardguidance.com" style="color:#8C2F26;">matt@graybeardguidance.com</a>).
+        </p>
+        <p class="text-base mb-4" style="color:#4a4a4a;">
+          That email includes a link to your <strong>Conversation Reference Guide</strong> — instructions plus access to start your 60-minute guided conversation.
+        </p>
+        <ul class="space-y-4 text-base" style="color:#4a4a4a; list-style: none; padding: 0; margin: 0;">
+          <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">1.</span><span>Open the email and click <strong>"Access Your Assessment"</strong></span></li>
+          <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">2.</span><span>Follow the Conversation Reference Guide — keep it open alongside the voice agent</span></li>
+          <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">3.</span><span>Start your guided conversation when you're ready — on your schedule</span></li>
+          <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">4.</span><span>Within 5–7 days, your <strong>Master&nbsp;Document</strong> arrives — personalized possibilities and path options to explore</span></li>
+        </ul>
+      </div>
+
+      <!-- MATT VIDEO — everyone sees this -->
+      <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8 text-left mb-8">
+        <h2 class="text-xl font-bold mb-2 text-center">A Quick Hello From Matt</h2>
+        <p class="text-base text-center mb-5" style="color:#4a4a4a;">
+          Real person. Same process you're about to go through. Two minutes — worth watching before you start.
+        </p>
+        <div class="video-wrap" id="matt-video-wrap"
+          data-youtube-id="HkgtyBFRNR8"
+          data-self-hosted="[CENTRIPE_SELF_HOSTED_VIDEO_URL]">
+          <!-- Player injected by script: self-hosted MP4 (best) or click-to-play YouTube -->
+        </div>
+        <p class="text-center mt-3 mb-0" style="color:#6b7280; font-size:1rem;">
+          <a id="matt-video-fallback" class="video-fallback-link" href="https://youtu.be/HkgtyBFRNR8" target="_blank" rel="noopener noreferrer">
+            Video not playing? Watch on YouTube
+          </a>
+        </p>
+      </div>
+
+      <!-- OPTIONAL STRATEGY SESSION — everyone sees this, no conditions -->
+      <div class="upsell-box mb-8">
+        <h2 class="text-xl font-bold mb-3" style="color:#121212;">One Optional Thing</h2>
+        <p class="text-base mb-4" style="color:#4a4a4a;">
+          If you already added the <strong>Blueprint Strategy Session</strong> at checkout — great. I look forward to sitting down with you once your Master Document is ready.
+        </p>
+        <p class="text-base mb-4" style="color:#4a4a4a;">
+          If you didn't, and you'd like 90 minutes with me to take what resonated from your Master Document and turn it into a concrete <strong>90-Day Action Plan</strong> — you can still add it here. No pressure either way. The Assessment delivers real value on its own.
+        </p>
+
+        <p class="text-base mb-4" style="color:#4a4a4a;">
+          90 minutes live with Matt · scheduled after your Master Document · written 90-Day Action Plan included
+        </p>
+
+        <a id="upsell-btn" href="[CENTRIPE_STRATEGY_SESSION_697_URL]" class="cta block w-full py-4 rounded-lg text-lg uppercase tracking-wide text-center">
+          Add Strategy Session — $697
+        </a>
+        <p class="text-base text-center mt-3" style="color:#9ca3af; font-size:0.9375rem;">
+          Secure checkout — takes about 60 seconds
+        </p>
+
+        <p class="credit-note text-center">
+          Everything you invest today — the Assessment and this session — credits dollar-for-dollar toward our premium group coaching program when you're ready and when enrollment opens.
+        </p>
+      </div>
+
+      <div class="rounded-xl p-5 mb-8 text-base text-left" style="background:#2B2B2B; color:#F7F5F0;">
+        <p class="font-bold mb-2" style="color:#D4A017;">Don't see the email?</p>
+        <p style="color:rgba(247,245,240,0.85);">Check spam or promotions. Still nothing after 15 minutes? Email us at <a href="mailto:matt@graybeardguidance.com" style="color:#D4A017;">matt@graybeardguidance.com</a> and we'll get you sorted.</p>
+      </div>
+
+      <p class="text-base" style="color:#6b7280;">
+        Questions before you start? <a href="mailto:matt@graybeardguidance.com" style="color:#8C2F26; font-weight:600;">matt@graybeardguidance.com</a>
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="py-8 px-6 text-center text-base" style="background:#121212; color:rgba(247,245,240,0.5);">
+    <p class="font-bold mb-1" style="color:#F7F5F0; font-family:'Roboto Slab',Georgia,serif;">The Graybeard Project</p>
+    <p>© 2026 The Graybeard Project · graybeardassessment.com</p>
+  </footer>
+
+  <script>
+    (function () {
+      var wrap = document.getElementById('matt-video-wrap');
+      if (!wrap) return;
+
+      var youtubeId = wrap.getAttribute('data-youtube-id') || 'HkgtyBFRNR8';
+      var selfHosted = (wrap.getAttribute('data-self-hosted') || '').trim();
+      var hasSelfHosted = selfHosted && selfHosted.indexOf('[') === -1 && selfHosted.indexOf('http') === 0;
+      var watchUrl = 'https://youtu.be/' + youtubeId;
+      var thumbUrl = 'https://i.ytimg.com/vi/' + youtubeId + '/hqdefault.jpg';
+      var fallback = document.getElementById('matt-video-fallback');
+      if (fallback) fallback.setAttribute('href', watchUrl);
+
+      function buildEmbedUrl() {
+        var base = 'https://www.youtube.com/embed/' + youtubeId + '?feature=oembed&rel=0&modestbranding=1';
+        if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+          return base + '&origin=' + encodeURIComponent(window.location.origin);
+        }
+        return base;
+      }
+
+      function mountIframe() {
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('title', 'Welcome to the Graybeard Assessment — Matt Hempel');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.src = buildEmbedUrl();
+        wrap.innerHTML = '';
+        wrap.appendChild(iframe);
+      }
+
+      function mountSelfHosted() {
+        var video = document.createElement('video');
+        video.setAttribute('controls', '');
+        video.setAttribute('playsinline', '');
+        video.setAttribute('preload', 'metadata');
+        video.setAttribute('poster', thumbUrl);
+        video.src = selfHosted;
+        wrap.innerHTML = '';
+        wrap.appendChild(video);
+      }
+
+      function mountFacade() {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'video-facade';
+        btn.setAttribute('aria-label', 'Play welcome video from Matt');
+
+        var img = document.createElement('img');
+        img.src = thumbUrl;
+        img.alt = '';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.onerror = function () { img.style.display = 'none'; };
+
+        var overlay = document.createElement('span');
+        overlay.className = 'video-facade-overlay';
+        overlay.innerHTML =
+          '<span class="play-icon" aria-hidden="true">&#9654;</span>' +
+          '<span style="font-weight:700; font-size:1.05rem;">Play Matt\'s 2-minute welcome</span>';
+
+        btn.appendChild(img);
+        btn.appendChild(overlay);
+
+        btn.addEventListener('click', function () {
+          if (window.location.protocol === 'file:') {
+            window.open(watchUrl, '_blank', 'noopener,noreferrer');
+            return;
+          }
+          mountIframe();
+        });
+
+        wrap.innerHTML = '';
+        wrap.appendChild(btn);
+      }
+
+      if (hasSelfHosted) {
+        mountSelfHosted();
+      } else {
+        mountFacade();
+      }
+    })();
+  </script>
+
+</body>
+</html>
