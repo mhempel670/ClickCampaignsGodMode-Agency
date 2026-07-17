@@ -5,14 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Thank You — The Graybeard Assessment</title>
-  <!--
-    CENTRIPE SETUP:
-    Success redirect from checkout lands here.
-    VIDEO (recommended): Ask Yash to upload Matt's MP4 to Centripe media, then replace
-    [CENTRIPE_SELF_HOSTED_VIDEO_URL] below — plays inline everywhere, no YouTube issues.
-    YouTube fallback ID: HkgtyBFRNR8 (click-to-play; avoids Error 153 on auto-load).
-    Replace [CENTRIPE_STRATEGY_SESSION_697_URL] with Centripe checkout for $697 session.
-  -->
+  <!-- Stripe redirects paid buyers here. Matt's YouTube video uses click-to-play. -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -208,8 +201,7 @@
           Real person. Same process you're about to go through. Two minutes — worth watching before you start.
         </p>
         <div class="video-wrap" id="matt-video-wrap"
-          data-youtube-id="HkgtyBFRNR8"
-          data-self-hosted="[CENTRIPE_SELF_HOSTED_VIDEO_URL]">
+          data-youtube-id="HkgtyBFRNR8">
           <!-- Player injected by script: self-hosted MP4 (best) or click-to-play YouTube -->
         </div>
         <p class="text-center mt-3 mb-0" style="color:#6b7280; font-size:1rem;">
@@ -233,9 +225,11 @@
           90 minutes live with Matt · scheduled after your Master Document · written 90-Day Action Plan included
         </p>
 
-        <a id="upsell-btn" href="[CENTRIPE_STRATEGY_SESSION_697_URL]" class="cta block w-full py-4 rounded-lg text-lg uppercase tracking-wide text-center">
-          Add Strategy Session — $697
-        </a>
+        <p class="text-base font-bold text-center mb-3" style="color:#8C2F26;">Your Assessment + Strategy Session total is $697. Because you've already purchased the $199 Assessment, the remaining session price is $498.</p>
+        <button type="button" id="upsell-btn" class="cta block w-full py-4 rounded-lg text-lg uppercase tracking-wide text-center">
+          Add Strategy Session — $498
+        </button>
+        <p id="upsell-error" class="text-base text-center mt-3" style="display:none; color:#8C2F26;">We couldn't open checkout. Please refresh this page or email matt@graybeardguidance.com.</p>
         <p class="text-base text-center mt-3" style="color:#9ca3af; font-size:0.9375rem;">
           Secure checkout — takes about 60 seconds
         </p>
@@ -344,6 +338,38 @@
       } else {
         mountFacade();
       }
+    })();
+
+    (function () {
+      var button = document.getElementById('upsell-btn');
+      var error = document.getElementById('upsell-error');
+      if (!button) return;
+
+      button.addEventListener('click', function () {
+        var originalSessionId = new URLSearchParams(window.location.search).get('session_id');
+        error.style.display = 'none';
+        button.disabled = true;
+        button.textContent = 'Opening Secure Checkout…';
+
+        fetch('/api/create-addon-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ originalSessionId: originalSessionId })
+        })
+          .then(function (response) {
+            if (!response.ok) return response.json().then(function (data) { throw new Error(data.error || 'Unable to start checkout.'); });
+            return response.json();
+          })
+          .then(function (data) {
+            if (!data.url) throw new Error('Stripe did not return a checkout URL.');
+            window.location.assign(data.url);
+          })
+          .catch(function () {
+            error.style.display = 'block';
+            button.disabled = false;
+            button.textContent = 'Add Strategy Session — $498';
+          });
+      });
     })();
   </script>
 

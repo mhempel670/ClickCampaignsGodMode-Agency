@@ -3,11 +3,10 @@ GRAYBEARD ASSESSMENT — BETA SHARING FOR TESTERS
 For: Matt (non-technical quick guide)
 Last updated: June 2026
 
-WHY NOT USE THE PROSPECTCONNECT LINK?
--------------------------------------
-Links like funnel.prospectconnect.ai/...?preview=true are hosted on Centripe's
-platform account. Visitors see Centripe branding and free-trial prompts — not
-your clean buyer experience. This beta-share folder is Centripe-free.
+WHY USE THIS BETA COPY?
+-----------------------
+This folder provides a clean, focused test of the participant delivery experience
+before the complete funnel is deployed to its production Vercel domain.
 
 
 WHAT'S IN THIS FOLDER
@@ -15,8 +14,8 @@ WHAT'S IN THIS FOLDER
   index.html      — Simple menu (starts with delivery page)
   delivery.html   — Conversation guide + voice agent (what testers need now)
 
-No Centripe URLs. The voice agent loads from voiceagents.tech (required for
-the AI conversation). Google Fonts load from the internet (page still works
+The voice agent loads from voiceagents.tech (required for the AI conversation).
+Google Fonts load from the internet (page still works
 without them, just plainer text).
 
 

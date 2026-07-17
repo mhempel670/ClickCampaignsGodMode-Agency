@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ben's Voice-Agent Conversation Guide — Review</title>
+  <style>
+    :root { color-scheme: light; --ink:#222; --muted:#666; --gold:#d4a017; --paper:#fffdf8; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:#ece9e1; color:var(--ink); font:18px/1.65 Georgia, serif; }
+    header { position:sticky; top:0; z-index:2; padding:18px 28px; background:#262626; color:white; border-bottom:4px solid var(--gold); }
+    header strong { display:block; font:700 20px/1.2 Arial, sans-serif; }
+    header span { color:#ddd; font:14px/1.4 Arial, sans-serif; }
+    main { width:min(940px, calc(100% - 32px)); margin:28px auto 60px; padding:38px clamp(24px,5vw,64px); background:var(--paper); box-shadow:0 8px 30px rgba(0,0,0,.12); }
+    pre { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; font:17px/1.7 Georgia, serif; }
+    .loading { color:var(--muted); font-style:italic; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Ben's Voice-Agent Conversation Guide</strong>
+    <span>Local review copy · edits are made in the master Markdown document</span>
+  </header>
+  <main><pre id="script" class="loading">Loading the revised conversation guide…</pre></main>
+  <script>
+    fetch('../documents/graybeard-assessment-voice-agent-script.md', { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) throw new Error('Unable to load the guide.');
+        return response.text();
+      })
+      .then(text => {
+        const script = document.getElementById('script');
+        script.textContent = text;
+        script.classList.remove('loading');
+      })
+      .catch(error => {
+        document.getElementById('script').textContent = error.message;
+      });
+  </script>
+</body>
+</html>

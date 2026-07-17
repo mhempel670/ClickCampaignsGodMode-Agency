@@ -4,7 +4,7 @@ Source document for delivery page. Purchasers access via unique link in post-pur
 
 ---
 
-Welcome! You're about to have a conversation that will help you clarify your expertise, design your business model or meaningful work going forward and define your brand. This document is here so you can follow along and see where we are in the process. This is a totally laid back, back and forth conversation, just like you'd have with a friend over coffee or a beer.
+Welcome! You're about to have a conversation that will help you clarify your expertise and explore what a meaningful next chapter could look like. That might include paid work, mentoring, nonprofit or foundation service, board participation, charitable work, local volunteering, or some combination. This document is here so you can follow along and see where we are in the process. This is a totally laid back, back and forth conversation, just like you'd have with a friend over coffee or a beer.
 
 ## Important things to know
 
@@ -18,8 +18,12 @@ Welcome! You're about to have a conversation that will help you clarify your exp
 
 A complete Master Document containing:
 
-- **Part I:** Your Business Blueprint (business model, offer structure, pricing, delivery, technical infrastructure)
-- **Part II:** Your Brand Foundation (story, messaging, voice, positioning)
+- **Part I:** Your Experience & Wisdom Map (expertise, judgment, strengths, patterns, and lessons)
+- **Part II:** Your Contribution Pathways (nonprofit, foundation, charity, board, mentoring, community, volunteer, and other service possibilities)
+- **Part III:** Your Optional Income Pathways (consulting, fractional leadership, coaching, teaching, or other paid work when desired)
+- **Part IV:** Your Communication Foundation (story, purpose, messaging, voice, and positioning appropriate to the paths you prefer)
+
+The conversation does not assume that you want to start a business. Early in the process, the agent should help clarify whether you want contribution, income, a combination, or simply a clearer view of the possibilities.
 
 **Time commitment:** Around 60 minutes.
 

@@ -4,18 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout — The Graybeard Assessment ($199)</title>
-  <!--
-    CENTRIPE SETUP (confirmed March 2026 — see documents/centripe-response-summary.md):
-    Products in Centripe (NOT a cart — checkbox switches which product/embed loads):
-      1. Graybeard Assessment — $199
-      2. Assessment + Strategy Session Bundle — $896
-    [CENTRIPE_STEP1_EMBED]     = lead capture embed (name + email)
-    [CENTRIPE_CHECKOUT_199]    = payment embed for $199 product only
-    [CENTRIPE_CHECKOUT_896]    = payment embed for $896 bundle
-    Checkbox toggles visibility between the two checkout embeds.
-    After payment → redirect to graybeard-assessment-thank-you.html
-    Post-Master Document upsell ($897): Centripe workflow + graybeard-blueprint-strategy-session.html
-  -->
+  <!-- Stripe Checkout Sessions are created securely by a Vercel server function. -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -174,7 +163,7 @@
   <main class="max-w-5xl mx-auto px-4 py-8 md:py-12">
 
     <h1 class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left">You're One Step Away From Clarity</h1>
-    <p class="text-muted text-lg mb-8 text-center md:text-left" style="color:#4a4a4a;">Start with your name and email on the left. Payment unlocks on the right once Step 1 is complete — so we have your info even if you need a minute before paying.</p>
+    <p class="text-muted text-lg mb-8 text-center md:text-left" style="color:#4a4a4a;">Start with your name and email on the left. Your secure Stripe checkout unlocks on the right once Step 1 is complete.</p>
 
     <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
 
@@ -188,8 +177,8 @@
           </div>
         </div>
 
-        <!-- Posts to Centripe on Continue — captures lead even if they abandon payment -->
-        <form id="step1-form" action="[CENTRIPE_STEP1_FORM_URL]" method="POST" class="space-y-4">
+        <!-- Step 1 validates contact details before secure checkout -->
+        <form id="step1-form" class="space-y-4">
           <div class="grid grid-cols-2 gap-4">
             <div>
               <label class="label" for="first_name">First Name <span style="color:#8C2F26;">*</span></label>
@@ -255,7 +244,7 @@
               </div>
               <div id="upsell-line" class="line-item hidden">
                 <span>Blueprint Strategy Session</span>
-                <span class="font-semibold">$697.00</span>
+                <span class="font-semibold">$498.00</span>
               </div>
             </div>
 
@@ -268,7 +257,7 @@
           <!-- ORDER BUMP — Blueprint Strategy Session -->
           <div id="upsell-bump" class="upsell-bump payment-interactive" role="group" aria-labelledby="upsell-title">
             <label class="flex gap-3 items-start cursor-pointer" style="cursor:pointer;">
-              <input type="checkbox" id="upsell-checkbox" name="add_strategy_session" value="697">
+              <input type="checkbox" id="upsell-checkbox" name="add_strategy_session" value="bundle_697">
               <div>
                 <p id="upsell-title" class="font-bold text-lg leading-snug mb-1" style="color:#121212;">
                   Yes — Add the Blueprint Strategy Session
@@ -283,7 +272,7 @@
                   <li>✓ Written 90-Day Action Plan after your session</li>
                   <li>✓ <strong>100% credits</strong> toward our premium group coaching program when it launches</li>
                 </ul>
-                <p class="text-base font-bold" style="color:#8C2F26;">+$697 today · <span style="font-weight:400; color:#6b7280;">$897 if you wait</span></p>
+                <p class="text-base font-bold" style="color:#8C2F26;">$697 total for the Assessment + Strategy Session <span style="font-weight:400; color:#6b7280;">($498 added to your $199 Assessment)</span></p>
                 <a href="graybeard-blueprint-strategy-session.html" target="_blank" class="text-base font-semibold" style="color:#8C2F26;" onclick="event.stopPropagation();">Read full details →</a>
               </div>
             </label>
@@ -294,33 +283,22 @@
             The session is optional — and intentionally selective. The Assessment alone delivers real value.
           </p>
 
-          <!-- Order / payment — Centripe embeds (two products, not a cart) -->
+          <!-- Secure Stripe Checkout handoff -->
           <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8 payment-interactive">
             <p class="label mb-3">Complete Your Order</p>
 
-            <!-- $199 Assessment only — shown when bump unchecked -->
-            <div id="centripe-checkout-199" class="centripe-embed-slot">
-              <div class="stripe-placeholder">
-                <p class="font-semibold mb-2" style="color:#4a4a4a;">Centripe Embed — Assessment ($199)</p>
-                <p>Paste embed code from Centripe for the <strong>$199 product</strong> here.<br>On onboarding call, ask Zaid for <code>[CENTRIPE_CHECKOUT_199]</code></p>
-              </div>
-            </div>
-
-            <!-- $896 Bundle — shown when bump checked -->
-            <div id="centripe-checkout-896" class="centripe-embed-slot hidden">
-              <div class="stripe-placeholder">
-                <p class="font-semibold mb-2" style="color:#4a4a4a;">Centripe Embed — Bundle ($896)</p>
-                <p>Paste embed code from Centripe for the <strong>$896 bundle</strong> here.<br>On onboarding call, ask Zaid for <code>[CENTRIPE_CHECKOUT_896]</code></p>
-              </div>
-            </div>
+            <button type="button" id="checkout-button" class="cta w-full py-4 rounded-lg text-lg uppercase tracking-wide">
+              Continue to Secure Stripe Checkout →
+            </button>
+            <p id="checkout-error" class="error-msg text-center mt-3">Checkout is not connected yet. Add the Stripe environment variables in Vercel, then try again.</p>
 
             <p class="text-base flex items-start gap-2 mt-4" style="color:#6b7280;">
               <span>🔒</span>
-              <span>256-bit SSL · Powered by Stripe · Payment handled by Centripe</span>
+              <span>Secure payment powered by Stripe</span>
             </p>
 
             <p id="pay-hint" class="text-base text-center mt-4 font-semibold" style="color:#121212;">
-              Total today: <span id="pay-amount">$199</span> — complete payment in the form above
+              Total today: <span id="pay-amount">$199</span> — you'll complete payment securely on Stripe
             </p>
 
             <p class="text-base text-center mt-2" style="color:#9ca3af;">One-time charge. No hidden fees.</p>
@@ -353,8 +331,8 @@
       var step1Complete = false;
       var panel = document.getElementById('payment-panel');
       var continueBtn = document.getElementById('continue-btn');
-      var checkout199 = document.getElementById('centripe-checkout-199');
-      var checkout896 = document.getElementById('centripe-checkout-896');
+      var checkoutButton = document.getElementById('checkout-button');
+      var checkoutError = document.getElementById('checkout-error');
       var step1Badge = document.getElementById('step1-badge');
       var step2Badge = document.getElementById('step2-badge');
       var err = document.getElementById('step1-error');
@@ -366,7 +344,7 @@
       var orderTotal = document.getElementById('order-total');
       var payAmount = document.getElementById('pay-amount');
       var ASSESSMENT = 199;
-      var BUNDLE = 896;
+      var BUNDLE = 697;
 
       function formatMoney(n) {
         return '$' + n.toFixed(2).replace(/\.00$/, '');
@@ -379,8 +357,6 @@
         if (upsellBump) upsellBump.classList.toggle('selected', withBundle);
         if (orderTotal) orderTotal.textContent = formatMoney(total) + '.00';
         if (payAmount) payAmount.textContent = formatMoney(total);
-        if (checkout199) checkout199.classList.toggle('hidden', withBundle);
-        if (checkout896) checkout896.classList.toggle('hidden', !withBundle);
       }
 
       if (upsellCheckbox) {
@@ -425,18 +401,6 @@
         err.classList.remove('show');
       }
 
-      function submitStep1ToCentripe(callback) {
-        var action = step1Form.getAttribute('action');
-        if (!action || action.indexOf('[CENTRIPE') === 0) {
-          callback(true);
-          return;
-        }
-        var data = new FormData(step1Form);
-        fetch(action, { method: 'POST', body: data, mode: 'no-cors' })
-          .then(function () { callback(true); })
-          .catch(function () { callback(true); });
-      }
-
       continueBtn.addEventListener('click', function () {
         if (step1Complete) return;
         if (!validateStep1()) {
@@ -444,11 +408,38 @@
           ok.classList.remove('show');
           return;
         }
-        continueBtn.disabled = true;
-        continueBtn.textContent = 'Saving…';
-        submitStep1ToCentripe(function () {
-          unlockPayment();
-        });
+        unlockPayment();
+      });
+
+      checkoutButton.addEventListener('click', function () {
+        if (!step1Complete || !validateStep1()) return;
+        checkoutError.classList.remove('show');
+        checkoutButton.disabled = true;
+        checkoutButton.textContent = 'Opening Secure Checkout…';
+        var fields = getFields();
+        fetch('/api/create-checkout-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            firstName: fields.first,
+            lastName: fields.last,
+            email: fields.email,
+            product: upsellCheckbox && upsellCheckbox.checked ? 'assessment_strategy_bundle' : 'assessment'
+          })
+        })
+          .then(function (response) {
+            if (!response.ok) return response.json().then(function (data) { throw new Error(data.error || 'Unable to start checkout.'); });
+            return response.json();
+          })
+          .then(function (data) {
+            if (!data.url) throw new Error('Stripe did not return a checkout URL.');
+            window.location.assign(data.url);
+          })
+          .catch(function () {
+            checkoutError.classList.add('show');
+            checkoutButton.disabled = false;
+            checkoutButton.textContent = 'Continue to Secure Stripe Checkout →';
+          });
       });
 
       ['first_name', 'last_name', 'email'].forEach(function (id) {
