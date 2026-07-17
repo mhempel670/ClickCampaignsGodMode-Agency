@@ -1,0 +1,47 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/html/graybeard-assessment-sales-page.html"
+    },
+    {
+      "source": "/graybeard-assessment-sales-page.html",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/html/graybeard-assessment-sales-page.html"
+    },
+    {
+      "source": "/graybeard-assessment-checkout.html",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/html/graybeard-assessment-checkout.html"
+    },
+    {
+      "source": "/graybeard-assessment-thank-you.html",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/html/graybeard-assessment-thank-you.html"
+    },
+    {
+      "source": "/graybeard-assessment-delivery.html",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/html/graybeard-assessment-delivery.html"
+    },
+    {
+      "source": "/graybeard-blueprint-strategy-session.html",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/html/graybeard-blueprint-strategy-session.html"
+    },
+    {
+      "source": "/graybeard-assessment-voice-agent-script-review.html",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/html/graybeard-assessment-voice-agent-script-review.html"
+    },
+    {
+      "source": "/html/:path*",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/html/:path*"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/images/:path*"
+    },
+    {
+      "source": "/documents/:path*",
+      "destination": "/clients/graybeard-guidance/campaigns/graybeard-assessment-funnel/output-assets/documents/:path*"
+    }
+  ]
+}
+
