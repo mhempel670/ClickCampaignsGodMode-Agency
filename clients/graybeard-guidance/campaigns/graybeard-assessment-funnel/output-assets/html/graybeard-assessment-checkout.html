@@ -435,6 +435,7 @@
           })
           .then(unlockPayment);
       });
+      continueBtn.dataset.checkoutBound = 'true';
 
       checkoutButton.addEventListener('click', function () {
         if (!step1Complete || !validateStep1()) return;
@@ -474,6 +475,7 @@
       });
     })();
   </script>
+  <script src="graybeard-assessment-checkout.js"></script>
 
 </body>
 </html>
