@@ -1,7 +1,7 @@
 (function () {
   var continueBtn = document.getElementById('continue-btn');
-  if (!continueBtn || continueBtn.dataset.checkoutBound === 'true') return;
-  continueBtn.dataset.checkoutBound = 'true';
+  if (!continueBtn || continueBtn.dataset.externalCheckoutBound === 'true') return;
+  continueBtn.dataset.externalCheckoutBound = 'true';
 
   var step1Complete = false;
   var panel = document.getElementById('payment-panel');
@@ -90,7 +90,8 @@
     return Promise.race([request, timeout]);
   }
 
-  continueBtn.addEventListener('click', function () {
+  continueBtn.addEventListener('click', function (event) {
+    event.stopImmediatePropagation();
     if (step1Complete) return;
     if (!validateStep1()) {
       err.classList.add('show');
@@ -100,9 +101,10 @@
     continueBtn.disabled = true;
     continueBtn.textContent = 'Saving your information…';
     subscribeLead(getFields()).catch(function () {}).then(unlockPayment);
-  });
+  }, true);
 
-  checkoutButton.addEventListener('click', function () {
+  checkoutButton.addEventListener('click', function (event) {
+    event.stopImmediatePropagation();
     if (!step1Complete || !validateStep1()) return;
     checkoutError.classList.remove('show');
     checkoutButton.disabled = true;
@@ -131,7 +133,7 @@
         checkoutButton.disabled = false;
         checkoutButton.textContent = 'Continue to Secure Stripe Checkout →';
       });
-  });
+  }, true);
 
   ['first_name', 'last_name', 'email'].forEach(function (id) {
     document.getElementById(id).addEventListener('input', function () {
