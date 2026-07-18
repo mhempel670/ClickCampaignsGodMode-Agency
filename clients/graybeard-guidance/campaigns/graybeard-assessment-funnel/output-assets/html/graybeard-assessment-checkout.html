@@ -401,6 +401,20 @@
         err.classList.remove('show');
       }
 
+      function subscribeLead(fields) {
+        var endpoint = 'https://api-form.tinyemail.com/ext/formservice/form-provider/7082d812-5688-4e8a-816a-144c4c7afe2d/b2aab7af-aa34-49b9-b892-24b99b3e2d97';
+        return fetch(endpoint, {
+          method: 'POST',
+          mode: 'cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            firstName: fields.first,
+            lastName: fields.last,
+            email: fields.email
+          })
+        });
+      }
+
       continueBtn.addEventListener('click', function () {
         if (step1Complete) return;
         if (!validateStep1()) {
@@ -408,7 +422,14 @@
           ok.classList.remove('show');
           return;
         }
-        unlockPayment();
+        continueBtn.disabled = true;
+        continueBtn.textContent = 'Saving your information…';
+        subscribeLead(getFields())
+          .catch(function () {
+            // Stripe still captures the buyer's email. A temporary email-provider
+            // outage should not prevent a customer from completing checkout.
+          })
+          .then(unlockPayment);
       });
 
       checkoutButton.addEventListener('click', function () {
