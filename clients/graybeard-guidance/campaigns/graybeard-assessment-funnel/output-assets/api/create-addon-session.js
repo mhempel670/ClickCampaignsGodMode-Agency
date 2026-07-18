@@ -17,7 +17,7 @@ async function stripeRequest(path, options = {}) {
   const response = await fetch(`${STRIPE_API}${path}`, {
     ...options,
     headers: {
-      Authorization: `Bearer ${process.env.STRIPE_SECRET_KEY}`,
+      Authorization: `Bearer ${process.env.STRIPE_SECRET_KEY || process.env.stripe_secret_key}`,
       'Content-Type': 'application/x-www-form-urlencoded',
       ...(options.headers || {})
     }
@@ -29,7 +29,7 @@ async function stripeRequest(path, options = {}) {
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return send(res, 405, { error: 'Method not allowed.' });
-  if (!process.env.STRIPE_SECRET_KEY || !process.env.STRIPE_PRICE_STRATEGY_ADDON) {
+  if (!(process.env.STRIPE_SECRET_KEY || process.env.stripe_secret_key) || !process.env.STRIPE_PRICE_STRATEGY_ADDON) {
     return send(res, 503, { error: 'Stripe is not configured.' });
   }
 
@@ -64,4 +64,3 @@ module.exports = async function handler(req, res) {
     return send(res, 502, { error: error.message });
   }
 };
-
