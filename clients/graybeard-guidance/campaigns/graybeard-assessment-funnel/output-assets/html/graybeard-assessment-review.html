@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graybeard Assessment — Reviewer Access</title>
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    :root { --ink:#121212; --gold:#D4A017; --brick:#8C2F26; --warm:#F7F5F0; --blue:#17324d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,sans-serif; color:var(--ink); background:var(--warm); font-size:18px; line-height:1.6; }
+    header { background:#2B2B2B; color:#fff; padding:42px 22px; text-align:center; }
+    header h1 { margin:0 0 10px; font-family:Georgia,serif; font-size:clamp(30px,6vw,44px); }
+    header p { max-width:720px; margin:0 auto; color:rgba(255,255,255,.84); }
+    main { max-width:820px; margin:0 auto; padding:34px 20px 54px; }
+    .notice { background:#fff; border-left:5px solid var(--gold); padding:18px 20px; margin-bottom:28px; box-shadow:0 3px 14px rgba(0,0,0,.07); }
+    .notice strong { color:var(--blue); }
+    .pages { display:grid; gap:16px; }
+    .page { display:grid; grid-template-columns:48px 1fr auto; gap:16px; align-items:center; background:#fff; border:1px solid #ddd7cf; border-radius:12px; padding:18px; text-decoration:none; color:var(--ink); box-shadow:0 2px 8px rgba(0,0,0,.05); }
+    .page:hover { border-color:var(--gold); transform:translateY(-1px); }
+    .number { width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:var(--gold); font-weight:800; }
+    .page h2 { font-size:20px; margin:0 0 3px; font-family:Georgia,serif; }
+    .page p { margin:0; color:#555; font-size:16px; }
+    .open { color:var(--brick); font-weight:800; white-space:nowrap; }
+    .delivery { border:2px solid var(--gold); }
+    .delivery .number { background:var(--brick); color:#fff; }
+    .tip { margin-top:28px; background:#e9f1f8; padding:18px 20px; border-radius:10px; }
+    @media(max-width:620px){ .page{grid-template-columns:44px 1fr}.open{grid-column:2}.page p{font-size:17px} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Graybeard Assessment Review</h1>
+    <p>Review the complete funnel without purchasing. Open the pages in order, then use the Delivery page to experience the Assessment.</p>
+  </header>
+  <main>
+    <div class="notice">
+      <strong>Safe reviewer access:</strong> Payment and contact-submission actions are disabled on these review links. The voice agent on the Delivery page remains active so you can complete the Assessment.
+    </div>
+    <div class="pages">
+      <a class="page" href="graybeard-assessment-sales-page.html?review=1" target="_blank" rel="noopener">
+        <span class="number">1</span><span><h2>Main Sales Page</h2><p>The offer, audience, promise, and complete Assessment presentation.</p></span><span class="open">Open →</span>
+      </a>
+      <a class="page" href="graybeard-assessment-checkout.html?review=1" target="_blank" rel="noopener">
+        <span class="number">2</span><span><h2>Two-Step Checkout</h2><p>Review the contact step, order summary, and Strategy Session option. Payments are disabled.</p></span><span class="open">Open →</span>
+      </a>
+      <a class="page" href="graybeard-assessment-thank-you.html?review=1" target="_blank" rel="noopener">
+        <span class="number">3</span><span><h2>Thank-You Page</h2><p>Review the post-purchase message and optional Strategy Session offer. Add-on payment is disabled.</p></span><span class="open">Open →</span>
+      </a>
+      <a class="page delivery" href="graybeard-assessment-delivery.html?review=1" target="_blank" rel="noopener">
+        <span class="number">4</span><span><h2>Delivery Page + Live Assessment</h2><p>Read the Conversation Reference Guide, allow microphone access, and complete the voice-agent conversation.</p></span><span class="open">Begin →</span>
+      </a>
+      <a class="page" href="graybeard-blueprint-strategy-session.html?review=1" target="_blank" rel="noopener">
+        <span class="number">5</span><span><h2>Blueprint Strategy Session Page</h2><p>Review the optional one-on-one session and 90-Day Action Plan offer.</p></span><span class="open">Open →</span>
+      </a>
+      <a class="page" href="../emails/graybeard-assessment-delivery-email.html" target="_blank" rel="noopener">
+        <span class="number">6</span><span><h2>Delivery Email</h2><p>Review the email customers receive with their Delivery page link.</p></span><span class="open">Open →</span>
+      </a>
+    </div>
+    <div class="tip"><strong>Assessment tip:</strong> A laptop is best. Allow microphone access, click <strong>Start conversation</strong>, and plan on about an hour. The Assessment may email a transcript when the conversation ends.</div>
+  </main>
+</body>
+</html>
