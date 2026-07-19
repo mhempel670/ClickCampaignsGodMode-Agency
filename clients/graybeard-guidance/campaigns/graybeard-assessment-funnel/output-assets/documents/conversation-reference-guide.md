@@ -4,7 +4,9 @@ Source document for delivery page. Purchasers access via unique link in post-pur
 
 ---
 
-Welcome! You probably know that something needs to change, but you may not be sure what should come next. That's exactly what this process is for. The conversation will help uncover what you bring, what you want from this stage of life, and which possibilities may be worth exploring. It is totally laid back and back-and-forth, just like a conversation with a friend over coffee or a beer.
+Welcome! You may be at a crossroads—ready to step back, adjust course, or explore a different direction—but not yet sure what should come next or what that next chapter could look like. That's exactly what this process is for. The conversation will help uncover what you bring, what you want from this stage of life, and which possibilities may be worth exploring.
+
+Before you begin, take a few minutes to read through this page. It will give you a simple framework for the conversation and a clear idea of what to expect. No studying required. There will not be a quiz. The conversation itself is laid back and back-and-forth, like talking with a friend over coffee or a beer.
 
 ## Two things we're exploring
 
@@ -37,7 +39,7 @@ The Master Document is not a forced business plan, a final answer, or a generic 
 
 **Note:** You'll also receive an email with a link to this page if you need to come back and do this later. Any issues please email matt@graybeardguidance.com
 
-**Note:** Both you and the agent will receive a transcript when you're complete. We'll process it with prompts developed specifically for this process and deliver your personalized Master Document within **5–7 days**.
+**Note:** You and the Graybeard team will receive a transcript when you're complete. We'll process it with prompts developed specifically for this process and deliver your personalized Master Document within **5–7 days**.
 
 **IMPORTANT:** This works best on a **laptop**. The AI voice agent opens in a side panel when the page loads. Pull that window out from your other tabs so you can see this reference guide alongside the voice agent. When ready, click **Start conversation** in the widget and talk naturally.
 
