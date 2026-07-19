@@ -15,7 +15,7 @@ Before you begin, take a few minutes to read through this page. It will give you
 
 You do not need to know what comes next. You only need to be willing to explore what might fit.
 
-Underneath it all, this is a practical way to revisit questions most of us never completely finish answering: Who am I now? What do I have to offer? What matters to me? What do I want to do with what I've learned? The raw material is your **crystallized intelligence**—the knowledge, judgment, perspective, and wisdom accumulated over decades of living and working. The process gets it out of your head and into a form you can see and use.
+Underneath it all, this is a practical way to take stock of what 30 or 40 years of work and life have added up to: What have I learned? What am I especially good at now? What do I bring to the table that I may no longer even notice? And where could all of that be useful next? The raw material is your **crystallized intelligence**—the knowledge, judgment, perspective, and wisdom accumulated over decades of living and working. The process gets it out of your head and into a form you can see and use.
 
 ## Important things to know
 
