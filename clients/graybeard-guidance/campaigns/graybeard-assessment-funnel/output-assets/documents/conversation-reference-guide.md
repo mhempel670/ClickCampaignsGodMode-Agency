@@ -4,7 +4,14 @@ Source document for delivery page. Purchasers access via unique link in post-pur
 
 ---
 
-Welcome! You're about to have a conversation that will help you clarify your expertise and explore what a meaningful next chapter could look like. That might include paid work, mentoring, nonprofit or foundation service, board participation, charitable work, local volunteering, or some combination. This document is here so you can follow along and see where we are in the process. This is a totally laid back, back and forth conversation, just like you'd have with a friend over coffee or a beer.
+Welcome! You probably know that something needs to change, but you may not be sure what should come next. That's exactly what this process is for. The conversation will help uncover what you bring, what you want from this stage of life, and which possibilities may be worth exploring. It is totally laid back and back-and-forth, just like a conversation with a friend over coffee or a beer.
+
+## Two things we're exploring
+
+1. **What kinds of next chapters might fit you?** That could mean employment, consulting, fractional work, teaching, a small business, nonprofit or foundation service, mentoring, volunteering, something deliberately simpler, or a blend. There is no preferred answer.
+2. **How certain are you right now?** You may have a developed plan to validate, a few possibilities to compare, or no idea whatsoever. All are legitimate starting points.
+
+You do not need to know what comes next. You only need to be willing to explore what might fit.
 
 ## Important things to know
 
@@ -16,20 +23,21 @@ Welcome! You're about to have a conversation that will help you clarify your exp
 
 ## What you'll get after this conversation
 
-A complete Master Document containing:
+A personalized Master Document designed to reveal credible possibilities, spark curiosity, and create useful direction. It contains:
 
-- **Part I:** Your Experience & Wisdom Map (expertise, judgment, strengths, patterns, and lessons)
-- **Part II:** Your Contribution Pathways (nonprofit, foundation, charity, board, mentoring, community, volunteer, and other service possibilities)
-- **Part III:** Your Optional Income Pathways (consulting, fractional leadership, coaching, teaching, or other paid work when desired)
-- **Part IV:** Your Communication Foundation (story, purpose, messaging, voice, and positioning appropriate to the paths you prefer)
+- **Part I:** Your Experience & Wisdom Map
+- **Part II:** Your Next-Chapter Possibility Portfolio
+- **Part III:** Your Fit, Preferences & Readiness Map
+- **Part IV:** Your Communication & Personal Brand Foundation
+- **Part V:** Your Questions & Low-Risk Next Steps
 
-The conversation does not assume that you want to start a business. Early in the process, the agent should help clarify whether you want contribution, income, a combination, or simply a clearer view of the possibilities.
+The Master Document is not a forced business plan, a final answer, or a generic list. It is a customized first look at what you bring, what may fit, and what deserves exploration next. It may include paid work, service, employment, business, a deliberately simple role, a blend, or continued exploration.
 
 **Time commitment:** Around 60 minutes.
 
 **Note:** You'll also receive an email with a link to this page if you need to come back and do this later. Any issues please email matt@graybeardguidance.com
 
-**Note:** Both you and the agent will receive a transcript when you're complete. Feel free to run it through the LLM of your choice to finalize your blueprint. We'll also process it with prompts developed specifically for this process. Give us **5–7 days** to get your blueprint back to you.
+**Note:** Both you and the agent will receive a transcript when you're complete. We'll process it with prompts developed specifically for this process and deliver your personalized Master Document within **5–7 days**.
 
 **IMPORTANT:** This works best on a **laptop**. The AI voice agent opens in a side panel when the page loads. Pull that window out from your other tabs so you can see this reference guide alongside the voice agent. When ready, click **Start conversation** in the widget and talk naturally.
 
