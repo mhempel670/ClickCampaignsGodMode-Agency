@@ -6,7 +6,7 @@ Source document for delivery page. Purchasers access via unique link in post-pur
 
 Welcome! You may be at a crossroads—ready to step back, adjust course, or explore a different direction—but not yet sure what should come next or what that next chapter could look like. That's exactly what this process is for. The conversation will help uncover what you bring, what you want from this stage of life, and which possibilities may be worth exploring.
 
-Before you begin, take a few minutes to read through this page. It will give you a simple framework for the conversation and a clear idea of what to expect. No studying required. There will not be a quiz. The conversation itself is laid back and back-and-forth, like talking with a friend over coffee or a beer.
+Before you begin, take a few minutes to read through this page. It will give you a simple framework for the conversation and a clear idea of what to expect. No studying required. There will not be a quiz. 🙂 The conversation itself is laid back and back-and-forth, like talking with a friend over coffee or a beer.
 
 ## Two things we're exploring
 
