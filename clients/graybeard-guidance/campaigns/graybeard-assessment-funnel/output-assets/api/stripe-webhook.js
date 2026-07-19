@@ -1,6 +1,7 @@
 const crypto = require('crypto');
 
 const TINYEMAIL_PURCHASE_FORM_URL = 'https://api-form.tinyemail.com/ext/formservice/form-provider/7082d812-5688-4e8a-816a-144c4c7afe2d/81f25805-2657-4056-bc23-3266c598a64d';
+const TINYEMAIL_STRATEGY_FORM_URL = 'https://api-form.tinyemail.com/ext/formservice/form-provider/7082d812-5688-4e8a-816a-144c4c7afe2d/3bc80b2a-d648-4095-a139-9e9924459b4a';
 
 function send(res, status, body) {
   res.statusCode = status;
@@ -37,13 +38,13 @@ function verifyStripeSignature(payload, signatureHeader, secret) {
   });
 }
 
-async function addCustomerToTinyEmail(session) {
+async function addCustomerToTinyEmail(session, formUrl) {
   const email = String(session.customer_details?.email || session.customer_email || '').trim();
   if (!/^\S+@\S+\.\S+$/.test(email)) throw new Error('Paid session has no valid customer email.');
 
   const firstName = String(session.metadata?.first_name || session.customer_details?.name || 'Graybeard').trim();
   const lastName = String(session.metadata?.last_name || 'Customer').trim();
-  const response = await fetch(TINYEMAIL_PURCHASE_FORM_URL, {
+  const response = await fetch(formUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -72,7 +73,13 @@ async function handler(req, res) {
       const session = event.data?.object || {};
       const product = session.metadata?.product;
       const deliversAssessment = product === 'assessment' || product === 'assessment_strategy_bundle';
-      if (session.payment_status === 'paid' && deliversAssessment) await addCustomerToTinyEmail(session);
+      const includesStrategySession = product === 'assessment_strategy_bundle' || product === 'strategy_session_addon';
+      if (session.payment_status === 'paid') {
+        const deliveries = [];
+        if (deliversAssessment) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_PURCHASE_FORM_URL));
+        if (includesStrategySession) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_STRATEGY_FORM_URL));
+        await Promise.all(deliveries);
+      }
     }
 
     return send(res, 200, { received: true });
