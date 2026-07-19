@@ -281,7 +281,7 @@ Depth should follow relevance. The participant's experience and answers determin
 
 ### What if I want help choosing a direction?
 
-“An optional ninety-minute Blueprint Strategy Session with Matt can help you choose a direction and turn it into a written 90-Day Action Plan. It is separate from the Assessment.”
+“An optional 60-minute Blueprint Strategy Session with Matt can help you choose a direction and turn it into a written 90-Day Action Plan. It is separate from the Assessment.”
 
 ### Are coaching, community, or done-for-you services available?
 
