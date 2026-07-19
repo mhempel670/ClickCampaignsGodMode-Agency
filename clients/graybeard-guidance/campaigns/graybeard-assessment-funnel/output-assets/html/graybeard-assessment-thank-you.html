@@ -265,6 +265,12 @@
 
   <script>
     (function () {
+      if (new URLSearchParams(window.location.search).get('strategy_session') === 'added') {
+        window.location.replace('graybeard-assessment-delivery.html?strategy_session=added');
+      }
+    })();
+
+    (function () {
       var wrap = document.getElementById('matt-video-wrap');
       if (!wrap) return;
 
