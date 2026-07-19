@@ -53,7 +53,7 @@ module.exports = async function handler(req, res) {
     if (email) params.set('customer_email', email);
     params.set('line_items[0][price]', process.env.STRIPE_PRICE_STRATEGY_ADDON);
     params.set('line_items[0][quantity]', '1');
-    params.set('success_url', `${origin}/html/graybeard-assessment-thank-you.html?strategy_session=added`);
+    params.set('success_url', `${origin}/html/graybeard-assessment-delivery.html?strategy_session=added`);
     params.set('cancel_url', `${origin}/html/graybeard-assessment-thank-you.html?session_id=${encodeURIComponent(originalSessionId)}`);
     params.set('metadata[product]', 'strategy_session_addon');
     params.set('metadata[original_session_id]', originalSessionId);
