@@ -15,6 +15,8 @@ Before you begin, take a few minutes to read through this page. It will give you
 
 You do not need to know what comes next. You only need to be willing to explore what might fit.
 
+Underneath it all, this is a practical way to revisit questions most of us never completely finish answering: Who am I now? What do I have to offer? What matters to me? What do I want to do with what I've learned? The raw material is your **crystallized intelligence**—the knowledge, judgment, perspective, and wisdom accumulated over decades of living and working. The process gets it out of your head and into a form you can see and use.
+
 ## Important things to know
 
 - There are no wrong answers
@@ -36,6 +38,8 @@ A personalized Master Document designed to reveal credible possibilities, spark 
 The Master Document is not a forced business plan, a final answer, or a generic list. It is a customized first look at what you bring, what may fit, and what deserves exploration next. It may include paid work, service, employment, business, a deliberately simple role, a blend, or continued exploration.
 
 **Time commitment:** Around 60 minutes.
+
+And yes, talking to a computer about your life, work, and whatever has been rattling around in your head may feel a little strange. Most of us have never done anything quite like it. Give it a chance anyway. People are often surprised by what becomes visible once their experience is spoken out loud and organized.
 
 **Note:** You'll also receive an email with a link to this page if you need to come back and do this later. Any issues please email matt@graybeardguidance.com
 

@@ -8,6 +8,8 @@ The participant is often at a crossroads—ready to step back, adjust course, or
 
 ## Primary outcome
 
+The deeper organizing idea is practical identity and purpose: Who am I now? What do I have to offer? What matters to me? What do I want to do with what I have learned? Answer those questions through evidence, not philosophy or therapy. Extract and organize the participant's crystallized intelligence—the knowledge, judgment, perspective, pattern recognition, and wisdom accumulated over decades—so it becomes visible, accessible, and usable in whatever direction the participant chooses.
+
 Create a document that helps the participant:
 
 - See the experience, judgment, strengths, and hard-won wisdom they may have stopped noticing
