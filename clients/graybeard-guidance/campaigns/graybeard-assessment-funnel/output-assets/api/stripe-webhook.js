@@ -72,8 +72,8 @@ async function handler(req, res) {
     if (event.type === 'checkout.session.completed') {
       const session = event.data?.object || {};
       const product = session.metadata?.product;
-      const deliversAssessment = product === 'assessment' || product === 'assessment_strategy_bundle';
-      const includesStrategySession = product === 'assessment_strategy_bundle' || product === 'strategy_session_addon';
+      const deliversAssessment = product === 'assessment' || product === 'assessment_strategy_bundle' || product === 'assessment_blueprint_forum';
+      const includesStrategySession = product === 'assessment_strategy_bundle' || product === 'assessment_blueprint_forum' || product === 'strategy_session_addon' || product === 'blueprint_addon' || product === 'blueprint_addon_forum';
       if (session.payment_status === 'paid') {
         const deliveries = [];
         if (deliversAssessment) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_PURCHASE_FORM_URL));

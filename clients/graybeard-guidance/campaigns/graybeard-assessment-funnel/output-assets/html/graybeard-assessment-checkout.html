@@ -117,6 +117,11 @@
     }
     .upsell-bump:hover { background: #fff9e6; }
     .upsell-bump.selected { background: #fff9e6; box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.35); }
+    .forum-bump { border-color: var(--brick); background:#fff; }
+    .forum-bump:hover, .forum-bump.selected { background:#fff7f5; }
+    .forum-bump.selected { box-shadow:0 0 0 3px rgba(140,47,38,0.22); }
+    .forum-bump.locked { opacity:0.78; background:#f9fafb; border-color:#9ca3af; cursor:default; }
+    .forum-bump.locked:hover { background:#f9fafb; }
     .upsell-bump input[type="checkbox"] {
       width: 1.35rem;
       height: 1.35rem;
@@ -162,7 +167,7 @@
 
   <main class="max-w-5xl mx-auto px-4 py-8 md:py-12">
 
-    <h1 class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left">You're One Step Away From Clarity</h1>
+    <h1 class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left">Turn This Crossroads Into a Clearer Next Step</h1>
     <p class="text-muted text-lg mb-8 text-center md:text-left" style="color:#4a4a4a;">Start with your name and email on the left. Your secure Stripe checkout unlocks on the right once Step 1 is complete.</p>
 
     <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
@@ -192,7 +197,7 @@
           <div>
             <label class="label" for="email">Email Address <span style="color:#8C2F26;">*</span></label>
             <input type="email" id="email" name="email" class="field" required placeholder="you@email.com" autocomplete="email">
-            <p class="text-base mt-1.5" style="color:#6b7280;">Your assessment instructions and blueprint updates go here.</p>
+            <p class="text-base mt-1.5" style="color:#6b7280;">Use the email you actually check. Revolutionary advice, we know.</p>
           </div>
           <p id="step1-error" class="error-msg">Please enter your first name, last name, and a valid email.</p>
           <p id="step1-success" class="success-msg">✓ Got it — payment is now unlocked on the right.</p>
@@ -218,32 +223,32 @@
               <span id="step2-badge" class="step-badge waiting">2</span>
               <div>
                 <h2 class="text-xl font-bold">Payment</h2>
-                <p class="text-base" style="color:#6b7280;">The Graybeard Assessment — $199</p>
+                <p class="text-base" style="color:#6b7280;">The Assessment — $199</p>
               </div>
             </div>
 
             <div class="flex gap-4 items-start mb-5 pb-5 border-b border-gray-100">
               <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 font-bold text-xl text-white" style="background:#2B2B2B;">G</div>
               <div>
-                <p class="font-bold text-lg leading-tight">The Graybeard Assessment</p>
-                <p class="text-base" style="color:#6b7280;">The Graybeard Assessment · Master Document in 5–7 days</p>
+                <p class="font-bold text-lg leading-tight">Your Assessment</p>
+                <p class="text-base" style="color:#6b7280;">Guided conversation · personalized Assessment within three business days</p>
               </div>
             </div>
 
             <ul class="space-y-2 text-base mb-5" style="color:#4a4a4a;">
               <li class="flex gap-2"><span style="color:#D4A017;">✓</span> 60-minute guided conversation</li>
-              <li class="flex gap-2"><span style="color:#D4A017;">✓</span> Your Master Document — what you bring, what may fit, and what to explore next</li>
+              <li class="flex gap-2"><span style="color:#D4A017;">✓</span> Your Assessment — what you bring, what may fit, and what to explore next</li>
               <li class="flex gap-2"><span style="color:#D4A017;">✓</span> Top expertise areas mapped and ranked</li>
               <li class="flex gap-2"><span style="color:#D4A017;">✓</span> One-time payment — no subscription</li>
             </ul>
 
             <div id="order-lines">
               <div class="line-item">
-                <span>The Graybeard Assessment</span>
+                <span>The Assessment</span>
                 <span class="font-semibold">$199.00</span>
               </div>
               <div id="upsell-line" class="line-item hidden">
-                <span>Blueprint Strategy Session</span>
+                <span>The Blueprint</span>
                 <span class="font-semibold">$498.00</span>
               </div>
             </div>
@@ -254,33 +259,47 @@
             </div>
           </div>
 
-          <!-- ORDER BUMP — Blueprint Strategy Session -->
+          <!-- ORDER BUMP — Graybeard Blueprint -->
           <div id="upsell-bump" class="upsell-bump payment-interactive" role="group" aria-labelledby="upsell-title">
             <label class="flex gap-3 items-start cursor-pointer" style="cursor:pointer;">
               <input type="checkbox" id="upsell-checkbox" name="add_strategy_session" value="bundle_697">
               <div>
                 <p id="upsell-title" class="font-bold text-lg leading-snug mb-1" style="color:#121212;">
-                  Yes — Add the Blueprint Strategy Session
+                  Yes — Add the Blueprint
                   <span class="upsell-save">Save $200</span>
                 </p>
                 <p class="text-base mb-2" style="color:#4a4a4a;">
-                  After your Master Document arrives, sit down with <strong>Matt</strong> for 60 minutes. You'll choose what resonated from your options and receive a written <strong>90-Day Action Plan</strong> — concrete steps, not more possibilities.
+                  After your Assessment is approved, continue into a second conversation with <strong>Ben</strong>. He brings forward what you already shared, so you do not have to start again. The result is a human-reviewed <strong>90-Day Blueprint</strong> with concrete actions and small experiments—not another pile of possibilities.
                 </p>
                 <ul class="text-base space-y-1 mb-2" style="color:#4a4a4a; padding-left:0; list-style:none;">
-                  <li>✓ Matt reads your Master Document before the call</li>
-                  <li>✓ Live 1:1 — turn options into a chosen direction</li>
-                  <li>✓ Written 90-Day Action Plan after your session</li>
-                  <li>✓ <strong>100% credits</strong> toward our premium group coaching program when it launches</li>
+                  <li>✓ Your Assessment becomes the starting point</li>
+                  <li>✓ Ben confirms he has the right person and the right information</li>
+                  <li>✓ Human-reviewed written 90-Day Blueprint after your conversation</li>
+                  <li>✓ Option to add your first 30 days in the Graybeard Forum free</li>
                 </ul>
-                <p class="text-base font-bold" style="color:#8C2F26;">$697 total for the Assessment + Strategy Session <span style="font-weight:400; color:#6b7280;">($498 added to your $199 Assessment)</span></p>
+                <p class="text-base font-bold" style="color:#8C2F26;">$697 total for the Assessment + Blueprint <span style="font-weight:400; color:#6b7280;">($498 optional upgrade added to your standalone $199 Assessment)</span></p>
                 <a href="graybeard-blueprint-strategy-session.html" target="_blank" class="text-base font-semibold" style="color:#8C2F26;" onclick="event.stopPropagation();">Read full details →</a>
+              </div>
+            </label>
+          </div>
+
+          <!-- OPTIONAL FORUM TRIAL — visible throughout; enabled with Blueprint -->
+          <div id="forum-bump" class="upsell-bump forum-bump payment-interactive locked" role="group" aria-labelledby="forum-title" aria-hidden="false">
+            <label class="flex gap-3 items-start cursor-pointer" style="cursor:pointer;">
+              <input type="checkbox" id="forum-checkbox" name="add_forum_trial" value="forum_trial_30" disabled>
+              <div>
+                <p id="forum-title" class="font-bold text-lg leading-snug mb-1" style="color:#121212;">Yes — Include My First 30 Days in the Graybeard Forum Free</p>
+                <p class="text-base mb-2" style="color:#4a4a4a;">Bring your 90-Day Blueprint into a private community with shared resources, practical help, and other people figuring out their own next chapter. It is easier—and generally more enjoyable—than doing all of this alone.</p>
+                <p id="forum-availability-note" class="text-base font-bold mb-2" style="color:#8C2F26;">Available when you add the Blueprint above.</p>
+                <p class="text-base font-bold mb-1" style="color:#8C2F26;">$0 today for the Forum · then $69/month beginning after the 30-day trial</p>
+                <p class="text-base" style="color:#6b7280; font-size:0.9375rem;">Cancel anytime before the trial ends to avoid the first $69 charge. If you continue, the subscription renews monthly until canceled. By checking this box and completing checkout, you authorize recurring billing after the free trial.</p>
               </div>
             </label>
           </div>
 
           <!-- Not for everyone note -->
           <p class="text-base text-center payment-interactive" style="color:#6b7280; font-size:0.9375rem;">
-            The session is optional — and intentionally selective. The Assessment alone delivers real value.
+            The Blueprint is optional. The Assessment alone delivers real value; the Blueprint is for people ready to turn clarity into a focused 90-day course of action.
           </p>
 
           <!-- Secure Stripe Checkout handoff -->
@@ -301,7 +320,7 @@
               Total today: <span id="pay-amount">$199</span> — you'll complete payment securely on Stripe
             </p>
 
-            <p class="text-base text-center mt-2" style="color:#9ca3af;">One-time charge. No hidden fees.</p>
+            <p id="billing-frequency-note" class="text-base text-center mt-2" style="color:#9ca3af;">One-time charge. No hidden fees.</p>
             <p class="text-base text-center mt-2" style="color:#6b7280; font-size:0.9375rem;">
               <strong>Billing note:</strong> Your receipt or card statement may show <strong>Digital Access Inc.</strong> or <strong>Digital Access Pro</strong>, the company operating Graybeard Guidance.
             </p>
@@ -312,8 +331,8 @@
             <p class="font-bold text-base mb-2" style="color:#121212;">What happens after you pay:</p>
             <ol class="text-base space-y-1 list-decimal list-inside" style="color:#4a4a4a;">
               <li>Confirmation email to the address you provided</li>
-              <li>Link to schedule your 60-minute guided conversation</li>
-              <li>Your personalized Master Document within 5–7 days — what you bring, what may fit, and what to explore next</li>
+              <li>Immediate access to your guided Assessment conversation</li>
+              <li>Your personalized Assessment within three business days — what you bring, what may fit, and what to explore next</li>
             </ol>
           </div>
 
@@ -326,11 +345,15 @@
   <footer class="py-8 px-6 text-center text-base" style="background:#121212; color:rgba(247,245,240,0.5);">
     <p class="font-bold mb-1" style="color:#F7F5F0;">The Graybeard Project · Graybeard Guidance</p>
     <p>Questions? <a href="mailto:matt@graybeardguidance.com" style="color:#D4A017;">matt@graybeardguidance.com</a></p>
-    <p class="mt-4 max-w-xl mx-auto text-sm" style="color:rgba(247,245,240,0.4);">One-time purchase of $199. Individual results vary. See earnings disclaimer on sales page.</p>
+    <p class="mt-3"><a href="privacy.html" style="color:#D4A017;">Privacy</a> · <a href="terms.html" style="color:#D4A017;">Terms</a> · <a href="refund-policy.html" style="color:#D4A017;">Refund Policy</a> · <a href="contact.html" style="color:#D4A017;">Contact</a></p>
+    <p class="mt-4 max-w-xl mx-auto text-sm" style="color:rgba(247,245,240,0.4);">Graybeard Guidance is operated by Digital Access Inc., a North Carolina corporation. Individual results vary. Forum enrollment, when selected, renews at $69/month after the 30-day free trial until canceled.</p>
   </footer>
 
   <script>
     (function () {
+      // Checkout behavior is maintained in graybeard-assessment-checkout.js.
+      // Keep this legacy block inert so controls are never bound twice.
+      return;
       var step1Complete = false;
       var panel = document.getElementById('payment-panel');
       var continueBtn = document.getElementById('continue-btn');

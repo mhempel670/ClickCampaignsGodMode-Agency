@@ -16,6 +16,10 @@
   var upsellLine = document.getElementById('upsell-line');
   var orderTotal = document.getElementById('order-total');
   var payAmount = document.getElementById('pay-amount');
+  var forumCheckbox = document.getElementById('forum-checkbox');
+  var forumBump = document.getElementById('forum-bump');
+  var forumAvailabilityNote = document.getElementById('forum-availability-note');
+  var billingFrequencyNote = document.getElementById('billing-frequency-note');
 
   function formatMoney(value) {
     return '$' + value.toFixed(2).replace(/\.00$/, '');
@@ -23,22 +27,42 @@
 
   function updateOrderTotal() {
     var withBundle = upsellCheckbox && upsellCheckbox.checked;
+    if (!withBundle && forumCheckbox) forumCheckbox.checked = false;
+    var withForum = withBundle && forumCheckbox && forumCheckbox.checked;
     var total = withBundle ? 697 : 199;
     if (upsellLine) upsellLine.classList.toggle('hidden', !withBundle);
     if (upsellBump) upsellBump.classList.toggle('selected', withBundle);
+    if (forumBump) {
+      forumBump.classList.toggle('locked', !withBundle);
+      forumBump.classList.toggle('selected', withForum);
+      forumBump.setAttribute('aria-hidden', 'false');
+    }
+    if (forumCheckbox) forumCheckbox.disabled = !withBundle;
+    if (forumAvailabilityNote) {
+      forumAvailabilityNote.textContent = withBundle
+        ? 'Optional — check the box if you would like to include the Forum trial.'
+        : 'Available when you add the Blueprint above.';
+    }
     if (orderTotal) orderTotal.textContent = formatMoney(total) + '.00';
     if (payAmount) payAmount.textContent = formatMoney(total);
+    if (billingFrequencyNote) {
+      billingFrequencyNote.textContent = withForum
+        ? 'Today: $697 one time. Forum: $0 for 30 days, then $69/month until canceled.'
+        : 'One-time charge. No hidden fees.';
+    }
+  }
+
+  if (forumCheckbox && forumBump) {
+    forumCheckbox.addEventListener('change', updateOrderTotal);
   }
 
   if (upsellCheckbox && upsellBump) {
     upsellCheckbox.addEventListener('change', updateOrderTotal);
-    upsellBump.addEventListener('click', function (event) {
-      if (event.target.tagName !== 'A' && event.target.type !== 'checkbox') {
-        upsellCheckbox.checked = !upsellCheckbox.checked;
-        updateOrderTotal();
-      }
-    });
   }
+
+  var selectedProduct = new URLSearchParams(window.location.search).get('product');
+  if (upsellCheckbox) upsellCheckbox.checked = selectedProduct === 'bundle';
+  updateOrderTotal();
 
   function getFields() {
     return {
@@ -98,9 +122,10 @@
       ok.classList.remove('show');
       return;
     }
-    continueBtn.disabled = true;
-    continueBtn.textContent = 'Saving your information…';
-    subscribeLead(getFields()).catch(function () {}).then(unlockPayment);
+    var fields = getFields();
+    unlockPayment();
+    // Lead capture is helpful but must never block a buyer from reaching payment.
+    subscribeLead(fields).catch(function () {});
   }, true);
 
   checkoutButton.addEventListener('click', function (event) {
@@ -117,7 +142,8 @@
         firstName: fields.first,
         lastName: fields.last,
         email: fields.email,
-        product: upsellCheckbox && upsellCheckbox.checked ? 'assessment_strategy_bundle' : 'assessment'
+        product: upsellCheckbox && upsellCheckbox.checked ? 'assessment_strategy_bundle' : 'assessment',
+        includeForum: Boolean(upsellCheckbox && upsellCheckbox.checked && forumCheckbox && forumCheckbox.checked)
       })
     })
       .then(function (response) {

@@ -27,7 +27,7 @@ Underneath it all, this is a practical way to take stock of what 30 or 40 years 
 
 ## What you'll get after this conversation
 
-A personalized Master Document designed to reveal credible possibilities, spark curiosity, and create useful direction. It contains:
+A personalized Graybeard Assessment designed to reveal credible possibilities, spark curiosity, and create useful direction. It contains:
 
 - **Part I:** Your Experience & Wisdom Map
 - **Part II:** Your Next-Chapter Possibility Portfolio
@@ -35,7 +35,7 @@ A personalized Master Document designed to reveal credible possibilities, spark 
 - **Part IV:** Your Communication & Personal Brand Foundation
 - **Part V:** Your Questions & Low-Risk Next Steps
 
-The Master Document is not a forced business plan, a final answer, or a generic list. It is a customized first look at what you bring, what may fit, and what deserves exploration next. It may include paid work, service, employment, business, a deliberately simple role, a blend, or continued exploration.
+The Graybeard Assessment is not a forced business plan, a final answer, or a generic list. It is a customized first look at what you bring, what may fit, and what deserves exploration next. It may include paid work, service, employment, business, a deliberately simple role, a blend, or continued exploration.
 
 **Time commitment:** Around 60 minutes.
 
@@ -43,7 +43,7 @@ And yes, talking to a computer about your life, work, and whatever has been ratt
 
 **Note:** You'll also receive an email with a link to this page if you need to come back and do this later. Any issues please email matt@graybeardguidance.com
 
-**Note:** You and the Graybeard team will receive a transcript when you're complete. We'll process it with prompts developed specifically for this process and deliver your personalized Master Document within **5–7 days**.
+**Note:** You and the Graybeard team will receive a transcript when you're complete. We'll process it with prompts developed specifically for this process and deliver your personalized Graybeard Assessment within **three business days**.
 
 **IMPORTANT:** This works best on a **laptop**. The AI voice agent opens in a side panel when the page loads. Pull that window out from your other tabs so you can see this reference guide alongside the voice agent. When ready, click **Start conversation** in the widget and talk naturally.
 
