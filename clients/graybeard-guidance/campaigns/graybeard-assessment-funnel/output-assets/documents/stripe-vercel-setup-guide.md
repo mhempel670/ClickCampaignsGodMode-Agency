@@ -5,7 +5,7 @@
 Stripe is connected in two places:
 
 1. **Stripe Dashboard:** Create the products and prices.
-2. **Vercel Project Settings:** Store the secret Stripe key and the four Stripe Price IDs as encrypted environment variables.
+2. **Vercel Project Settings:** Store the secret Stripe key as an encrypted environment variable.
 
 No secret keys belong in the HTML, ClickCampaigns assets, or GitHub repository.
 
@@ -19,10 +19,9 @@ Create these prices in Stripe:
 |---|---:|---|
 | The Graybeard Assessment | $199 | Assessment by itself |
 | Assessment + Graybeard Blueprint | $697 one time | Combined checkout package |
-| Graybeard Blueprint Add-On | $498 one time | Offered after a confirmed $199 Assessment purchase |
 | Graybeard Forum | $69/month recurring | Optional 30-day free trial available only with the Blueprint |
 
-The $498 add-on makes the participant's total investment $697. It is not a $697 charge on top of the Assessment.
+The buyer makes one product choice before payment. There is no post-purchase Blueprint upgrade: Assessment-only buyers pay $199, and complete Assessment + Blueprint buyers pay $697.
 
 ## Vercel environment variables
 
@@ -30,10 +29,6 @@ Add the following under the production Vercel project's environment-variable set
 
 ```text
 STRIPE_SECRET_KEY=sk_live_...
-STRIPE_PRICE_ASSESSMENT=price_...
-STRIPE_PRICE_ASSESSMENT_STRATEGY_BUNDLE=price_...
-STRIPE_PRICE_STRATEGY_ADDON=price_...
-STRIPE_PRICE_FORUM_MONTHLY=price_...
 PUBLIC_SITE_URL=https://graybeardassessment.com
 ```
 
@@ -47,14 +42,14 @@ Create the Forum price as a recurring monthly Stripe Price. The application appl
 4. The buyer completes payment on Stripe's secure hosted checkout.
 5. Stripe returns the buyer to the thank-you page with the Checkout Session ID.
 
-If the buyer purchased only the $199 Assessment, the thank-you-page button sends that paid Session ID to `/api/create-addon-session`. The server verifies the original Assessment payment before creating the $498 add-on checkout. The buyer may also explicitly add the 30-day Forum trial from that upgrade offer.
+The purchase choice is final at checkout. Assessment-only buyers continue through Assessment delivery. Buyers whose Stripe metadata confirms the complete package receive Blueprint access only after their Assessment has been approved.
 
 ## Still required before launch
 
-- Create the four Stripe prices, including the recurring $69/month Forum price.
+- Confirm the $199 Assessment, $697 complete package, and recurring $69/month Forum pricing in Stripe.
 - Add the test environment variables to Vercel.
 - Enable Stripe's trial-ending reminder emails and customer subscription-management portal.
-- Deploy and complete test purchases for the $199 Assessment, $697 bundle, $697 bundle plus Forum trial, $498 post-purchase add-on, and $498 add-on plus Forum trial.
+- Deploy and complete test purchases for the $199 Assessment, $697 complete package, and $697 package plus Forum trial.
 - Add a Stripe webhook for authoritative fulfillment. The webhook should respond to `checkout.session.completed`, record the purchase, and trigger the correct confirmation/delivery email.
 - Decide which email/CRM system will send the delivery email and retain buyer records. Stripe and Vercel handle payment, but they do not replace a complete email/CRM workflow by themselves.
 - After successful test-mode fulfillment, switch Vercel to the live Stripe key and live Price IDs, redeploy, and complete one low-risk live purchase.

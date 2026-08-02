@@ -13,7 +13,8 @@
   var ok = document.getElementById('step1-success');
   var upsellCheckbox = document.getElementById('upsell-checkbox');
   var upsellBump = document.getElementById('upsell-bump');
-  var upsellLine = document.getElementById('upsell-line');
+  var selectedProductName = document.getElementById('selected-product-name');
+  var selectedProductPrice = document.getElementById('selected-product-price');
   var orderTotal = document.getElementById('order-total');
   var payAmount = document.getElementById('pay-amount');
   var forumCheckbox = document.getElementById('forum-checkbox');
@@ -30,7 +31,8 @@
     if (!withBundle && forumCheckbox) forumCheckbox.checked = false;
     var withForum = withBundle && forumCheckbox && forumCheckbox.checked;
     var total = withBundle ? 697 : 199;
-    if (upsellLine) upsellLine.classList.toggle('hidden', !withBundle);
+    if (selectedProductName) selectedProductName.textContent = withBundle ? 'Assessment + Blueprint' : 'The Assessment';
+    if (selectedProductPrice) selectedProductPrice.textContent = withBundle ? '$697.00' : '$199.00';
     if (upsellBump) upsellBump.classList.toggle('selected', withBundle);
     if (forumBump) {
       forumBump.classList.toggle('locked', !withBundle);

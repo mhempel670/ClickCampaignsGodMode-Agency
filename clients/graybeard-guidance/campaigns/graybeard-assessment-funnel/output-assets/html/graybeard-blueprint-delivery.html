@@ -61,9 +61,13 @@
     <p class="laptop-note"><strong>Best experienced on a laptop.</strong> Keep this conversation guide open on the left while you talk with Ben in the voice-agent panel on the right.</p>
   </header>
 
-  <iframe id="audio_iframe" src="https://widget.synthflow.ai/widget/v3/799e771d-46d1-401c-9f23-0b8d099fc1fc/1765572009224x604092604846103600" allow="microphone" title="Graybeard Blueprint AI voice agent" scrolling="no"></iframe>
+  <iframe id="audio_iframe" data-review-src="https://widget.synthflow.ai/widget/v3/799e771d-46d1-401c-9f23-0b8d099fc1fc/1765572009224x604092604846103600" allow="microphone" title="Graybeard Blueprint AI voice agent" scrolling="no" style="display:none;"></iframe>
 
   <main class="guide-main">
+    <section id="private-access-notice" class="card notice">
+      <h2>Private Purchaser Access Required</h2>
+      <p style="margin-bottom:0;">The Blueprint conversation opens only from the unique access link emailed to an eligible Assessment + Blueprint purchaser after the Assessment has been approved. If you purchased the complete package and have not received that email, contact <a href="mailto:matt@graybeardguidance.com" style="color:var(--brick);">matt@graybeardguidance.com</a>.</p>
+    </section>
     <div class="mobile-agent-note"><strong>On a phone?</strong> The voice agent appears above this guide. A laptop provides the best side-by-side experience.</div>
 
     <section class="card notice">
@@ -139,5 +143,18 @@
     <small>Operated by Digital Access Inc., a North Carolina corporation.</small>
   </footer>
   <script src="graybeard-review-mode.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('review') !== '1') return;
+      var frame = document.getElementById('audio_iframe');
+      var notice = document.getElementById('private-access-notice');
+      if (frame) {
+        frame.src = frame.getAttribute('data-review-src');
+        frame.style.display = 'block';
+      }
+      if (notice) notice.style.display = 'none';
+    })();
+  </script>
 </body>
 </html>

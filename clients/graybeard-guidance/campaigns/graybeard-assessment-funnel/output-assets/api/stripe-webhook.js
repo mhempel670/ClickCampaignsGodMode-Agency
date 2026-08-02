@@ -73,11 +73,11 @@ async function handler(req, res) {
       const session = event.data?.object || {};
       const product = session.metadata?.product;
       const deliversAssessment = product === 'assessment' || product === 'assessment_strategy_bundle' || product === 'assessment_blueprint_forum';
-      const includesStrategySession = product === 'assessment_strategy_bundle' || product === 'assessment_blueprint_forum' || product === 'strategy_session_addon' || product === 'blueprint_addon' || product === 'blueprint_addon_forum';
+      const includesBlueprint = product === 'assessment_strategy_bundle' || product === 'assessment_blueprint_forum';
       if (session.payment_status === 'paid') {
         const deliveries = [];
         if (deliversAssessment) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_PURCHASE_FORM_URL));
-        if (includesStrategySession) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_STRATEGY_FORM_URL));
+        if (includesBlueprint) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_STRATEGY_FORM_URL));
         await Promise.all(deliveries);
       }
     }
