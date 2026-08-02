@@ -154,16 +154,35 @@
       padding-top: 1rem;
       margin-top: 1rem;
     }
+    .page-shell { width:100%; max-width:62rem; margin:0 auto; }
+    .intro-copy { max-width:46rem; margin-left:auto; margin-right:auto; }
+    .standard-card { max-width:52rem; margin-left:auto; margin-right:auto; }
+    .founder-letter { max-width:60rem; margin-left:auto; margin-right:auto; padding:clamp(1.5rem,4vw,3rem); }
+    .founder-intro { display:grid; grid-template-columns:minmax(220px,280px) minmax(0,1fr); gap:clamp(1.5rem,4vw,2.75rem); align-items:start; }
+    .founder-photo { width:100%; display:block; border-radius:0.85rem; aspect-ratio:4/5; object-fit:cover; object-position:center top; box-shadow:0 10px 28px rgba(18,18,18,0.13); }
+    .founder-opening h2 { font-size:clamp(1.65rem,3vw,2.15rem); margin-top:0; }
+    .founder-body { max-width:46rem; margin:1.5rem auto 0; }
+    .founder-letter p { font-size:1.1875rem !important; line-height:1.78 !important; }
+    .thank-you-page .text-base { font-size:1.125rem !important; line-height:1.72 !important; }
+    .thank-you-page .text-lg { font-size:1.25rem !important; }
+    .thank-you-page h2 { line-height:1.3; }
+    .thank-you-page .founder-letter p { font-size:1.1875rem !important; line-height:1.78 !important; }
+    @media (max-width:700px) {
+      .founder-intro { grid-template-columns:1fr; }
+      .founder-photo { max-width:20rem; margin:0 auto; }
+      .founder-opening { text-align:left; }
+      .founder-letter p { font-size:1.125rem !important; }
+    }
   </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col">
+<body class="thank-you-page antialiased min-h-screen flex flex-col">
 
   <div style="background:#121212;" class="text-white text-center py-2.5 px-4 font-semibold text-base">
     Order Confirmed — The Graybeard Project
   </div>
 
   <main class="flex-1 px-6 py-12 md:py-16">
-    <div class="max-w-xl w-full mx-auto text-center">
+    <div class="page-shell text-center">
 
       <div class="check-circle">✓</div>
 
@@ -173,12 +192,12 @@
         Your Order Is Complete.
       </h1>
 
-      <p class="text-lg md:text-xl mb-8 leading-relaxed" style="color:#4a4a4a;">
+      <p class="intro-copy text-lg md:text-xl mb-8 leading-relaxed" style="color:#4a4a4a;">
         We've received your payment for <strong>The Graybeard Assessment</strong>. You're in.
       </p>
 
       <!-- NEXT STEPS — always first -->
-      <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8 md:p-10 text-left mb-8">
+      <div class="standard-card bg-white rounded-2xl shadow-md border border-gray-100 p-8 md:p-10 text-left mb-8">
         <h2 class="text-xl font-bold mb-4 text-center">Check Your Email — Next Steps Are There</h2>
         <p class="text-base mb-4" style="color:#4a4a4a;">
           Within the next few minutes, look for an email from <strong>Graybeard Guidance</strong> (<a href="mailto:matt@graybeardguidance.com" style="color:#8C2F26;">matt@graybeardguidance.com</a>).
@@ -190,66 +209,36 @@
           <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">1.</span><span>Open the email and click <strong>"Access Your Assessment"</strong></span></li>
           <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">2.</span><span>Follow the Conversation Reference Guide — keep it open alongside the voice agent</span></li>
           <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">3.</span><span>Start your guided conversation when you're ready — on your schedule</span></li>
-          <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">4.</span><span>Within 5–7 days, your <strong>Master&nbsp;Document</strong> arrives — a clearer view of what you bring, personalized possibilities, and practical ways to explore what resonates</span></li>
+          <li class="flex gap-3 items-start"><span style="color:#D4A017;" class="font-bold flex-shrink-0">4.</span><span>Within three business days, your <strong>Assessment</strong> arrives — a clearer view of what you bring, personalized possibilities, and practical ways to explore what resonates</span></li>
         </ul>
       </div>
 
-      <!-- MATT VIDEO — everyone sees this -->
-      <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8 text-left mb-8">
-        <h2 class="text-xl font-bold mb-2 text-center">A Quick Hello From Matt</h2>
-        <p class="text-base text-center mb-5" style="color:#4a4a4a;">
-          Real person. Same process you're about to go through. Two minutes — worth watching before you start.
-        </p>
-        <div class="video-wrap" id="matt-video-wrap"
-          data-youtube-id="HkgtyBFRNR8">
-          <!-- Player injected by script: self-hosted MP4 (best) or click-to-play YouTube -->
+      <!-- A HUMAN WELCOME — intentionally simple; no booking request -->
+      <div class="founder-letter bg-white rounded-2xl shadow-md border border-gray-100 text-left mb-8">
+        <p class="font-bold uppercase tracking-widest mb-6 text-center" style="color:#D4A017; font-size:0.9375rem !important;">From the Desk of Matt Hempel</p>
+        <div class="founder-intro">
+          <img src="../images/matt-hempel-headshot.jpg" alt="Matt Hempel, founder of Graybeard Guidance" class="founder-photo">
+          <div class="founder-opening">
+            <h2 class="font-bold mb-4">Thank You—and Welcome.</h2>
+            <p class="mb-4" style="color:#4a4a4a;">I'm genuinely glad you're here. Thank you for trusting us with this part of your journey and for giving yourself the time to take a clear-eyed look at what might come next.</p>
+            <p class="mb-0" style="color:#4a4a4a;">I built this after reaching a crossroads of my own. I still wanted to contribute and do work that mattered, but I needed a practical way to understand what decades of experience added up to—and what it might make possible next.</p>
+          </div>
         </div>
-        <p class="text-center mt-3 mb-0" style="color:#6b7280; font-size:1rem;">
-          <a id="matt-video-fallback" class="video-fallback-link" href="https://youtu.be/HkgtyBFRNR8" target="_blank" rel="noopener noreferrer">
-            Video not playing? Watch on YouTube
-          </a>
-        </p>
+        <div class="founder-body">
+            <p class="text-base mb-3" style="color:#4a4a4a;">That is why this Assessment exists. No one else has lived your decisions, setbacks, victories, relationships, or lessons. AI can help draw that experience out, organize it, and reveal patterns that may have become invisible—but your lived experience and judgment are the source.</p>
+            <p class="text-base mb-3" style="color:#4a4a4a;">My hope is that this moves you from “I know there is something here, but I cannot quite name it” toward clarity, confidence, and a firmer grasp of what you carry.</p>
+            <p class="text-base mb-3" style="color:#4a4a4a;">Take your time, tell the truth, and do not worry about sounding impressive. You have already done the hard part: you lived it.</p>
+            <p class="text-base mb-0 font-bold" style="color:#8C2F26;">— Matt Hempel<br><span style="font-weight:600; color:#6b7280;">Graybeard Guidance</span></p>
+        </div>
       </div>
 
-      <!-- OPTIONAL STRATEGY SESSION — everyone sees this, no conditions -->
-      <div class="upsell-box mb-8">
-        <h2 class="text-xl font-bold mb-3" style="color:#121212;">One Optional Thing</h2>
-        <p class="text-base mb-4" style="color:#4a4a4a;">
-          If you already added the <strong>Blueprint Strategy Session</strong> at checkout — great. I look forward to sitting down with you once your Master Document is ready.
-        </p>
-        <p class="text-base mb-4" style="color:#4a4a4a;">
-          If you didn't, and you'd like 60 minutes with me to take what resonated from your Master Document and turn it into a concrete <strong>90-Day Action Plan</strong> — you can still add it here. No pressure either way. The Assessment delivers real value on its own.
-        </p>
-
-        <p class="text-base mb-4" style="color:#4a4a4a;">
-          60 minutes live with Matt · scheduled after your Master Document · written 90-Day Action Plan included
-        </p>
-
-        <p class="text-base font-bold text-center mb-3" style="color:#8C2F26;">Your Assessment + Strategy Session total is $697. Because you've already purchased the $199 Assessment, the remaining session price is $498.</p>
-        <button type="button" id="upsell-btn" class="cta block w-full py-4 rounded-lg text-lg uppercase tracking-wide text-center">
-          Add Strategy Session — $498
-        </button>
-        <p id="upsell-error" class="text-base text-center mt-3" style="display:none; color:#8C2F26;">We couldn't open checkout. Please refresh this page or email matt@graybeardguidance.com.</p>
-        <p class="text-base text-center mt-3" style="color:#9ca3af; font-size:0.9375rem;">
-          Secure checkout — takes about 60 seconds
-        </p>
-        <p class="text-base text-center mt-2" style="color:#6b7280; font-size:0.9375rem;">
-          <strong>Billing note:</strong> Your receipt or card statement may show <strong>Digital Access Inc.</strong> or <strong>Digital Access Pro</strong>, the company operating Graybeard Guidance.
-        </p>
-
-        <a href="graybeard-assessment-delivery.html" class="block w-full py-3 mt-4 rounded-lg text-base font-bold text-center" style="border:2px solid #8C2F26; color:#8C2F26; text-decoration:none;">
-          No Thanks — Continue to My Assessment
-        </a>
-        <p class="text-base text-center mt-2" style="color:#6b7280; font-size:0.9375rem;">
-          You can begin the Assessment now and decide about additional support later.
-        </p>
-
-        <p class="credit-note text-center">
-          Everything you invest today — the Assessment and this session — credits dollar-for-dollar toward our premium group coaching program when you're ready and when enrollment opens.
-        </p>
+      <div class="standard-card bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8 mb-8">
+        <h2 class="text-xl font-bold mb-3">Ready When You Are</h2>
+        <p class="text-base mb-5" style="color:#4a4a4a;">Your Assessment conversation is on demand—there is nothing to schedule. If your purchase includes the Blueprint, access follows after your Assessment has been reviewed and approved.</p>
+        <a href="graybeard-assessment-delivery.html" class="cta block w-full py-4 rounded-lg text-lg uppercase tracking-wide text-center">Start My Assessment →</a>
       </div>
 
-      <div class="rounded-xl p-5 mb-8 text-base text-left" style="background:#2B2B2B; color:#F7F5F0;">
+      <div class="standard-card rounded-xl p-5 mb-8 text-base text-left" style="background:#2B2B2B; color:#F7F5F0;">
         <p class="font-bold mb-2" style="color:#D4A017;">Don't see the email?</p>
         <p style="color:rgba(247,245,240,0.85);">Check spam or promotions. Still nothing after 15 minutes? Email us at <a href="mailto:matt@graybeardguidance.com" style="color:#D4A017;">matt@graybeardguidance.com</a> and we'll get you sorted.</p>
       </div>
@@ -264,15 +253,11 @@
   <footer class="py-8 px-6 text-center text-base" style="background:#121212; color:rgba(247,245,240,0.5);">
     <p class="font-bold mb-1" style="color:#F7F5F0; font-family:'Roboto Slab',Georgia,serif;">The Graybeard Project</p>
     <p>© 2026 The Graybeard Project · graybeardassessment.com</p>
+    <p><a href="privacy.html" style="color:#D4A017;">Privacy</a> · <a href="terms.html" style="color:#D4A017;">Terms</a> · <a href="refund-policy.html" style="color:#D4A017;">Refund Policy</a> · <a href="contact.html" style="color:#D4A017;">Contact</a></p>
+    <p>Operated by Digital Access Inc., a North Carolina corporation.</p>
   </footer>
 
   <script>
-    (function () {
-      if (new URLSearchParams(window.location.search).get('strategy_session') === 'added') {
-        window.location.replace('graybeard-assessment-delivery.html?strategy_session=added');
-      }
-    })();
-
     (function () {
       var wrap = document.getElementById('matt-video-wrap');
       if (!wrap) return;
@@ -356,37 +341,6 @@
       }
     })();
 
-    (function () {
-      var button = document.getElementById('upsell-btn');
-      var error = document.getElementById('upsell-error');
-      if (!button) return;
-
-      button.addEventListener('click', function () {
-        var originalSessionId = new URLSearchParams(window.location.search).get('session_id');
-        error.style.display = 'none';
-        button.disabled = true;
-        button.textContent = 'Opening Secure Checkout…';
-
-        fetch('/api/create-addon-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ originalSessionId: originalSessionId })
-        })
-          .then(function (response) {
-            if (!response.ok) return response.json().then(function (data) { throw new Error(data.error || 'Unable to start checkout.'); });
-            return response.json();
-          })
-          .then(function (data) {
-            if (!data.url) throw new Error('Stripe did not return a checkout URL.');
-            window.location.assign(data.url);
-          })
-          .catch(function () {
-            error.style.display = 'block';
-            button.disabled = false;
-            button.textContent = 'Add Strategy Session — $498';
-          });
-      });
-    })();
   </script>
 
   <script src="graybeard-review-mode.js"></script>

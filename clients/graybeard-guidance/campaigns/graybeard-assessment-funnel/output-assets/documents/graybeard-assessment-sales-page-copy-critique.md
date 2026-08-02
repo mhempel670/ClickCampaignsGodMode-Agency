@@ -9,7 +9,7 @@ Move seasoned professionals who are uncertain about their next chapter toward pu
 - Reframed the hero around the prospect's primary desire: clarity about what comes next.
 - Replaced the broad “the world needs your wisdom” headline with a more personal, curiosity-led discovery hook.
 - Removed the comparison with younger “experts” from the hero and replaced jargon with conversational language.
-- Made the Master Document tangible through specific contents and an illustrative preview.
+- Made the Graybeard Assessment tangible through specific contents and an illustrative preview.
 - Removed two unverified customer testimonials and replaced them with a restrained, unattributed summary of early beta feedback.
 - Reworked CTA language to describe the value of the next step.
 - Added factual post-purchase reassurance, technical-support guidance, and data-use guidance.
@@ -20,7 +20,7 @@ Move seasoned professionals who are uncertain about their next chapter toward pu
 - Audience: explicit and recognizable.
 - Dream outcome: clarity about the next chapter appears immediately.
 - Promise: specific and believable.
-- Mechanism: a 60-minute guided conversation leading to a personalized Master Document.
+- Mechanism: a 60-minute guided conversation leading to a personalized Graybeard Assessment.
 - Proof: limited to a careful beta-feedback statement; no fabricated individual claims remain.
 - CTA: singular and outcome-focused.
 - Risk: reduced with clear delivery timing, access instructions, support contact, and an honest promise.
@@ -28,7 +28,7 @@ Move seasoned professionals who are uncertain about their next chapter toward pu
 
 ## Future evidence opportunity
 
-As real customers complete the Assessment, collect permission-based quotes about the clarity they gained and show anonymized sample pages from completed Master Documents. Verified process proof should replace generalized beta feedback when available.
+As real customers complete the Assessment, collect permission-based quotes about the clarity they gained and show anonymized sample pages from completed Graybeard Assessments. Verified process proof should replace generalized beta feedback when available.
 
 ## Contribution-path expansion
 
@@ -38,4 +38,4 @@ The sales message now makes clear that business creation and monetization are op
 
 The page keeps paid, service, and blended possibilities explicit in the offer and FAQ while restoring the three deeper brand pillars: Health & Capability, Purpose & Meaningful Contribution, and Relationships & Connection. Audience-facing references to “men” and “man” were replaced with inclusive language while preserving The Graybeard Project name and its male-forward imagery.
 
-The FAQ now explains the post-Assessment support ladder accurately: independent use of the Master Document, an optional 60-minute Blueprint Strategy Session with a written 90-Day Action Plan, and future group/community and done-for-you services that are still in development and are not included in the Assessment.
+The FAQ now explains the post-Assessment support ladder accurately: independent use of the Graybeard Assessment, an optional 60-minute Blueprint Strategy Session with a written 90-Day Action Plan, and future group/community and done-for-you services that are still in development and are not included in the Assessment.

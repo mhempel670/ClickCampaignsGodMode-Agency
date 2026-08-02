@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Conversation Guide — The Graybeard Blueprint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#121212; --charcoal:#2b2b2b; --paper:#f7f5f0; --gold:#d4a017; --brick:#8c2f26; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:#292929; font:18px/1.7 'Source Sans 3',system-ui,sans-serif; }
+    h1,h2,h3 { font-family:'Roboto Slab',Georgia,serif; line-height:1.3; }
+    .top-bar { background:var(--charcoal); color:#fff; text-align:center; padding:.75rem 1rem; font-weight:600; font-size:1rem; }
+    .page-header { background:#fff; border-bottom:1px solid #e5e7eb; padding:1.75rem 1.5rem; text-align:center; }
+    .page-header .tag { color:var(--gold); font-size:.9375rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin-bottom:.4rem; }
+    .page-header h1 { font-size:clamp(1.85rem,4vw,2.5rem); margin:0 0 .6rem; color:var(--ink); }
+    .page-header p { max-width:42rem; margin:0 auto; color:#4a4a4a; font-size:1.125rem; }
+    .page-header .laptop-note { max-width:34rem; margin:1rem auto 0; padding:.8rem 1rem; background:#fef3c7; border:1px solid var(--gold); border-radius:.5rem; color:#292929; font-size:1rem; }
+    .guide-main { width:100%; max-width:52rem; margin:0 auto; padding:2rem 1.5rem 4rem; }
+    @media(min-width:900px) {
+      .guide-main { width:calc(100% - 432px); margin-left:auto; margin-right:432px; }
+    }
+    .card { background:#fff; border:1px solid rgba(0,0,0,.06); border-radius:.75rem; padding:1.6rem 1.8rem; margin-bottom:1.25rem; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+    .card h2 { margin:0 0 .85rem; color:var(--ink); font-size:1.5rem; }
+    .card h3 { margin:1.25rem 0 .4rem; font-size:1.15rem; }
+    .card p { margin-top:0; }
+    .notice { border-left:5px solid var(--gold); background:#fffef8; }
+    .guide-banner { background:#fff8dc; border:2px solid var(--gold); border-radius:.65rem; padding:1.25rem 1.35rem; margin-bottom:1.25rem; }
+    .guide-banner h2 { color:var(--brick); font-size:1.35rem; margin:0 0 .5rem; }
+    .guide-banner p { margin:0; }
+    .value-grid { display:grid; gap:.85rem; margin-top:1rem; }
+    @media(min-width:620px) { .value-grid { grid-template-columns:1fr 1fr; } }
+    .value-item { background:var(--paper); border-radius:.55rem; padding:1rem 1.1rem; }
+    .value-item strong { display:block; color:var(--brick); margin-bottom:.2rem; }
+    ul { padding-left:1.25rem; }
+    li { margin:.55rem 0; }
+    .sequence { list-style:none; padding:0; counter-reset:steps; }
+    .sequence li { counter-increment:steps; position:relative; padding-left:2.6rem; margin:1rem 0; }
+    .sequence li::before { content:counter(steps); position:absolute; left:0; top:.05rem; width:1.8rem; height:1.8rem; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--gold); color:var(--ink); font-weight:700; }
+    .human-review { background:var(--charcoal); color:#f7f5f0; }
+    .human-review h2 { color:#fff; }
+    .human-review p { color:rgba(247,245,240,.9); }
+    #audio_iframe { position:fixed; right:1rem; bottom:1rem; width:400px; height:550px; max-width:calc(100vw - 2rem); max-height:calc(100vh - 2rem); border:0; background:transparent; z-index:999; }
+    .mobile-agent-note { display:none; background:#fef3c7; border:1px solid var(--gold); border-radius:.5rem; padding:1rem; margin-bottom:1.25rem; }
+    @media(max-width:899px) {
+      .mobile-agent-note { display:block; }
+      #audio_iframe { position:relative; right:auto; bottom:auto; display:block; width:100%; height:520px; max-width:100%; margin:0 auto 1.5rem; }
+    }
+    footer { background:var(--ink); color:rgba(247,245,240,.65); text-align:center; padding:2rem 1.5rem; font-size:1rem; }
+    footer strong { color:#fff; }
+    footer a { color:var(--gold); }
+  </style>
+</head>
+<body>
+  <div class="top-bar">The Graybeard Blueprint · Your 90-Day Planning Conversation</div>
+
+  <header class="page-header">
+    <div class="tag">Product Two · From Clarity to Action</div>
+    <h1>Turn What You Learned Into a Direction You Can Act On</h1>
+    <p>Your Assessment helped reveal what you bring and which possibilities may fit. This second conversation helps you choose, go deeper, and build a practical 90-day plan around the direction that matters most.</p>
+    <p class="laptop-note"><strong>Best experienced on a laptop.</strong> Keep this conversation guide open on the left while you talk with Ben in the voice-agent panel on the right.</p>
+  </header>
+
+  <iframe id="audio_iframe" data-review-src="https://widget.synthflow.ai/widget/v3/799e771d-46d1-401c-9f23-0b8d099fc1fc/1765572009224x604092604846103600" allow="microphone" title="Graybeard Blueprint AI voice agent" scrolling="no" style="display:none;"></iframe>
+
+  <main class="guide-main">
+    <section id="private-access-notice" class="card notice">
+      <h2>Private Purchaser Access Required</h2>
+      <p style="margin-bottom:0;">The Blueprint conversation opens only from the unique access link emailed to an eligible Assessment + Blueprint purchaser after the Assessment has been approved. If you purchased the complete package and have not received that email, contact <a href="mailto:matt@graybeardguidance.com" style="color:var(--brick);">matt@graybeardguidance.com</a>.</p>
+    </section>
+    <div class="mobile-agent-note"><strong>On a phone?</strong> The voice agent appears above this guide. A laptop provides the best side-by-side experience.</div>
+
+    <section class="card notice">
+      <h2>You Are Not Starting Over</h2>
+      <p>Your Assessment is the foundation for this conversation. Ben, your AI conversation guide, will bring forward the strengths, priorities, possibilities, preferences, and open questions that emerged there.</p>
+      <p style="margin-bottom:0;"><strong>Ben will first confirm your name and that he has the correct Assessment.</strong> If he does not have it, stop the conversation rather than continuing with generic or invented information. Email <a href="mailto:matt@graybeardguidance.com" style="color:var(--brick);">matt@graybeardguidance.com</a> and we will get it corrected.</p>
+    </section>
+
+    <section class="guide-banner">
+      <h2>This Is Your Blueprint Conversation Guide</h2>
+      <p><strong>Keep this page front and center while you talk with Ben.</strong> It shows where the conversation is headed and what will be included in your written 90-Day Blueprint. You do not need polished answers. Bring your honest reactions, questions, constraints, and judgment. Pauses are allowed. So is changing your mind.</p>
+    </section>
+
+    <section class="card">
+      <h2>What Makes This Different From the Assessment</h2>
+      <p>The Assessment was intentionally expansive. It helped you see the accumulated value of your experience, recognize patterns, and consider credible next-chapter possibilities. The Blueprint is intentionally narrower and more concrete.</p>
+      <p>Here, you and Ben will look closely at the directions that resonated, challenge a few assumptions, identify what is realistic for your life, and choose where to place your attention now. The goal is not another heroic list of 47 things you <em>could</em> do. It is to decide what is worth doing next—and how to learn by doing it.</p>
+      <p style="margin-bottom:0;">This is where reflection becomes direction, and direction becomes a plan that fits your actual life. A novel concept, perhaps, but a useful one.</p>
+    </section>
+
+    <section class="card">
+      <h2>What You Will Work Through With Ben</h2>
+      <div class="value-grid">
+        <div class="value-item"><strong>Choose the strongest direction</strong>Clarify which opportunity best fits your goals, energy, desired contribution, obligations, and current season of life.</div>
+        <div class="value-item"><strong>Define a meaningful 90-day outcome</strong>Decide what useful progress should look like by the end of the next three months.</div>
+        <div class="value-item"><strong>Be honest about real-life limits</strong>Identify what must be true, what remains unknown, and what your time, energy, and responsibilities will realistically allow.</div>
+        <div class="value-item"><strong>Design low-risk experiments</strong>Choose small tests that create evidence before you make a large commitment of time, money, or identity.</div>
+        <div class="value-item"><strong>Translate experience into action</strong>Connect your knowledge, relationships, judgment, and strengths to the actual work ahead.</div>
+        <div class="value-item"><strong>Use AI as practical leverage</strong>Identify where technology can reduce friction in research, organizing, creating, testing, and implementation.</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>What Your Written 90-Day Blueprint Will Contain</h2>
+      <ol class="sequence">
+        <li><strong>Your chosen direction and 90-day outcome</strong><br>A concise statement of what you are pursuing now, why it fits, and what progress will mean.</li>
+        <li><strong>Three focused 30-day phases</strong><br>A practical sequence that moves from exploration and setup into real-world testing and informed next decisions.</li>
+        <li><strong>Weekly actions and commitments</strong><br>Specific, manageable steps that turn the plan into movement without creating another full-time job.</li>
+        <li><strong>Low-risk experiments</strong><br>For each test: what to try, why you are trying it, what evidence to watch, and what decision the evidence will inform.</li>
+        <li><strong>Risks, boundaries, and safeguards</strong><br>What could pull the plan off course, what you do not want to recreate, and the limits that protect your time and energy.</li>
+        <li><strong>Progress measures and decision points</strong><br>Simple signals that help you know whether to continue, adjust, pause, or choose another direction.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>How to Get the Most From This Conversation</h2>
+      <ul>
+        <li>Correct anything from the Assessment that no longer feels accurate.</li>
+        <li>Say what genuinely excites you—and what leaves you cold.</li>
+        <li>Be candid about time, money, health, family, technology, and other real constraints.</li>
+        <li>Ask Ben to slow down, go deeper, compare options, or explain his reasoning.</li>
+        <li>Prefer useful evidence and small tests over pressure to make one permanent decision.</li>
+      </ul>
+      <p style="margin-bottom:0;"><strong>You remain the decision-maker.</strong> Ben helps you think, organize, question assumptions, and plan. Your experience and judgment decide what belongs. Ben is helpful; he is not the boss of you.</p>
+    </section>
+
+    <section class="card">
+      <h2>Start When You Are Ready</h2>
+      <p>This conversation is available on demand. No appointment is required. Allow microphone access, click <strong>Start conversation</strong>, and speak naturally.</p>
+      <p style="margin-bottom:0;">If you are interrupted, return later using the same name and email. Your completed sessions will be brought together for the written Blueprint.</p>
+    </section>
+
+    <section class="card human-review">
+      <h2>What Happens After the Conversation</h2>
+      <p>Your transcript and Assessment context are used to prepare the first draft of your 90-Day Blueprint. That draft is reviewed for accuracy, usefulness, internal consistency, and fidelity to what you actually said.</p>
+      <p style="margin-bottom:0;"><strong>No AI-generated draft is delivered automatically.</strong> Your written Blueprint is released only after an authorized human approver has reviewed and approved it.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Graybeard Guidance</strong><br>
+    <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund-policy.html">Refunds</a> · <a href="contact.html">Contact</a><br>
+    <small>Operated by Digital Access Inc., a North Carolina corporation.</small>
+  </footer>
+  <script src="graybeard-review-mode.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('review') !== '1') return;
+      var frame = document.getElementById('audio_iframe');
+      var notice = document.getElementById('private-access-notice');
+      if (frame) {
+        frame.src = frame.getAttribute('data-review-src');
+        frame.style.display = 'block';
+      }
+      if (notice) notice.style.display = 'none';
+    })();
+  </script>
+</body>
+</html>

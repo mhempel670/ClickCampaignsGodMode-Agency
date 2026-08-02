@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blueprint Strategy Session — From Options to Action Plan</title>
+  <title>The Graybeard Blueprint — Turn Clarity Into a 90-Day Plan</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -23,27 +23,43 @@
     }
     h1, h2, h3 { font-family: 'Roboto Slab', Georgia, serif; line-height: 1.25; }
     .cta {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: var(--gold);
       color: var(--ink);
       font-weight: 700;
       text-decoration: none;
+      text-align: center;
+      line-height: 1.25;
+      min-height: 3.75rem;
+      padding: 0.9rem 1.5rem;
+      border-radius: 0.75rem;
       transition: background 0.2s, transform 0.15s;
     }
     .cta:hover { background: #c49214; transform: translateY(-1px); }
     .cta-outline {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       border: 2px solid var(--brick);
       color: var(--brick);
       font-weight: 700;
       text-decoration: none;
-      padding: 0.85rem 1.75rem;
-      border-radius: 0.5rem;
+      text-align: center;
+      line-height: 1.25;
+      min-height: 3.75rem;
+      padding: 0.9rem 1.5rem;
+      border-radius: 0.75rem;
     }
+    .choice-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.85rem; max-width: 46rem; margin: 0 auto; }
+    .choice-buttons a { flex: 1 1 18rem; max-width: 22rem; }
+    .choice-buttons .button-main { display:block; font-size:1.05rem; }
+    .choice-buttons .button-detail { display:block; margin-top:0.2rem; font-size:0.9rem; font-weight:600; opacity:0.78; }
     .top-bar { background: var(--brick); color: #fff; text-align: center; padding: 0.75rem 1rem; font-weight: 600; font-size: 1rem; }
     .hero { background: var(--charcoal); color: #F7F5F0; padding: 3rem 1.5rem; text-align: center; }
-    .hero h1 { color: #fff; font-size: 2rem; max-width: 40rem; margin: 0 auto 1rem; }
-    .hero .sub { font-size: 1.2rem; color: rgba(247,245,240,0.9); max-width: 36rem; margin: 0 auto 1.5rem; }
+    .hero h1 { color: #fff; font-size: 2.15rem; max-width: 44rem; margin: 0 auto 1rem; }
+    .hero .sub { font-size: 1.2rem; color: rgba(247,245,240,0.9); max-width: 42rem; margin: 0 auto 1.5rem; }
     .price-tag { font-size: 2.5rem; font-weight: 700; color: var(--gold); font-family: 'Roboto Slab', Georgia, serif; }
     .container { max-width: 42rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
     .card {
@@ -70,100 +86,117 @@
 </head>
 <body>
 
-  <div class="top-bar">The Graybeard Assessment + Blueprint Strategy Session</div>
+  <div class="top-bar">The Graybeard Assessment + The Graybeard Blueprint</div>
 
   <section class="hero">
-    <p style="color:#D4A017; font-size:0.9375rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:1rem;">The Blueprint Strategy Session</p>
-    <h1>Your Master Document Gives You Options.<br>This Session Gives You a <span style="color:#D4A017;">Plan.</span></h1>
-    <p class="sub">60 minutes live with Matt — the founder who designed this process. Review what resonated from your Master Document, choose your direction, and receive a written <strong>90-Day Action Plan</strong> you can actually execute.</p>
+    <p style="color:#D4A017; font-size:0.9375rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:1rem;">Choose Your Graybeard Experience</p>
+    <h1>Would You Like to Turn Your Assessment Into a <span style="color:#D4A017;">Practical 90-Day Plan?</span></h1>
+    <p class="sub">Think of the Assessment as the wide-angle view: what you bring and which directions may fit. The Blueprint is the closer look—a second conversation and a second written document that help you choose a direction and map out the next 90 days.</p>
     <p class="price-tag">$697 Total</p>
-    <p style="color:rgba(247,245,240,0.7); font-size:1rem; margin-bottom:1.5rem;">Includes the $199 Graybeard Assessment and your 60-minute Blueprint Strategy Session.</p>
-    <a href="graybeard-assessment-checkout.html" class="cta px-8 py-4 rounded-lg text-lg uppercase tracking-wide">Get Assessment + Session — $697</a>
-    <p style="margin-top:1rem; font-size:0.9375rem; color:rgba(247,245,240,0.55);">Scheduled after your Master Document is delivered · Not for everyone — and that's intentional</p>
+    <p style="color:rgba(247,245,240,0.7); font-size:1rem; margin-bottom:1.5rem;">$697 includes both stages: the $199 Assessment, your Blueprint conversation with Ben, and the human-reviewed 90-Day Blueprint that follows.</p>
+    <div class="choice-buttons">
+      <a href="graybeard-assessment-checkout.html?product=bundle" class="cta"><span><span class="button-main">Choose Assessment + Blueprint</span><span class="button-detail">Complete experience · $697 total</span></span></a>
+      <a href="graybeard-assessment-checkout.html?product=assessment" class="cta-outline" style="border-color:#D4A017; color:#D4A017;"><span><span class="button-main">Continue With the Assessment Only</span><span class="button-detail">Assessment · $199</span></span></a>
+    </div>
+    <p style="margin-top:1rem; font-size:0.9375rem; color:rgba(247,245,240,0.7);">Both conversations are on demand. Start each one when it works for you—no appointment or scheduling required.</p>
   </section>
 
   <div class="container">
 
     <div class="card">
-      <h2>What the Assessment Gives You vs. What This Session Adds</h2>
-      <p>Your $199 Assessment produces a <strong>Master Document</strong> — a thorough, personalized first look at what you bring, which next-chapter possibilities may fit, how certain you are, and what deserves exploration. It also gives you a Communication &amp; Personal Brand Foundation: practical language for who you are now and how you want to show up. <strong>That's breadth — and it's valuable.</strong></p>
-      <p style="margin-bottom:0;">This session is where you go deeper. Matt takes what you <em>liked</em> from your Master Document — your strengths, preferences, what to avoid — and helps you build a <strong>concrete, customized 90-Day Action Plan</strong>. Not twelve ideas. One chosen direction with specific next steps. It's also a natural first step toward our <strong>premium group coaching program</strong> (in development) — where that plan gets built out and executed with support.</p>
+      <h2>Two Products. One Continuous Personal Journey.</h2>
+      <p>Your $199 purchase produces a thorough, personalized <strong>Assessment</strong>—a clear look at what you bring, which next-chapter possibilities may fit, and what deserves exploration. It also gives you practical language for who you are now and how you want to show up. <strong>That is the wide-angle view, and it is valuable on its own.</strong></p>
+      <p style="margin-bottom:0;"><strong>The Blueprint</strong> is where you zoom in. Ben, your AI conversation guide, brings the Assessment into the next conversation. Together, you confirm what still fits, correct what does not, choose a direction, and turn it into a usable 90-day plan. Nothing is carved in stone; the point is to move thoughtfully and learn what is real.</p>
     </div>
 
     <div class="vs-grid card" style="padding:1.5rem;">
       <div class="vs-box vs-without">
-        <strong>Without this session</strong>
+        <strong>With the Assessment alone</strong>
         <ul style="margin:0.75rem 0 0; padding-left:1.1rem; font-size:1rem;">
-          <li>Rich Master Document, no chosen path</li>
-          <li>Strong options, nothing committed</li>
-          <li>Curiosity fades in two weeks</li>
-          <li>Back to "I'll figure it out someday"</li>
+          <li>A useful Assessment with plenty to consider</li>
+          <li>Several options that may look equally possible</li>
+          <li>Questions that are hard to sort out alone</li>
+          <li>No outside perspective on what may fit</li>
         </ul>
       </div>
       <div class="vs-box vs-with">
-        <strong>With this session</strong>
+        <strong>With the Blueprint added</strong>
         <ul style="margin:0.75rem 0 0; padding-left:1.1rem; font-size:1rem;">
-          <li>One direction chosen together</li>
-          <li>What to ignore — clearly named</li>
-          <li>90-Day Action Plan in writing</li>
-          <li>Momentum while the fire is still lit</li>
+          <li>A direction narrowed around your real priorities</li>
+          <li>A defined outcome for the next 90 days</li>
+          <li>Weekly actions and low-risk experiments</li>
+          <li>Evidence and decision points for what to do next</li>
         </ul>
       </div>
     </div>
 
     <div class="card card-gold">
-      <h2>What You Get — Every Dollar Has a Job</h2>
+      <h2>What You Get</h2>
       <ul class="check">
-        <li><strong>Matt reads your Master Document before you meet</strong> — not cold, not generic. Your session starts with context.</li>
-        <li><strong>60-minute live 1:1 strategy session</strong> with Matt — founder, process designer, peer. Real conversation, not a script.</li>
-        <li><strong>Structured working session</strong> — we go through your Master Document together: what fits you, what doesn't, what matters for the next few years of this chapter — not just business, but life.</li>
-        <li><strong>Path selection</strong> — volunteer, part-time, consult, coach, teach, build, or stay put. We pick what fits <em>you</em>, not a template.</li>
-        <li><strong>Your 90-Day Action Plan</strong> (written deliverable) — customized steps based on your expertise, preferences, strengths, and what to avoid. The first phase of what our coaching program helps you execute.</li>
-        <li><strong>Follow-up summary email</strong> — decisions captured so nothing gets lost after the call.</li>
+        <li><strong>Your Assessment becomes the starting point</strong> — Ben brings its results into your Blueprint conversation so you do not have to begin again.</li>
+        <li><strong>A second conversation with Ben</strong> — the same warm, practical guide, now focused on helping you choose and move.</li>
+        <li><strong>A useful planning conversation</strong> — Ben works through what fits, what does not, and what matters in this chapter—not just for work, but for life.</li>
+        <li><strong>Possibility review</strong> — volunteer, work part-time, consult, coach, teach, build, serve, or combine a few paths. We narrow the options toward what fits <em>you</em>, without forcing an answer.</li>
+        <li><strong>Your written 90-Day Blueprint</strong> — a practical plan with three 30-day phases, weekly actions, and small experiments that tell you what to try and what to learn from it.</li>
+        <li><strong>Follow-up summary email</strong> — the useful parts of the conversation captured so they do not disappear afterward.</li>
       </ul>
     </div>
 
+    <div class="card card-gold">
+      <h2>Optional Bonus: Your First 30 Days in the Graybeard Forum Free</h2>
+      <p>The Blueprint gives you the plan. The Forum is where people come together to implement: shared resources, practical guidance, hands-on assistance, and others working through a crossroads and building their own next phase.</p>
+      <p><strong>Select the Forum option at checkout only if you want it.</strong> Your first 30 days are free. After that, membership is $69 per month and renews until canceled. Cancel before the trial ends to avoid the first charge.</p>
+    </div>
+
     <div class="card">
-      <h2>Why One Focused Hour Is Enough</h2>
-      <p>We're not starting from scratch — your Master Document does the heavy lifting. Matt comes prepared. The session is focused: review what resonated, choose a direction, and build your action plan. Sixty minutes of focused work with someone who's done this before beats hours of spinning on your own.</p>
-      <p style="margin-bottom:0;">If you want help <strong>executing</strong> that plan — that's what our premium group coaching program is for (in development — small cohorts, real implementation support). This session gets you <strong>unstuck, decided, and moving</strong>.</p>
+      <h2>Our Satisfaction Promise</h2>
+      <p style="margin-bottom:0;">Complete the process. If you are not satisfied with the experience or what we deliver, email us and we will refund your purchase. No hoops. No fine-print treasure hunt. <a href="refund-policy.html" style="color:#8C2F26; font-weight:700;">Read the refund policy.</a></p>
+    </div>
+
+    <div class="card">
+      <h2>What One Focused Hour Can Do</h2>
+      <p>The Blueprint does not start from scratch. It continues the work begun in your Assessment. Ben uses what you have already shared, confirms it with you, and helps turn the strongest direction into action. This is an unusually practical moment to do it: AI can reduce the time, cost, and friction of researching, organizing, creating, testing, and connecting. It cannot replace the experience, judgment, relationships, and purpose you have spent decades earning.</p>
+      <p style="margin-bottom:0;">If you choose it at checkout, the Graybeard Forum provides a practical place to implement your Blueprint with useful resources, hands-on help, and other people moving through their own next chapter.</p>
     </div>
 
     <div class="card">
       <h2>Who This Is For — And Who It Isn't</h2>
       <p><strong>This is for you if:</strong></p>
       <ul class="check">
-        <li>You've completed (or will complete) The Graybeard Assessment</li>
-        <li>You want a real human to help you choose — not more reading material</li>
-        <li>You're ready to invest in clarity, not just collect ideas</li>
+        <li>You've completed—or will complete—the Assessment</li>
+        <li>You want a conversation grounded in your own Assessment—not more generic reading material</li>
+        <li>You want a clearer sense of which options may fit you best</li>
         <li>You respect your own time enough to pay for focus</li>
       </ul>
       <p style="margin-top:1.25rem;"><strong>This is NOT for you if:</strong></p>
       <ul style="padding-left:1.25rem; color:#4a4a4a;">
-        <li>You're still browsing and not committed to the Assessment</li>
-        <li>You want someone to "build it for you" (that's the done-for-you tier)</li>
+        <li>You have not completed, and do not plan to complete, the Assessment</li>
+        <li>You want someone else to make every decision or guarantee the outcome</li>
         <li>You're looking for a magic income promise — we don't do that</li>
       </ul>
     </div>
 
     <div class="card card-dark">
-      <h2>100% Credit Toward Premium Coaching</h2>
-      <p>Everything you invest in the Assessment and this Strategy Session credits dollar-for-dollar toward enrollment in our <strong>premium group coaching program</strong> when it launches. We're building it now — small cohorts, real implementation support, the next step after your Action Plan.</p>
-      <p style="margin-bottom:0; color:#D4A017; font-weight:600;">You're not spending money twice. You're building toward something bigger — and we'll honor every dollar when coaching opens.</p>
+      <h2>Your Experience Is the Source. AI Is the Leverage.</h2>
+      <p>There has never been a better time in history to reach this crossroads. AI and today’s technology can help one person research, organize, create, test, and connect in ways that recently required a staff, a large budget, or months of setup. That creates unprecedented ways to turn decades of knowledge toward paid work, service, teaching, advising, community contribution, or a blend that fits your terms.</p>
+      <p style="margin-bottom:0; color:#D4A017; font-weight:600;">The technology provides the leverage. Your experience and judgment give it value.</p>
     </div>
 
     <div class="card" style="text-align:center;">
       <h2>How It Works</h2>
       <ol style="text-align:left; max-width:28rem; margin:0 auto 1.5rem; padding-left:1.25rem; color:#4a4a4a;">
-        <li style="margin-bottom:0.5rem;">Complete your Graybeard Assessment conversation</li>
-        <li style="margin-bottom:0.5rem;">Receive your Master Document (5–7 days)</li>
-        <li style="margin-bottom:0.5rem;">We schedule your Blueprint Strategy Session</li>
-        <li style="margin-bottom:0.5rem;">Matt reviews your document before the call</li>
-        <li style="margin-bottom:0.5rem;">60-minute live session + your 90-Day Action Plan delivered after</li>
+        <li style="margin-bottom:0.5rem;">Complete your on-demand Assessment conversation</li>
+        <li style="margin-bottom:0.5rem;">Receive your Assessment (within three business days)</li>
+        <li style="margin-bottom:0.5rem;">Your approved Assessment becomes the starting point for the Blueprint</li>
+        <li style="margin-bottom:0.5rem;">Open your dedicated, on-demand Blueprint conversation with Ben whenever you are ready</li>
+        <li style="margin-bottom:0.5rem;">Talk through your direction with Ben and receive your human-reviewed 90-Day Blueprint after approval</li>
       </ol>
       <p class="price-tag" style="font-size:2rem;">$697 Total</p>
-      <p style="color:#6b7280; margin-bottom:1.25rem;">Assessment + Blueprint Strategy Session in one package</p>
-      <a href="graybeard-assessment-checkout.html" class="cta px-8 py-4 rounded-lg text-lg uppercase tracking-wide">Get Assessment + Session</a>
+      <p style="color:#6b7280; margin-bottom:1.25rem;">Assessment + personal conversation with Ben + human-reviewed 90-Day Blueprint</p>
+      <div class="choice-buttons">
+        <a href="graybeard-assessment-checkout.html?product=bundle" class="cta"><span><span class="button-main">Choose Assessment + Blueprint</span><span class="button-detail">Complete experience · $697 total</span></span></a>
+        <a href="graybeard-assessment-checkout.html?product=assessment" class="cta-outline"><span><span class="button-main">Continue With the Assessment Only</span><span class="button-detail">Assessment · $199</span></span></a>
+      </div>
       <p style="margin-top:1rem; font-size:0.9375rem; color:#9ca3af;">Questions? <a href="mailto:matt@graybeardguidance.com" style="color:#8C2F26;">matt@graybeardguidance.com</a></p>
     </div>
 
@@ -171,7 +204,9 @@
 
   <footer>
     <p><strong style="color:#F7F5F0;">The Graybeard Project</strong> · Graybeard Guidance</p>
-    <p style="margin-top:0.5rem;">© 2026 · Blueprint Strategy Session</p>
+    <p style="margin-top:0.5rem;">© 2026 · The Graybeard Blueprint</p>
+    <p><a href="privacy.html" style="color:#D4A017;">Privacy</a> · <a href="terms.html" style="color:#D4A017;">Terms</a> · <a href="refund-policy.html" style="color:#D4A017;">Refund Policy</a> · <a href="contact.html" style="color:#D4A017;">Contact</a></p>
+    <p>Operated by Digital Access Inc., a North Carolina corporation.</p>
   </footer>
 
   <script src="graybeard-review-mode.js"></script>

@@ -1,5 +1,7 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/html/graybeard-assessment-sales-page.html" }
+    { "source": "/", "destination": "/html/graybeard-assessment-sales-page.html" },
+    { "source": "/:page.html", "destination": "/html/:page.html" },
+    { "source": "/:script.js", "destination": "/html/:script.js" }
   ]
 }

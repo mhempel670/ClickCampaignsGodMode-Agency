@@ -34,7 +34,7 @@
   var originalFetch = window.fetch;
   window.fetch = function (input, options) {
     var url = typeof input === 'string' ? input : (input && input.url) || '';
-    if (/\/api\/(create-checkout-session|create-addon-session|subscribe-lead)/i.test(url)) {
+    if (/\/api\/(create-checkout-session|subscribe-lead)/i.test(url)) {
       return Promise.reject(new Error('Disabled in reviewer mode.'));
     }
     return originalFetch.call(window, input, options);
@@ -67,13 +67,4 @@
     }, true);
   }
 
-  var addonButton = document.getElementById('upsell-btn');
-  if (addonButton) {
-    addonButton.textContent = 'Add-On Payment Disabled — Review Only';
-    addonButton.classList.add('graybeard-review-disabled');
-    addonButton.addEventListener('click', function (event) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-    }, true);
-  }
 })();

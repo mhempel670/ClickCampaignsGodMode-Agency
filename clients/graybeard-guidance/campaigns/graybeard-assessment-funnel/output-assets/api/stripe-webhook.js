@@ -72,12 +72,12 @@ async function handler(req, res) {
     if (event.type === 'checkout.session.completed') {
       const session = event.data?.object || {};
       const product = session.metadata?.product;
-      const deliversAssessment = product === 'assessment' || product === 'assessment_strategy_bundle';
-      const includesStrategySession = product === 'assessment_strategy_bundle' || product === 'strategy_session_addon';
+      const deliversAssessment = product === 'assessment' || product === 'assessment_strategy_bundle' || product === 'assessment_blueprint_forum';
+      const includesBlueprint = product === 'assessment_strategy_bundle' || product === 'assessment_blueprint_forum';
       if (session.payment_status === 'paid') {
         const deliveries = [];
         if (deliversAssessment) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_PURCHASE_FORM_URL));
-        if (includesStrategySession) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_STRATEGY_FORM_URL));
+        if (includesBlueprint) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_STRATEGY_FORM_URL));
         await Promise.all(deliveries);
       }
     }
