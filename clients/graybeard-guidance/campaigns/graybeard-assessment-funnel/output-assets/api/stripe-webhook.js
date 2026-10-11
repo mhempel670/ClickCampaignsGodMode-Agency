@@ -169,10 +169,12 @@ async function handler(req, res) {
         if (deliversAssessment) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_PURCHASE_FORM_URL));
         if (includesBlueprint) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_STRATEGY_FORM_URL));
         await Promise.all(deliveries);
-        try {
-          await sendMetaPurchase(event, session);
-        } catch (metaError) {
-          console.error('Meta Conversions API purchase event failed:', metaError.message);
+        if (session.metadata?.marketing_consent === 'granted') {
+          try {
+            await sendMetaPurchase(event, session);
+          } catch (metaError) {
+            console.error('Meta Conversions API purchase event failed:', metaError.message);
+          }
         }
       }
     }

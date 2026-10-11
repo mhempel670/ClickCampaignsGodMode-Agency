@@ -156,7 +156,8 @@
         includeForum: Boolean(upsellCheckbox && upsellCheckbox.checked && forumCheckbox && forumCheckbox.checked),
         fbp: readCookie('_fbp'),
         fbc: readCookie('_fbc'),
-        eventSourceUrl: window.location.href
+        eventSourceUrl: window.location.href,
+        marketingConsent: typeof window.graybeardMarketingConsentGranted === 'function' && window.graybeardMarketingConsentGranted()
       })
     })
       .then(function (response) {

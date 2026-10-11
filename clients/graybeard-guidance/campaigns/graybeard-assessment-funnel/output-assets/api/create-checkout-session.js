@@ -51,6 +51,7 @@ module.exports = async function handler(req, res) {
   const fbp = String(body.fbp || '').slice(0, 500);
   const fbc = String(body.fbc || '').slice(0, 500);
   const eventSourceUrl = String(body.eventSourceUrl || '').slice(0, 500);
+  const marketingConsent = body.marketingConsent === true;
 
   if (!firstName || !lastName || !/^\S+@\S+\.\S+$/.test(email)) {
     return send(res, 400, { error: 'Valid contact information is required.' });
@@ -86,11 +87,14 @@ module.exports = async function handler(req, res) {
     params.set('metadata[first_name]', firstName);
     params.set('metadata[last_name]', lastName);
     params.set('metadata[forum_trial]', includeForum ? '30_days_then_69_monthly' : 'none');
-    if (forwardedFor) params.set('metadata[client_ip_address]', forwardedFor);
-    if (userAgent) params.set('metadata[client_user_agent]', userAgent);
-    if (fbp) params.set('metadata[fbp]', fbp);
-    if (fbc) params.set('metadata[fbc]', fbc);
-    if (eventSourceUrl) params.set('metadata[event_source_url]', eventSourceUrl);
+    params.set('metadata[marketing_consent]', marketingConsent ? 'granted' : 'declined');
+    if (marketingConsent) {
+      if (forwardedFor) params.set('metadata[client_ip_address]', forwardedFor);
+      if (userAgent) params.set('metadata[client_user_agent]', userAgent);
+      if (fbp) params.set('metadata[fbp]', fbp);
+      if (fbc) params.set('metadata[fbc]', fbc);
+      if (eventSourceUrl) params.set('metadata[event_source_url]', eventSourceUrl);
+    }
     if (!includeForum) {
       params.set('payment_intent_data[metadata][product]', product);
       params.set('payment_intent_data[metadata][email]', email);
