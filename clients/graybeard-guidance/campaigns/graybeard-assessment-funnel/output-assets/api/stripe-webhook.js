@@ -168,8 +168,12 @@ async function handler(req, res) {
         const deliveries = [];
         if (deliversAssessment) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_PURCHASE_FORM_URL));
         if (includesBlueprint) deliveries.push(addCustomerToTinyEmail(session, TINYEMAIL_STRATEGY_FORM_URL));
-        deliveries.push(sendMetaPurchase(event, session));
         await Promise.all(deliveries);
+        try {
+          await sendMetaPurchase(event, session);
+        } catch (metaError) {
+          console.error('Meta Conversions API purchase event failed:', metaError.message);
+        }
       }
     }
 
@@ -181,4 +185,3 @@ async function handler(req, res) {
 
 module.exports = handler;
 module.exports.config = { api: { bodyParser: false } };
-module.exports.sendMetaPurchase = sendMetaPurchase;
