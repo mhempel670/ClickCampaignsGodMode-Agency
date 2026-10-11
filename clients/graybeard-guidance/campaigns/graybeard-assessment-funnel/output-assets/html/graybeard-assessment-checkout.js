@@ -78,6 +78,14 @@
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
   }
 
+  function readCookie(name) {
+    var prefix = name + '=';
+    var match = document.cookie.split(';').map(function (part) { return part.trim(); }).find(function (part) {
+      return part.indexOf(prefix) === 0;
+    });
+    return match ? decodeURIComponent(match.slice(prefix.length)) : '';
+  }
+
   function validateStep1() {
     var fields = getFields();
     return fields.first.length > 0 && fields.last.length > 0 && validEmail(fields.email);
@@ -145,7 +153,10 @@
         lastName: fields.last,
         email: fields.email,
         product: upsellCheckbox && upsellCheckbox.checked ? 'assessment_strategy_bundle' : 'assessment',
-        includeForum: Boolean(upsellCheckbox && upsellCheckbox.checked && forumCheckbox && forumCheckbox.checked)
+        includeForum: Boolean(upsellCheckbox && upsellCheckbox.checked && forumCheckbox && forumCheckbox.checked),
+        fbp: readCookie('_fbp'),
+        fbc: readCookie('_fbc'),
+        eventSourceUrl: window.location.href
       })
     })
       .then(function (response) {
@@ -154,6 +165,17 @@
       })
       .then(function (data) {
         if (!data.url) throw new Error('Stripe did not return a checkout URL.');
+        var withBundle = Boolean(upsellCheckbox && upsellCheckbox.checked);
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', 'InitiateCheckout', {
+            content_name: withBundle ? 'Graybeard Assessment + 90-Day Blueprint' : 'Graybeard Assessment',
+            content_ids: [withBundle ? 'assessment_strategy_bundle' : 'assessment'],
+            content_type: 'product',
+            value: withBundle ? 697 : 199,
+            currency: 'USD',
+            num_items: 1
+          });
+        }
         window.location.assign(data.url);
       })
       .catch(function () {
